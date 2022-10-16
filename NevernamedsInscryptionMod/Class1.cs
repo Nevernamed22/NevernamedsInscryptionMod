@@ -52,7 +52,7 @@ namespace NevernamedsInscryptionMod
             GrueAttackColourOverride.Init();
             BoardWipe.Init();
             CreateCharredLump.Init();
-
+             //stuff and shit
             //OBELISKS
             BlankObelisk.Init();
             SquirrelObelisk.Init();
