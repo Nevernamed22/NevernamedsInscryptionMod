@@ -1,0 +1,1892 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\CardsTech\bustedbot.png" />
+    <None Remove="Resources\CardsTech\counstabot.png" />
+    <None Remove="Resources\CardsTech\crusher.png" />
+    <None Remove="Resources\CardsTech\energycube.png" />
+    <None Remove="Resources\CardsTech\gembrain.png" />
+    <None Remove="Resources\CardsTech\helidrone.png" />
+    <None Remove="Resources\CardsTech\omnibot.png" />
+    <None Remove="Resources\CardsTech\pidgeonbot.png" />
+    <None Remove="Resources\CardsTech\shieldrone.png" />
+    <None Remove="Resources\CardsTech\undertecher.png" />
+    <None Remove="Resources\Cards\aderynycorph.png" />
+    <None Remove="Resources\Cards\aderynycorph_emission.png" />
+    <None Remove="Resources\Cards\albatross.png" />
+    <None Remove="Resources\Cards\albatrosschick.png" />
+    <None Remove="Resources\Cards\albatrosschick_emission.png" />
+    <None Remove="Resources\Cards\albatross_emission.png" />
+    <None Remove="Resources\Cards\alligatorgar.png" />
+    <None Remove="Resources\Cards\alligatorgar_emission.png" />
+    <None Remove="Resources\Cards\anansi.png" />
+    <None Remove="Resources\Cards\anansi_emission.png" />
+    <None Remove="Resources\Cards\annoyingdog.png" />
+    <None Remove="Resources\Cards\annoyingdog_emission.png" />
+    <None Remove="Resources\Cards\antingaw.png" />
+    <None Remove="Resources\Cards\antingaw_emission.png" />
+    <None Remove="Resources\Cards\antlarva.png" />
+    <None Remove="Resources\Cards\antlarva_emission.png" />
+    <None Remove="Resources\Cards\antlion.png" />
+    <None Remove="Resources\Cards\antlion_emission.png" />
+    <None Remove="Resources\Cards\ararach.png" />
+    <None Remove="Resources\Cards\ararach_emission.png" />
+    <None Remove="Resources\Cards\areion.png" />
+    <None Remove="Resources\Cards\areion2.png" />
+    <None Remove="Resources\Cards\areion2_emission.png" />
+    <None Remove="Resources\Cards\areion_emission.png" />
+    <None Remove="Resources\Cards\bakunawa.png" />
+    <None Remove="Resources\Cards\bakunawa_emission.png" />
+    <None Remove="Resources\Cards\baldeagle.png" />
+    <None Remove="Resources\Cards\baldeagle_emission.png" />
+    <None Remove="Resources\Cards\barnacle.png" />
+    <None Remove="Resources\Cards\barnacle_emission.png" />
+    <None Remove="Resources\Cards\basilisk.png" />
+    <None Remove="Resources\Cards\basilisk_emission.png" />
+    <None Remove="Resources\Cards\beachedwhale.png" />
+    <None Remove="Resources\Cards\beachedwhale_emission.png" />
+    <None Remove="Resources\Cards\biscione.png" />
+    <None Remove="Resources\Cards\biscione_emission.png" />
+    <None Remove="Resources\Cards\bison.png" />
+    <None Remove="Resources\Cards\bison_emission.png" />
+    <None Remove="Resources\Cards\blackdog.png" />
+    <None Remove="Resources\Cards\blackdog_emission.png" />
+    <None Remove="Resources\Cards\blackgiantsquirrel.png" />
+    <None Remove="Resources\Cards\blackgiantsquirrel_emission.png" />
+    <None Remove="Resources\Cards\blackwidow.png" />
+    <None Remove="Resources\Cards\blackwidow_emission.png" />
+    <None Remove="Resources\Cards\blasttermite.png" />
+    <None Remove="Resources\Cards\blasttermite_emission.png" />
+    <None Remove="Resources\Cards\blindmouse.png" />
+    <None Remove="Resources\Cards\blindmouse_emission.png" />
+    <None Remove="Resources\Cards\blindscorpion.png" />
+    <None Remove="Resources\Cards\blindscorpion_emission.png" />
+    <None Remove="Resources\Cards\bloatedleech.png" />
+    <None Remove="Resources\Cards\bloatedleech_emission.png" />
+    <None Remove="Resources\Cards\blockhead.png" />
+    <None Remove="Resources\Cards\blockhead_emission.png" />
+    <None Remove="Resources\Cards\bloodreddog.png" />
+    <None Remove="Resources\Cards\bloodreddog_emission.png" />
+    <None Remove="Resources\Cards\bloodwolf.png" />
+    <None Remove="Resources\Cards\bloodwolf_emission.png" />
+    <None Remove="Resources\Cards\blowfly.png" />
+    <None Remove="Resources\Cards\blowfly_emission.png" />
+    <None Remove="Resources\Cards\blueringed.png" />
+    <None Remove="Resources\Cards\blueringed_emission.png" />
+    <None Remove="Resources\Cards\boardtentacle.png" />
+    <None Remove="Resources\Cards\bobbitworm.png" />
+    <None Remove="Resources\Cards\bobbitworm_emission.png" />
+    <None Remove="Resources\Cards\bombardierbeetle.png" />
+    <None Remove="Resources\Cards\bombardierbeetle_emission.png" />
+    <None Remove="Resources\Cards\boneworm.png" />
+    <None Remove="Resources\Cards\boneworm_emission.png" />
+    <None Remove="Resources\Cards\bowerbird.png" />
+    <None Remove="Resources\Cards\bowerbird_emission.png" />
+    <None Remove="Resources\Cards\brollachan.png" />
+    <None Remove="Resources\Cards\brollachan_emission.png" />
+    <None Remove="Resources\Cards\brownrecluse.png" />
+    <None Remove="Resources\Cards\brownrecluse_emission.png" />
+    <None Remove="Resources\Cards\bugbear.png" />
+    <None Remove="Resources\Cards\bugbear_emission.png" />
+    <None Remove="Resources\Cards\cactusant.png" />
+    <None Remove="Resources\Cards\cactusant_emission.png" />
+    <None Remove="Resources\Cards\cagedbeasts.png" />
+    <None Remove="Resources\Cards\cagedbeasts_emission.png" />
+    <None Remove="Resources\Cards\camelspider.png" />
+    <None Remove="Resources\Cards\camelspider_emission.png" />
+    <None Remove="Resources\Cards\canopichawk.png" />
+    <None Remove="Resources\Cards\canopichawk_emission.png" />
+    <None Remove="Resources\Cards\capybara.png" />
+    <None Remove="Resources\Cards\capybara_emission.png" />
+    <None Remove="Resources\Cards\carrionfly.png" />
+    <None Remove="Resources\Cards\carrionfly_emission.png" />
+    <None Remove="Resources\Cards\cellarspider.png" />
+    <None Remove="Resources\Cards\cellarspider_emission.png" />
+    <None Remove="Resources\Cards\charredlump.png" />
+    <None Remove="Resources\Cards\charybdis.png" />
+    <None Remove="Resources\Cards\charybdis_emission.png" />
+    <None Remove="Resources\Cards\chupacabra.png" />
+    <None Remove="Resources\Cards\chupacabra_emission.png" />
+    <None Remove="Resources\Cards\claw_left.png" />
+    <None Remove="Resources\Cards\claw_left_emission.png" />
+    <None Remove="Resources\Cards\claw_right.png" />
+    <None Remove="Resources\Cards\claw_right_emission.png" />
+    <None Remove="Resources\Cards\clonegrub.png" />
+    <None Remove="Resources\Cards\clonegrub_emission.png" />
+    <None Remove="Resources\Cards\cobra.png" />
+    <None Remove="Resources\Cards\cobra_emission.png" />
+    <None Remove="Resources\Cards\colossalsquid.png" />
+    <None Remove="Resources\Cards\colossalsquid_emission.png" />
+    <None Remove="Resources\Cards\conesnail.png" />
+    <None Remove="Resources\Cards\conesnail_emission.png" />
+    <None Remove="Resources\Cards\copycat.png" />
+    <None Remove="Resources\Cards\copycat_emission.png" />
+    <None Remove="Resources\Cards\cowardlylion.png" />
+    <None Remove="Resources\Cards\cowardlylion_emission.png" />
+    <None Remove="Resources\Cards\crab.png" />
+    <None Remove="Resources\Cards\crabspider.png" />
+    <None Remove="Resources\Cards\crabspider_emission.png" />
+    <None Remove="Resources\Cards\crab_emission.png" />
+    <None Remove="Resources\Cards\crayfish.png" />
+    <None Remove="Resources\Cards\crayfish_emission.png" />
+    <None Remove="Resources\Cards\cursedchild.png" />
+    <None Remove="Resources\Cards\cursedchild_emission.png" />
+    <None Remove="Resources\Cards\debug.png" />
+    <None Remove="Resources\Cards\debug_emission.png" />
+    <None Remove="Resources\Cards\deepstaria.png" />
+    <None Remove="Resources\Cards\deepstaria_emission.png" />
+    <None Remove="Resources\Cards\deerlord.png" />
+    <None Remove="Resources\Cards\deerlord_emission.png" />
+    <None Remove="Resources\Cards\dermestid.png" />
+    <None Remove="Resources\Cards\dermestid_emission.png" />
+    <None Remove="Resources\Cards\dhole.png" />
+    <None Remove="Resources\Cards\dhole_emission.png" />
+    <None Remove="Resources\Cards\dikdik.png" />
+    <None Remove="Resources\Cards\dikdik_emission.png" />
+    <None Remove="Resources\Cards\dingo.png" />
+    <None Remove="Resources\Cards\dingo_emission.png" />
+    <None Remove="Resources\Cards\direbeaver.png" />
+    <None Remove="Resources\Cards\direbeaver_emission.png" />
+    <None Remove="Resources\Cards\diredam.png" />
+    <None Remove="Resources\Cards\diredam_emission.png" />
+    <None Remove="Resources\Cards\direrat.png" />
+    <None Remove="Resources\Cards\direrat_emission.png" />
+    <None Remove="Resources\Cards\diseasedcur.png" />
+    <None Remove="Resources\Cards\diseasedcur_emission.png" />
+    <None Remove="Resources\Cards\dodo.png" />
+    <None Remove="Resources\Cards\dodo_emission.png" />
+    <None Remove="Resources\Cards\dolphin.png" />
+    <None Remove="Resources\Cards\dolphin_emission.png" />
+    <None Remove="Resources\Cards\dormouse.png" />
+    <None Remove="Resources\Cards\dormouse_emission.png" />
+    <None Remove="Resources\Cards\dudegg.png" />
+    <None Remove="Resources\Cards\dudegg_emission.png" />
+    <None Remove="Resources\Cards\dyingspider.png" />
+    <None Remove="Resources\Cards\dyingspider_emission.png" />
+    <None Remove="Resources\Cards\eagerhatchling.png" />
+    <None Remove="Resources\Cards\eagerhatchling_emission.png" />
+    <None Remove="Resources\Cards\earthworm.png" />
+    <None Remove="Resources\Cards\earthworm_emission.png" />
+    <None Remove="Resources\Cards\eggsac.png" />
+    <None Remove="Resources\Cards\eggsac_emission.png" />
+    <None Remove="Resources\Cards\emmet.png" />
+    <None Remove="Resources\Cards\emmet_emission.png" />
+    <None Remove="Resources\Cards\empusa.png" />
+    <None Remove="Resources\Cards\empusa_beast.png" />
+    <None Remove="Resources\Cards\explodingant.png" />
+    <None Remove="Resources\Cards\explodingant_emission.png" />
+    <None Remove="Resources\Cards\explodingbunny.png" />
+    <None Remove="Resources\Cards\explodingbunny_emission.png" />
+    <None Remove="Resources\Cards\fangtooth.png" />
+    <None Remove="Resources\Cards\fangtooth_emission.png" />
+    <None Remove="Resources\Cards\fantail.png" />
+    <None Remove="Resources\Cards\fantail_emission.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\berke.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\cody.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\daniel.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\davidtahnee.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\jonah.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\kaminski.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\kaycee.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\kevin.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\louis.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\luke.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\reginald.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\sean.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\tamara.png" />
+    <None Remove="Resources\Cards\FauxDeathcards\you.png" />
+    <None Remove="Resources\Cards\featherlessbiped.png" />
+    <None Remove="Resources\Cards\featherlessbiped_emission.png" />
+    <None Remove="Resources\Cards\fennec.png" />
+    <None Remove="Resources\Cards\fennec_emission.png" />
+    <None Remove="Resources\Cards\festeringguts.png" />
+    <None Remove="Resources\Cards\festeringguts_emission.png" />
+    <None Remove="Resources\Cards\finch.png" />
+    <None Remove="Resources\Cards\finch_emission.png" />
+    <None Remove="Resources\Cards\flyingfish.png" />
+    <None Remove="Resources\Cards\flyingfish_emission.png" />
+    <None Remove="Resources\Cards\frid.png" />
+    <None Remove="Resources\Cards\frid_emission.png" />
+    <None Remove="Resources\Cards\gadreel.png" />
+    <None Remove="Resources\Cards\gadreel_emission.png" />
+    <None Remove="Resources\Cards\garroe.png" />
+    <None Remove="Resources\Cards\garroe_emission.png" />
+    <None Remove="Resources\Cards\giantearthworm.png" />
+    <None Remove="Resources\Cards\giantearthworm_emission.png" />
+    <None Remove="Resources\Cards\giftspider.png" />
+    <None Remove="Resources\Cards\giftspider_emission.png" />
+    <None Remove="Resources\Cards\glochidium.png" />
+    <None Remove="Resources\Cards\glochidium_emission.png" />
+    <None Remove="Resources\Cards\gnat.png" />
+    <None Remove="Resources\Cards\gnat_emission.png" />
+    <None Remove="Resources\Cards\goose.png" />
+    <None Remove="Resources\Cards\goose_emission.png" />
+    <None Remove="Resources\Cards\greaterdam.png" />
+    <None Remove="Resources\Cards\greaterdam_emission.png" />
+    <None Remove="Resources\Cards\greenfang.png" />
+    <None Remove="Resources\Cards\greenfang_emission.png" />
+    <None Remove="Resources\Cards\gruagach.png" />
+    <None Remove="Resources\Cards\gruagach_emission.png" />
+    <None Remove="Resources\Cards\grue.png" />
+    <None Remove="Resources\Cards\grue_cardback.png" />
+    <None Remove="Resources\Cards\grue_emission.png" />
+    <None Remove="Resources\Cards\grue_title.png" />
+    <None Remove="Resources\Cards\guts.png" />
+    <None Remove="Resources\Cards\guts_emission.png" />
+    <None Remove="Resources\Cards\hallucigenia.png" />
+    <None Remove="Resources\Cards\hallucigeniaflipped.png" />
+    <None Remove="Resources\Cards\hallucigeniaflipped_emission.png" />
+    <None Remove="Resources\Cards\hallucigenia_emission.png" />
+    <None Remove="Resources\Cards\handragora.png" />
+    <None Remove="Resources\Cards\harvestman.png" />
+    <None Remove="Resources\Cards\harvestman_emission.png" />
+    <None Remove="Resources\Cards\heartofharts.png" />
+    <None Remove="Resources\Cards\heartofharts_emission.png" />
+    <None Remove="Resources\Cards\hivecrawler.png" />
+    <None Remove="Resources\Cards\hivecrawler_emission.png" />
+    <None Remove="Resources\Cards\hotdog.png" />
+    <None Remove="Resources\Cards\hotdog_emission.png" />
+    <None Remove="Resources\Cards\hummingbird.png" />
+    <None Remove="Resources\Cards\hummingbird_emission.png" />
+    <None Remove="Resources\Cards\huntaway.png" />
+    <None Remove="Resources\Cards\huntaway_emission.png" />
+    <None Remove="Resources\Cards\huntsman.png" />
+    <None Remove="Resources\Cards\huntsman_emission.png" />
+    <None Remove="Resources\Cards\impossibeast.png" />
+    <None Remove="Resources\Cards\impossibeast_emission.png" />
+    <None Remove="Resources\Cards\infectedant.png" />
+    <None Remove="Resources\Cards\infectedant_emission.png" />
+    <None Remove="Resources\Cards\isopod.png" />
+    <None Remove="Resources\Cards\isopod_emission.png" />
+    <None Remove="Resources\Cards\jackal.png" />
+    <None Remove="Resources\Cards\jackal_emission.png" />
+    <None Remove="Resources\Cards\jorogumo.png" />
+    <None Remove="Resources\Cards\jorogumo_emission.png" />
+    <None Remove="Resources\Cards\jumpingspider.png" />
+    <None Remove="Resources\Cards\jumpingspider_emission.png" />
+    <None Remove="Resources\Cards\karkinos.png" />
+    <None Remove="Resources\Cards\karkinos_emission.png" />
+    <None Remove="Resources\Cards\khepri.png" />
+    <None Remove="Resources\Cards\khepri_emission.png" />
+    <None Remove="Resources\Cards\kingcobra.png" />
+    <None Remove="Resources\Cards\kingcobra_emission.png" />
+    <None Remove="Resources\Cards\kokyangwuti.png" />
+    <None Remove="Resources\Cards\kokyangwuti_emission.png" />
+    <None Remove="Resources\Cards\kuchipatchi.png" />
+    <None Remove="Resources\Cards\kuchipatchi_emission.png" />
+    <None Remove="Resources\Cards\labrats.png" />
+    <None Remove="Resources\Cards\labrats_emission.png" />
+    <None Remove="Resources\Cards\ladybug.png" />
+    <None Remove="Resources\Cards\ladybug_emission.png" />
+    <None Remove="Resources\Cards\leafcutterant.png" />
+    <None Remove="Resources\Cards\leafcutterant_emission.png" />
+    <None Remove="Resources\Cards\leafybarricade.png" />
+    <None Remove="Resources\Cards\leatherback.png" />
+    <None Remove="Resources\Cards\leatherback_emission.png" />
+    <None Remove="Resources\Cards\leech.png" />
+    <None Remove="Resources\Cards\leech_emission.png" />
+    <None Remove="Resources\Cards\lengspider.png" />
+    <None Remove="Resources\Cards\lengspider_emission.png" />
+    <None Remove="Resources\Cards\lion.png" />
+    <None Remove="Resources\Cards\lionsmanejelly.png" />
+    <None Remove="Resources\Cards\lionsmanejelly_emission.png" />
+    <None Remove="Resources\Cards\lion_emission.png" />
+    <None Remove="Resources\Cards\littleblue.png" />
+    <None Remove="Resources\Cards\littleblue_emission.png" />
+    <None Remove="Resources\Cards\locust.png" />
+    <None Remove="Resources\Cards\locust_emission.png" />
+    <None Remove="Resources\Cards\lonewolf.png" />
+    <None Remove="Resources\Cards\lonewolf_emission.png" />
+    <None Remove="Resources\Cards\macaque.png" />
+    <None Remove="Resources\Cards\macaque_emission.png" />
+    <None Remove="Resources\Cards\macracantha.png" />
+    <None Remove="Resources\Cards\macracantha_emission.png" />
+    <None Remove="Resources\Cards\manmantis.png" />
+    <None Remove="Resources\Cards\manmantis_emission.png" />
+    <None Remove="Resources\Cards\mantaray.png" />
+    <None Remove="Resources\Cards\mantaray_emission.png" />
+    <None Remove="Resources\Cards\marmot.png" />
+    <None Remove="Resources\Cards\marmot_emission.png" />
+    <None Remove="Resources\Cards\masok.png" />
+    <None Remove="Resources\Cards\masok_emission.png" />
+    <None Remove="Resources\Cards\mauidolphin.png" />
+    <None Remove="Resources\Cards\mauidolphinsub.png" />
+    <None Remove="Resources\Cards\mauidolphinsub_emission.png" />
+    <None Remove="Resources\Cards\mauidolphin_emission.png" />
+    <None Remove="Resources\Cards\mayfly.png" />
+    <None Remove="Resources\Cards\mayflyswarm.png" />
+    <None Remove="Resources\Cards\mayflyswarm_emission.png" />
+    <None Remove="Resources\Cards\mayfly_emission.png" />
+    <None Remove="Resources\Cards\mealybug.png" />
+    <None Remove="Resources\Cards\mealybug_emission.png" />
+    <None Remove="Resources\Cards\minnow.png" />
+    <None Remove="Resources\Cards\minnow_emission.png" />
+    <None Remove="Resources\Cards\mistake.png" />
+    <None Remove="Resources\Cards\mistake_emission.png" />
+    <None Remove="Resources\Cards\moa.png" />
+    <None Remove="Resources\Cards\moa_emission.png" />
+    <None Remove="Resources\Cards\moeraki.png" />
+    <None Remove="Resources\Cards\moeraki_emission.png" />
+    <None Remove="Resources\Cards\molelizard.png" />
+    <None Remove="Resources\Cards\molelizard_emission.png" />
+    <None Remove="Resources\Cards\monarch.png" />
+    <None Remove="Resources\Cards\monarch_emission.png" />
+    <None Remove="Resources\Cards\mugwump.png" />
+    <None Remove="Resources\Cards\mugwump_emission.png" />
+    <None Remove="Resources\Cards\myrmecoleon.png" />
+    <None Remove="Resources\Cards\myrmecoleon_emission.png" />
+    <None Remove="Resources\Cards\nematode.png" />
+    <None Remove="Resources\Cards\nematode_emission.png" />
+    <None Remove="Resources\Cards\niao.png" />
+    <None Remove="Resources\Cards\niao_emission.png" />
+    <None Remove="Resources\Cards\nidhoggr.png" />
+    <None Remove="Resources\Cards\nidhoggr_emission.png" />
+    <None Remove="Resources\Cards\nightmare.png" />
+    <None Remove="Resources\Cards\nightmarefuel.png" />
+    <None Remove="Resources\Cards\nightmare_emission.png" />
+    <None Remove="Resources\Cards\noeyedeer.png" />
+    <None Remove="Resources\Cards\noeyedeer_emission.png" />
+    <None Remove="Resources\Cards\Obelisks\blankobelisk.png" />
+    <None Remove="Resources\Cards\Obelisks\mendingobelisk.png" />
+    <None Remove="Resources\Cards\Obelisks\mendingobelisk_emission.png" />
+    <None Remove="Resources\Cards\Obelisks\squirrelobelisk.png" />
+    <None Remove="Resources\Cards\Obelisks\squirrelobelisk_emission.png" />
+    <None Remove="Resources\Cards\octopus.png" />
+    <None Remove="Resources\Cards\octopus_emission.png" />
+    <None Remove="Resources\Cards\oddfang.png" />
+    <None Remove="Resources\Cards\oddfang_emission.png" />
+    <None Remove="Resources\Cards\orbweaver.png" />
+    <None Remove="Resources\Cards\orbweaver_emission.png" />
+    <None Remove="Resources\Cards\parrot.png" />
+    <None Remove="Resources\Cards\parrot_emission.png" />
+    <None Remove="Resources\Cards\phouka.png" />
+    <None Remove="Resources\Cards\phouka_emission.png" />
+    <None Remove="Resources\Cards\pig.png" />
+    <None Remove="Resources\Cards\pig_emission.png" />
+    <None Remove="Resources\Cards\poppingtoad.png" />
+    <None Remove="Resources\Cards\poppingtoad_emission.png" />
+    <None Remove="Resources\Cards\popweasel.png" />
+    <None Remove="Resources\Cards\popweasel_emission.png" />
+    <None Remove="Resources\Cards\pufferfish.png" />
+    <None Remove="Resources\Cards\pufferfish_emission.png" />
+    <None Remove="Resources\Cards\puffin.png" />
+    <None Remove="Resources\Cards\puffin_emission.png" />
+    <None Remove="Resources\Cards\pygarg.png" />
+    <None Remove="Resources\Cards\pygarg_emission.png" />
+    <None Remove="Resources\Cards\rabiddog.png" />
+    <None Remove="Resources\Cards\rabiddog_emission.png" />
+    <None Remove="Resources\Cards\redcard.png" />
+    <None Remove="Resources\Cards\redmite.png" />
+    <None Remove="Resources\Cards\redmite_emission.png" />
+    <None Remove="Resources\Cards\redpanda.png" />
+    <None Remove="Resources\Cards\redpandasleeping.png" />
+    <None Remove="Resources\Cards\redpandasleeping_emission.png" />
+    <None Remove="Resources\Cards\redpanda_emission.png" />
+    <None Remove="Resources\Cards\reem.png" />
+    <None Remove="Resources\Cards\reem_emission.png" />
+    <None Remove="Resources\Cards\rhinobeetle.png" />
+    <None Remove="Resources\Cards\rhinobeetle_emission.png" />
+    <None Remove="Resources\Cards\roc.png" />
+    <None Remove="Resources\Cards\roc_emission.png" />
+    <None Remove="Resources\Cards\salamander.png" />
+    <None Remove="Resources\Cards\salamander_emission.png" />
+    <None Remove="Resources\Cards\sanddollar.png" />
+    <None Remove="Resources\Cards\sanddollar_emission.png" />
+    <None Remove="Resources\Cards\scaletick.png" />
+    <None Remove="Resources\Cards\scaletick_emission.png" />
+    <None Remove="Resources\Cards\scarab.png" />
+    <None Remove="Resources\Cards\scarab_emission.png" />
+    <None Remove="Resources\Cards\scylla.png" />
+    <None Remove="Resources\Cards\scylla_emission.png" />
+    <None Remove="Resources\Cards\seaspider.png" />
+    <None Remove="Resources\Cards\seaspider_emission.png" />
+    <None Remove="Resources\Cards\selkieskin.png" />
+    <None Remove="Resources\Cards\selkieskin_emission.png" />
+    <None Remove="Resources\Cards\silkworm.png" />
+    <None Remove="Resources\Cards\silkworm_emission.png" />
+    <None Remove="Resources\Cards\skinwalker.png" />
+    <None Remove="Resources\Cards\skinwalker_emission.png" />
+    <None Remove="Resources\Cards\snakeeyes.png" />
+    <None Remove="Resources\Cards\snakeeyes_emission.png" />
+    <None Remove="Resources\Cards\spectraltarsier.png" />
+    <None Remove="Resources\Cards\spectraltarsier_emission.png" />
+    <None Remove="Resources\Cards\springbok.png" />
+    <None Remove="Resources\Cards\springbok_emission.png" />
+    <None Remove="Resources\Cards\springytail.png" />
+    <None Remove="Resources\Cards\squidge.png" />
+    <None Remove="Resources\Cards\squidge_emission.png" />
+    <None Remove="Resources\Cards\starling.png" />
+    <None Remove="Resources\Cards\starling_emission.png" />
+    <None Remove="Resources\Cards\starnosedmole.png" />
+    <None Remove="Resources\Cards\starnosedmole_emission.png" />
+    <None Remove="Resources\Cards\starvedrat.png" />
+    <None Remove="Resources\Cards\starvedrat_emission.png" />
+    <None Remove="Resources\Cards\stonefish.png" />
+    <None Remove="Resources\Cards\stonefish_emission.png" />
+    <None Remove="Resources\Cards\talbot.png" />
+    <None Remove="Resources\Cards\talbot_emission.png" />
+    <None Remove="Resources\Cards\tasmaniandevil.png" />
+    <None Remove="Resources\Cards\tasmaniandevil_emission.png" />
+    <None Remove="Resources\Cards\taurobolium.png" />
+    <None Remove="Resources\Cards\taurobolium_emission.png" />
+    <None Remove="Resources\Cards\termite.png" />
+    <None Remove="Resources\Cards\termitekingcard.png" />
+    <None Remove="Resources\Cards\termitekingcard_emission.png" />
+    <None Remove="Resources\Cards\termitequeen.png" />
+    <None Remove="Resources\Cards\termitequeen_emission.png" />
+    <None Remove="Resources\Cards\termite_emission.png" />
+    <None Remove="Resources\Cards\Terrain\web.png" />
+    <None Remove="Resources\Cards\Terrain\web_emission.png" />
+    <None Remove="Resources\Cards\tewheke.png" />
+    <None Remove="Resources\Cards\tewheke_emission.png" />
+    <None Remove="Resources\Cards\theblob.png" />
+    <None Remove="Resources\Cards\theblob_emission.png" />
+    <None Remove="Resources\Cards\theflesh.png" />
+    <None Remove="Resources\Cards\theflesh_emission.png" />
+    <None Remove="Resources\Cards\thepack.png" />
+    <None Remove="Resources\Cards\thepack_emission.png" />
+    <None Remove="Resources\Cards\thicklizard.png" />
+    <None Remove="Resources\Cards\thicklizard_emission.png" />
+    <None Remove="Resources\Cards\thicklizard_tailless.png" />
+    <None Remove="Resources\Cards\thornedcordyceps.png" />
+    <None Remove="Resources\Cards\thornedcordyceps_emission.png" />
+    <None Remove="Resources\Cards\thornydevil.png" />
+    <None Remove="Resources\Cards\thornydevil_emission.png" />
+    <None Remove="Resources\Cards\thornydevil_tailless.png" />
+    <None Remove="Resources\Cards\thornytail.png" />
+    <None Remove="Resources\Cards\tick.png" />
+    <None Remove="Resources\Cards\tick_emission.png" />
+    <None Remove="Resources\Cards\titanicisopod.png" />
+    <None Remove="Resources\Cards\titanicisopod_emission.png" />
+    <None Remove="Resources\Cards\toothbug.png" />
+    <None Remove="Resources\Cards\toothbug_emission.png" />
+    <None Remove="Resources\Cards\trapezia.png" />
+    <None Remove="Resources\Cards\trapezia_emission.png" />
+    <None Remove="Resources\Cards\trapjawant.png" />
+    <None Remove="Resources\Cards\trapjawant_emission.png" />
+    <None Remove="Resources\Cards\turtledove.png" />
+    <None Remove="Resources\Cards\turtledove_emission.png" />
+    <None Remove="Resources\Cards\urchin.png" />
+    <None Remove="Resources\Cards\urchin_emission.png" />
+    <None Remove="Resources\Cards\velvetworm.png" />
+    <None Remove="Resources\Cards\velvetworm_emission.png" />
+    <None Remove="Resources\Cards\visceratentacle.png" />
+    <None Remove="Resources\Cards\visceratentacle_emission.png" />
+    <None Remove="Resources\Cards\vodyanoy.png" />
+    <None Remove="Resources\Cards\vodyanoy_emission.png" />
+    <None Remove="Resources\Cards\whippoorwill.png" />
+    <None Remove="Resources\Cards\whippoorwill_emission.png" />
+    <None Remove="Resources\Cards\whipworm.png" />
+    <None Remove="Resources\Cards\whipworm_emission.png" />
+    <None Remove="Resources\Cards\whitetailed.png" />
+    <None Remove="Resources\Cards\whitetailed_emission.png" />
+    <None Remove="Resources\Cards\wildboar.png" />
+    <None Remove="Resources\Cards\wildboar_emission.png" />
+    <None Remove="Resources\Cards\wildhare.png" />
+    <None Remove="Resources\Cards\wildhare_emission.png" />
+    <None Remove="Resources\Cards\wishpoosh.png" />
+    <None Remove="Resources\Cards\wishpoosh_emission.png" />
+    <None Remove="Resources\Cards\woodpecker.png" />
+    <None Remove="Resources\Cards\woodpecker_emission.png" />
+    <None Remove="Resources\Cards\wyrm.png" />
+    <None Remove="Resources\Cards\wyrm_emission.png" />
+    <None Remove="Resources\Cards\wyvern.png" />
+    <None Remove="Resources\Cards\wyvern_emission.png" />
+    <None Remove="Resources\Cards\yaramayhawho.png" />
+    <None Remove="Resources\Cards\yaramayhawho_emission.png" />
+    <None Remove="Resources\Cards\yellowsacspider.png" />
+    <None Remove="Resources\Cards\yellowsacspider_emission.png" />
+    <None Remove="Resources\Nodes\raresacrifice1.png" />
+    <None Remove="Resources\Nodes\raresacrifice2.png" />
+    <None Remove="Resources\Nodes\raresacrifice3.png" />
+    <None Remove="Resources\Other\antplustwo.png" />
+    <None Remove="Resources\Other\birdsofafeather.png" />
+    <None Remove="Resources\Other\bloodandbone.png" />
+    <None Remove="Resources\Other\boned.png" />
+    <None Remove="Resources\Other\damagedice.png" />
+    <None Remove="Resources\Other\directoroftheboard.png" />
+    <None Remove="Resources\Other\fireparticle.png" />
+    <None Remove="Resources\Other\greycardback.png" />
+    <None Remove="Resources\Other\healthdamage.png" />
+    <None Remove="Resources\Other\onehalfsquirrels.png" />
+    <None Remove="Resources\Other\packhunter.png" />
+    <None Remove="Resources\Other\packicon.png" />
+    <None Remove="Resources\Other\signature.png" />
+    <None Remove="Resources\Other\signaturerare.png" />
+    <None Remove="Resources\Other\sineater.png" />
+    <None Remove="Resources\Other\smokedecal.png" />
+    <None Remove="Resources\Other\tentacle_title.png" />
+    <None Remove="Resources\Other\worldwideweb.png" />
+    <None Remove="Resources\PixelCards\acelord_pixel.png" />
+    <None Remove="Resources\PixelCards\act2emptyves_pixel.png" />
+    <None Remove="Resources\PixelCards\adipocere_pixel.png" />
+    <None Remove="Resources\PixelCards\antlarva_pixel.png" />
+    <None Remove="Resources\PixelCards\bat_tery_pixel.png" />
+    <None Remove="Resources\PixelCards\beachedwhale_pixel.png" />
+    <None Remove="Resources\PixelCards\bellbot_pixel.png" />
+    <None Remove="Resources\PixelCards\bhoot_pixel.png" />
+    <None Remove="Resources\PixelCards\bishop_pixel.png" />
+    <None Remove="Resources\PixelCards\blasttermite_pixel.png" />
+    <None Remove="Resources\PixelCards\bloatedleech_pixel.png" />
+    <None Remove="Resources\PixelCards\bloodysack_pixel.png" />
+    <None Remove="Resources\PixelCards\bobbitworm_pixel.png" />
+    <None Remove="Resources\PixelCards\bombardierbeetle_pixel.png" />
+    <None Remove="Resources\PixelCards\brollachan_pixel.png" />
+    <None Remove="Resources\PixelCards\bustedbot_pixel.png" />
+    <None Remove="Resources\PixelCards\camdrone_pixel.png" />
+    <None Remove="Resources\PixelCards\capybara_pixel.png" />
+    <None Remove="Resources\PixelCards\chaosengine_pixel.png" />
+    <None Remove="Resources\PixelCards\chochin_pixel.png" />
+    <None Remove="Resources\PixelCards\chupacabra_pixel.png" />
+    <None Remove="Resources\PixelCards\clawleft_pixel.png" />
+    <None Remove="Resources\PixelCards\clawright_pixel.png" />
+    <None Remove="Resources\PixelCards\conjurer_pixel.png" />
+    <None Remove="Resources\PixelCards\copycat_pixel.png" />
+    <None Remove="Resources\PixelCards\counstabot_pixel.png" />
+    <None Remove="Resources\PixelCards\cowardlylion_pixel.png" />
+    <None Remove="Resources\PixelCards\crayfish_pixel.png" />
+    <None Remove="Resources\PixelCards\cremator_pixel.png" />
+    <None Remove="Resources\PixelCards\crookedwraith_pixel.png" />
+    <None Remove="Resources\PixelCards\crystalhealer_pixel.png" />
+    <None Remove="Resources\PixelCards\dc_kaminski_pixel.png" />
+    <None Remove="Resources\PixelCards\dc_kaycee_pixel.png" />
+    <None Remove="Resources\PixelCards\dc_louis_pixel.png" />
+    <None Remove="Resources\PixelCards\dc_reginald_pixel.png" />
+    <None Remove="Resources\PixelCards\deathsdoor_pixel.png" />
+    <None Remove="Resources\PixelCards\dentalmage_pixel.png" />
+    <None Remove="Resources\PixelCards\dicebot_pixel.png" />
+    <None Remove="Resources\PixelCards\diseasedcur_pixel.png" />
+    <None Remove="Resources\PixelCards\dodo_pixel.png" />
+    <None Remove="Resources\PixelCards\dozer_pixel.png" />
+    <None Remove="Resources\PixelCards\druid_pixel.png" />
+    <None Remove="Resources\PixelCards\earthworm_pixel.png" />
+    <None Remove="Resources\PixelCards\enchantedpine_pixel.png" />
+    <None Remove="Resources\PixelCards\enchantress_pixel.png" />
+    <None Remove="Resources\PixelCards\energycube_pixel.png" />
+    <None Remove="Resources\PixelCards\feargorta_pixel.png" />
+    <None Remove="Resources\PixelCards\fennec_pixel.png" />
+    <None Remove="Resources\PixelCards\festeringguts_pixel.png" />
+    <None Remove="Resources\PixelCards\finch_pixel.png" />
+    <None Remove="Resources\PixelCards\firelight_pixel.png" />
+    <None Remove="Resources\PixelCards\flammenwarlock_pixel.png" />
+    <None Remove="Resources\PixelCards\foddroid_pixel.png" />
+    <None Remove="Resources\PixelCards\gembrain_pixel.png" />
+    <None Remove="Resources\PixelCards\goose_pixel.png" />
+    <None Remove="Resources\PixelCards\goreygirl_pixel.png" />
+    <None Remove="Resources\PixelCards\guts_pixel.png" />
+    <None Remove="Resources\PixelCards\h4wk_pixel.png" />
+    <None Remove="Resources\PixelCards\helidrone_pixel.png" />
+    <None Remove="Resources\PixelCards\hotdog_pixel.png" />
+    <None Remove="Resources\PixelCards\huntsman_pixel.png" />
+    <None Remove="Resources\PixelCards\hypermage_pixel.png" />
+    <None Remove="Resources\PixelCards\iieyes_pixel.png" />
+    <None Remove="Resources\PixelCards\jikininki_pixel.png" />
+    <None Remove="Resources\PixelCards\jumpingspider_pixel.png" />
+    <None Remove="Resources\PixelCards\karkinos_pixel.png" />
+    <None Remove="Resources\PixelCards\leech_pixel.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_1.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_2.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_3.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_4.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_5.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_6.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_7.png" />
+    <None Remove="Resources\PixelCards\liliputianskeleton_pixel_8.png" />
+    <None Remove="Resources\PixelCards\luckycoin_pixel.png" />
+    <None Remove="Resources\PixelCards\magicbag_pixel.png" />
+    <None Remove="Resources\PixelCards\magictrap_pixel.png" />
+    <None Remove="Resources\PixelCards\mayfly_pixel.png" />
+    <None Remove="Resources\PixelCards\medicinal_pixel.png" />
+    <None Remove="Resources\PixelCards\mermage_pixel.png" />
+    <None Remove="Resources\PixelCards\molemage_pixel.png" />
+    <None Remove="Resources\PixelCards\morphmage_pixel.png" />
+    <None Remove="Resources\PixelCards\moxcrafter_pixel.png" />
+    <None Remove="Resources\PixelCards\nanomachines_pixel.png" />
+    <None Remove="Resources\PixelCards\nematode_pixel.png" />
+    <None Remove="Resources\PixelCards\nosferat_pixel.png" />
+    <None Remove="Resources\PixelCards\oz_pixel.png" />
+    <None Remove="Resources\PixelCards\photocopier_pixel.png" />
+    <None Remove="Resources\PixelCards\phouka_pixel.png" />
+    <None Remove="Resources\PixelCards\pidgeonbot_pixel.png" />
+    <None Remove="Resources\PixelCards\pincerknight_pixel.png" />
+    <None Remove="Resources\PixelCards\poppingtoad_pixel.png" />
+    <None Remove="Resources\PixelCards\portalmage_pixel.png" />
+    <None Remove="Resources\PixelCards\professor_pixel.png" />
+    <None Remove="Resources\PixelCards\prototypegiftbot_pixel.png" />
+    <None Remove="Resources\PixelCards\puffin_pixel.png" />
+    <None Remove="Resources\PixelCards\qt_pixel.png" />
+    <None Remove="Resources\PixelCards\ragemage_pixel.png" />
+    <None Remove="Resources\PixelCards\redcap_pixel.png" />
+    <None Remove="Resources\PixelCards\renegadesorcerer_pixel.png" />
+    <None Remove="Resources\PixelCards\rook_pixel.png" />
+    <None Remove="Resources\PixelCards\salamander_pixel.png" />
+    <None Remove="Resources\PixelCards\scaletick_pixel.png" />
+    <None Remove="Resources\PixelCards\scarecrow_pixel.png" />
+    <None Remove="Resources\PixelCards\shieldrone_pixel.png" />
+    <None Remove="Resources\PixelCards\sluagh_pixel.png" />
+    <None Remove="Resources\PixelCards\smitemage_pixel.png" />
+    <None Remove="Resources\PixelCards\spambot_pixel.png" />
+    <None Remove="Resources\PixelCards\sparky_pixel.png" />
+    <None Remove="Resources\PixelCards\strikedrone_pixel.png" />
+    <None Remove="Resources\PixelCards\talos_pixel.png" />
+    <None Remove="Resources\PixelCards\theblob_pixel.png" />
+    <None Remove="Resources\PixelCards\thegooddoctor_pixel.png" />
+    <None Remove="Resources\PixelCards\trenchfoot_pixel.png" />
+    <None Remove="Resources\PixelCards\trojan_pixel.png" />
+    <None Remove="Resources\PixelCards\velvetworm_pixel.png" />
+    <None Remove="Resources\PixelCards\vesselball_pixel.png" />
+    <None Remove="Resources\PixelCards\vessellord_pixel.png" />
+    <None Remove="Resources\PixelCards\whippoorwill_pixel.png" />
+    <None Remove="Resources\PixelCards\wight_pixel.png" />
+    <None Remove="Resources\PixelCards\wildboar_pixel.png" />
+    <None Remove="Resources\PixelCards\wildhare_pixel.png" />
+    <None Remove="Resources\PixelCards\wiztank_pixel.png" />
+    <None Remove="Resources\PixelCards\ziburinis_pixel.png" />
+    <None Remove="Resources\PixelOther\boned_pixel.png" />
+    <None Remove="Resources\PixelOther\healthdamage_pixel.png" />
+    <None Remove="Resources\PixelSigils\abstain_pixel.png" />
+    <None Remove="Resources\PixelSigils\Activated\eternalgallop_pixel.png" />
+    <None Remove="Resources\PixelSigils\Activated\flip_pixel.png" />
+    <None Remove="Resources\PixelSigils\allure_pixel.png" />
+    <None Remove="Resources\PixelSigils\bonedependent_pixel.png" />
+    <None Remove="Resources\PixelSigils\bonespurs_pixel.png" />
+    <None Remove="Resources\PixelSigils\burning_pixel.png" />
+    <None Remove="Resources\PixelSigils\clawed_pixel.png" />
+    <None Remove="Resources\PixelSigils\claw_pixel.png" />
+    <None Remove="Resources\PixelSigils\copier_pixel.png" />
+    <None Remove="Resources\PixelSigils\crookedstrikeleft_pixel.png" />
+    <None Remove="Resources\PixelSigils\crookedstrikeright_pixel.png" />
+    <None Remove="Resources\PixelSigils\crossbones_pixel.png" />
+    <None Remove="Resources\PixelSigils\cute_pixel.png" />
+    <None Remove="Resources\PixelSigils\deckedout_pixel.png" />
+    <None Remove="Resources\PixelSigils\deushoof_pixel.png" />
+    <None Remove="Resources\PixelSigils\diver_pixel.png" />
+    <None Remove="Resources\PixelSigils\doomed_pixel.png" />
+    <None Remove="Resources\PixelSigils\endangered_pixel.png" />
+    <None Remove="Resources\PixelSigils\energydependent_pixel.png" />
+    <None Remove="Resources\PixelSigils\explodingcorpse_pixel.png" />
+    <None Remove="Resources\PixelSigils\fearsome_pixel.png" />
+    <None Remove="Resources\PixelSigils\fireresistant_pixel.png" />
+    <None Remove="Resources\PixelSigils\flighty_pixel.png" />
+    <None Remove="Resources\PixelSigils\gutspewer_pixel.png" />
+    <None Remove="Resources\PixelSigils\harbinger_pixel.png" />
+    <None Remove="Resources\PixelSigils\homerun_pixel.png" />
+    <None Remove="Resources\PixelSigils\hypermorphic_pixel.png" />
+    <None Remove="Resources\PixelSigils\ignition_pixel.png" />
+    <None Remove="Resources\PixelSigils\lonesome_pixel.png" />
+    <None Remove="Resources\PixelSigils\medicinal_pixel.png" />
+    <None Remove="Resources\PixelSigils\mockery_pixel.png" />
+    <None Remove="Resources\PixelSigils\organthief_pixel.png" />
+    <None Remove="Resources\PixelSigils\otherside_pixel.png" />
+    <None Remove="Resources\PixelSigils\ripper_pixel.png" />
+    <None Remove="Resources\PixelSigils\savageritual_pixel.png" />
+    <None Remove="Resources\PixelSigils\scarecrow_pixel.png" />
+    <None Remove="Resources\PixelSigils\snapshot_pixel.png" />
+    <None Remove="Resources\PixelSigils\toothpuller_pixel.png" />
+    <None Remove="Resources\PixelSigils\trampler_pixel.png" />
+    <None Remove="Resources\PixelSigils\transformer_pixel.png" />
+    <None Remove="Resources\PixelSigils\trapjaw_pixel.png" />
+    <None Remove="Resources\PixelSigils\trio_pixel.png" />
+    <None Remove="Resources\PixelSigils\trophyhunter_pixel.png" />
+    <None Remove="Resources\PixelSigils\tuckandroll_pixel.png" />
+    <None Remove="Resources\PixelSigils\twinbond_pixel.png" />
+    <None Remove="Resources\Sigils\abstain.png" />
+    <None Remove="Resources\Sigils\Activated\eternalgallop.png" />
+    <None Remove="Resources\Sigils\Activated\fetch.png" />
+    <None Remove="Resources\Sigils\Activated\remove.png" />
+    <None Remove="Resources\Sigils\Activated\trainedflier.png" />
+    <None Remove="Resources\Sigils\allure.png" />
+    <None Remove="Resources\Sigils\bandageweaver.png" />
+    <None Remove="Resources\Sigils\bonedependent.png" />
+    <None Remove="Resources\Sigils\bonespurs.png" />
+    <None Remove="Resources\Sigils\burning.png" />
+    <None Remove="Resources\Sigils\claw.png" />
+    <None Remove="Resources\Sigils\clawed.png" />
+    <None Remove="Resources\Sigils\commander.png" />
+    <None Remove="Resources\Sigils\copier.png" />
+    <None Remove="Resources\Sigils\crookedstrikeleft.png" />
+    <None Remove="Resources\Sigils\crookedstrikeright.png" />
+    <None Remove="Resources\Sigils\crossbones.png" />
+    <None Remove="Resources\Sigils\cute.png" />
+    <None Remove="Resources\Sigils\deushoof.png" />
+    <None Remove="Resources\Sigils\diver.png" />
+    <None Remove="Resources\Sigils\Doomed.png" />
+    <None Remove="Resources\Sigils\endangered.png" />
+    <None Remove="Resources\Sigils\energydependent.png" />
+    <None Remove="Resources\Sigils\enraged.png" />
+    <None Remove="Resources\Sigils\exceptionalsacrifice.png" />
+    <None Remove="Resources\Sigils\explodingcorpse.png" />
+    <None Remove="Resources\Sigils\fantailed.png" />
+    <None Remove="Resources\Sigils\fearsome.png" />
+    <None Remove="Resources\Sigils\fireresistant.png" />
+    <None Remove="Resources\Sigils\flighty.png" />
+    <None Remove="Resources\Sigils\frailsacrifice.png" />
+    <None Remove="Resources\Sigils\gutspewer.png" />
+    <None Remove="Resources\Sigils\Harbinger.png" />
+    <None Remove="Resources\Sigils\haunter.png" />
+    <None Remove="Resources\Sigils\homerun.png" />
+    <None Remove="Resources\Sigils\hypermorphic.png" />
+    <None Remove="Resources\Sigils\ignition.png" />
+    <None Remove="Resources\Sigils\immortalcoil.png" />
+    <None Remove="Resources\Sigils\inspiringsacrifice.png" />
+    <None Remove="Resources\Sigils\landscaper.png" />
+    <None Remove="Resources\Sigils\lonesome.png" />
+    <None Remove="Resources\Sigils\medicinal.png" />
+    <None Remove="Resources\Sigils\mockery.png" />
+    <None Remove="Resources\Sigils\parthenogenesis.png" />
+    <None Remove="Resources\Sigils\placeholdersigil.png" />
+    <None Remove="Resources\Sigils\returnstrike.png" />
+    <None Remove="Resources\Sigils\ripper.png" />
+    <None Remove="Resources\Sigils\runningstrike.png" />
+    <None Remove="Resources\Sigils\savageritual.png" />
+    <None Remove="Resources\Sigils\sharperquills.png" />
+    <None Remove="Resources\Sigils\skinanimator.png" />
+    <None Remove="Resources\Sigils\squirreldependent.png" />
+    <None Remove="Resources\Sigils\termatriarch.png" />
+    <None Remove="Resources\Sigils\termiteking.png" />
+    <None Remove="Resources\Sigils\toothpuller.png" />
+    <None Remove="Resources\Sigils\traitor.png" />
+    <None Remove="Resources\Sigils\trampler.png" />
+    <None Remove="Resources\Sigils\transformer.png" />
+    <None Remove="Resources\Sigils\trapjaw.png" />
+    <None Remove="Resources\Sigils\triflingsacrifice.png" />
+    <None Remove="Resources\Sigils\trio.png" />
+    <None Remove="Resources\Sigils\trophyhunter.png" />
+    <None Remove="Resources\Sigils\tuckandroll.png" />
+    <None Remove="Resources\Sigils\twinbond.png" />
+    <None Remove="Resources\Sigils\UnfocusedStrike.png" />
+    <None Remove="Resources\Sigils\vampiric.png" />
+    <None Remove="Resources\Sigils\visceral.png" />
+    <None Remove="Resources\Sigils\weaver.png" />
+    <None Remove="Resources\Sigils\web.png" />
+    <None Remove="Resources\StarterDecks\deathcarddeck.png" />
+    <None Remove="Resources\StarterDecks\firedeck.png" />
+    <None Remove="Resources\StarterDecks\latchdeck.png" />
+    <None Remove="Resources\StarterDecks\lightdeck.png" />
+    <None Remove="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\BrazenBull\brazenbull_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\Cyclops\cyclops_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\Cyclops\cyclops_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\Cyclops\cyclops_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\Husky\husky_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\Husky\husky_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\Husky\husky_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\nnscryptionbundle" />
+    <None Remove="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyes.png" />
+    <None Remove="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyesblink_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_mouth.png" />
+    <None Remove="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stinkbug\stinkbug_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stinkbug\stinkbug_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stinkbug\stinkbug_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stoat\stoat_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stoat\stoat_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\Stoat\stoat_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\Act1\Woodmouse\woodmouse_eyesblink.png" />
+    <None Remove="Resources\TalkingCards\Act1\Woodmouse\woodmouse_eyes_emission.png" />
+    <None Remove="Resources\TalkingCards\Act1\Woodmouse\woodmouse_mouthopen.png" />
+    <None Remove="Resources\TalkingCards\nnscryptionbundle" />
+    <None Remove="Resources\TalkingCards\pallasnoctua.png" />
+    <None Remove="Resources\TalkingCards\pallasnoctua_emission.png" />
+    <None Remove="Resources\Tribes\arachnid_cardback.png" />
+    <None Remove="Resources\Tribes\arachnid_tribe.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\CardsTech\bustedbot.png" />
+    <EmbeddedResource Include="Resources\CardsTech\counstabot.png" />
+    <EmbeddedResource Include="Resources\CardsTech\crusher.png" />
+    <EmbeddedResource Include="Resources\CardsTech\energycube.png" />
+    <EmbeddedResource Include="Resources\CardsTech\gembrain.png" />
+    <EmbeddedResource Include="Resources\CardsTech\helidrone.png" />
+    <EmbeddedResource Include="Resources\CardsTech\omnibot.png" />
+    <EmbeddedResource Include="Resources\CardsTech\pidgeonbot.png" />
+    <EmbeddedResource Include="Resources\CardsTech\shieldrone.png" />
+    <EmbeddedResource Include="Resources\CardsTech\undertecher.png" />
+    <EmbeddedResource Include="Resources\Cards\antingaw.png" />
+    <EmbeddedResource Include="Resources\Cards\antingaw_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blasttermite.png" />
+    <EmbeddedResource Include="Resources\Cards\blasttermite_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cagedbeasts.png" />
+    <EmbeddedResource Include="Resources\Cards\cagedbeasts_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\charredlump.png" />
+    <EmbeddedResource Include="Resources\Cards\colossalsquid.png" />
+    <EmbeddedResource Include="Resources\Cards\colossalsquid_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\conesnail.png" />
+    <EmbeddedResource Include="Resources\Cards\conesnail_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\crab.png" />
+    <EmbeddedResource Include="Resources\Cards\crab_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\deepstaria.png" />
+    <EmbeddedResource Include="Resources\Cards\deepstaria_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\direbeaver.png" />
+    <EmbeddedResource Include="Resources\Cards\direbeaver_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\diredam.png" />
+    <EmbeddedResource Include="Resources\Cards\diredam_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\diseasedcur.png" />
+    <EmbeddedResource Include="Resources\Cards\diseasedcur_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\eggsac.png" />
+    <EmbeddedResource Include="Resources\Cards\eggsac_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\fennec.png" />
+    <EmbeddedResource Include="Resources\Cards\fennec_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\glochidium.png" />
+    <EmbeddedResource Include="Resources\Cards\glochidium_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\greaterdam.png" />
+    <EmbeddedResource Include="Resources\Cards\greaterdam_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hummingbird.png" />
+    <EmbeddedResource Include="Resources\Cards\hummingbird_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\jorogumo.png" />
+    <EmbeddedResource Include="Resources\Cards\jorogumo_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\kuchipatchi.png" />
+    <EmbeddedResource Include="Resources\Cards\kuchipatchi_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\leafcutterant.png" />
+    <EmbeddedResource Include="Resources\Cards\leafcutterant_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\leafybarricade.png" />
+    <EmbeddedResource Include="Resources\Cards\leatherback.png" />
+    <EmbeddedResource Include="Resources\Cards\leatherback_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\lionsmanejelly.png" />
+    <EmbeddedResource Include="Resources\Cards\lionsmanejelly_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\macaque.png" />
+    <EmbeddedResource Include="Resources\Cards\macaque_emission.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cards\aderynycorph.png" />
+    <EmbeddedResource Include="Resources\Cards\aderynycorph_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\albatross.png" />
+    <EmbeddedResource Include="Resources\Cards\albatrosschick.png" />
+    <EmbeddedResource Include="Resources\Cards\albatrosschick_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\albatross_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\alligatorgar.png" />
+    <EmbeddedResource Include="Resources\Cards\alligatorgar_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\annoyingdog.png" />
+    <EmbeddedResource Include="Resources\Cards\annoyingdog_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\ararach.png" />
+    <EmbeddedResource Include="Resources\Cards\ararach_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\baldeagle.png" />
+    <EmbeddedResource Include="Resources\Cards\baldeagle_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\biscione.png" />
+    <EmbeddedResource Include="Resources\Cards\biscione_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blackwidow.png" />
+    <EmbeddedResource Include="Resources\Cards\blackwidow_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blockhead.png" />
+    <EmbeddedResource Include="Resources\Cards\blockhead_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bloodreddog.png" />
+    <EmbeddedResource Include="Resources\Cards\bloodreddog_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bloodwolf.png" />
+    <EmbeddedResource Include="Resources\Cards\bloodwolf_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blowfly.png" />
+    <EmbeddedResource Include="Resources\Cards\blowfly_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bombardierbeetle.png" />
+    <EmbeddedResource Include="Resources\Cards\bombardierbeetle_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bowerbird.png" />
+    <EmbeddedResource Include="Resources\Cards\bowerbird_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\canopichawk.png" />
+    <EmbeddedResource Include="Resources\Cards\canopichawk_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\charybdis.png" />
+    <EmbeddedResource Include="Resources\Cards\charybdis_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cowardlylion.png" />
+    <EmbeddedResource Include="Resources\Cards\cowardlylion_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\crabspider.png" />
+    <EmbeddedResource Include="Resources\Cards\crabspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\crayfish.png" />
+    <EmbeddedResource Include="Resources\Cards\crayfish_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dikdik.png" />
+    <EmbeddedResource Include="Resources\Cards\dikdik_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\direrat.png" />
+    <EmbeddedResource Include="Resources\Cards\direrat_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\eagerhatchling.png" />
+    <EmbeddedResource Include="Resources\Cards\eagerhatchling_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\emmet.png" />
+    <EmbeddedResource Include="Resources\Cards\emmet_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\fangtooth.png" />
+    <EmbeddedResource Include="Resources\Cards\fangtooth_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\fantail.png" />
+    <EmbeddedResource Include="Resources\Cards\fantail_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\berke.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\cody.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\daniel.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\davidtahnee.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\jonah.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\kaminski.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\kaycee.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\kevin.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\louis.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\luke.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\reginald.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\sean.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\tamara.png" />
+    <EmbeddedResource Include="Resources\Cards\FauxDeathcards\you.png" />
+    <EmbeddedResource Include="Resources\Cards\featherlessbiped.png" />
+    <EmbeddedResource Include="Resources\Cards\featherlessbiped_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\flyingfish.png" />
+    <EmbeddedResource Include="Resources\Cards\flyingfish_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\garroe.png" />
+    <EmbeddedResource Include="Resources\Cards\garroe_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\giantearthworm.png" />
+    <EmbeddedResource Include="Resources\Cards\giantearthworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\giftspider.png" />
+    <EmbeddedResource Include="Resources\Cards\giftspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\gruagach.png" />
+    <EmbeddedResource Include="Resources\Cards\gruagach_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hallucigenia.png" />
+    <EmbeddedResource Include="Resources\Cards\hallucigeniaflipped.png" />
+    <EmbeddedResource Include="Resources\Cards\hallucigeniaflipped_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hallucigenia_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\handragora.png" />
+    <EmbeddedResource Include="Resources\Cards\harvestman.png" />
+    <EmbeddedResource Include="Resources\Cards\harvestman_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\heartofharts.png" />
+    <EmbeddedResource Include="Resources\Cards\heartofharts_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hivecrawler.png" />
+    <EmbeddedResource Include="Resources\Cards\hivecrawler_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hotdog.png" />
+    <EmbeddedResource Include="Resources\Cards\hotdog_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\infectedant.png" />
+    <EmbeddedResource Include="Resources\Cards\infectedant_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\labrats.png" />
+    <EmbeddedResource Include="Resources\Cards\labrats_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\lengspider.png" />
+    <EmbeddedResource Include="Resources\Cards\lengspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\locust.png" />
+    <EmbeddedResource Include="Resources\Cards\locust_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\macracantha.png" />
+    <EmbeddedResource Include="Resources\Cards\macracantha_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mantaray.png" />
+    <EmbeddedResource Include="Resources\Cards\mantaray_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\masok.png" />
+    <EmbeddedResource Include="Resources\Cards\masok_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mauidolphin.png" />
+    <EmbeddedResource Include="Resources\Cards\mauidolphinsub.png" />
+    <EmbeddedResource Include="Resources\Cards\mauidolphinsub_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mauidolphin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mayflyswarm.png" />
+    <EmbeddedResource Include="Resources\Cards\mayflyswarm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\minnow.png" />
+    <EmbeddedResource Include="Resources\Cards\minnow_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\moa.png" />
+    <EmbeddedResource Include="Resources\Cards\moa_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\moeraki.png" />
+    <EmbeddedResource Include="Resources\Cards\moeraki_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\molelizard.png" />
+    <EmbeddedResource Include="Resources\Cards\molelizard_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mugwump.png" />
+    <EmbeddedResource Include="Resources\Cards\mugwump_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\myrmecoleon.png" />
+    <EmbeddedResource Include="Resources\Cards\myrmecoleon_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\niao.png" />
+    <EmbeddedResource Include="Resources\Cards\niao_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\nidhoggr.png" />
+    <EmbeddedResource Include="Resources\Cards\nidhoggr_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\Obelisks\blankobelisk.png" />
+    <EmbeddedResource Include="Resources\Cards\Obelisks\mendingobelisk.png" />
+    <EmbeddedResource Include="Resources\Cards\Obelisks\mendingobelisk_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\Obelisks\squirrelobelisk.png" />
+    <EmbeddedResource Include="Resources\Cards\Obelisks\squirrelobelisk_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\oddfang.png" />
+    <EmbeddedResource Include="Resources\Cards\oddfang_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\popweasel.png" />
+    <EmbeddedResource Include="Resources\Cards\popweasel_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\pufferfish.png" />
+    <EmbeddedResource Include="Resources\Cards\pufferfish_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\puffin.png" />
+    <EmbeddedResource Include="Resources\Cards\puffin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\redcard.png" />
+    <EmbeddedResource Include="Resources\Cards\redmite.png" />
+    <EmbeddedResource Include="Resources\Cards\redmite_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\redpanda.png" />
+    <EmbeddedResource Include="Resources\Cards\redpandasleeping.png" />
+    <EmbeddedResource Include="Resources\Cards\redpandasleeping_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\redpanda_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\sanddollar.png" />
+    <EmbeddedResource Include="Resources\Cards\sanddollar_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\scaletick.png" />
+    <EmbeddedResource Include="Resources\Cards\scaletick_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\seaspider.png" />
+    <EmbeddedResource Include="Resources\Cards\seaspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\snakeeyes.png" />
+    <EmbeddedResource Include="Resources\Cards\snakeeyes_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\springytail.png" />
+    <EmbeddedResource Include="Resources\Cards\squidge.png" />
+    <EmbeddedResource Include="Resources\Cards\squidge_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\starvedrat.png" />
+    <EmbeddedResource Include="Resources\Cards\starvedrat_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\talbot.png" />
+    <EmbeddedResource Include="Resources\Cards\talbot_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\thepack.png" />
+    <EmbeddedResource Include="Resources\Cards\thepack_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\thicklizard.png" />
+    <EmbeddedResource Include="Resources\Cards\thicklizard_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\thicklizard_tailless.png" />
+    <EmbeddedResource Include="Resources\Cards\thornydevil.png" />
+    <EmbeddedResource Include="Resources\Cards\thornydevil_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\thornydevil_tailless.png" />
+    <EmbeddedResource Include="Resources\Cards\thornytail.png" />
+    <EmbeddedResource Include="Resources\Cards\tick.png" />
+    <EmbeddedResource Include="Resources\Cards\tick_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\trapezia.png" />
+    <EmbeddedResource Include="Resources\Cards\trapezia_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\turtledove.png" />
+    <EmbeddedResource Include="Resources\Cards\turtledove_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\vodyanoy.png" />
+    <EmbeddedResource Include="Resources\Cards\vodyanoy_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\whipworm.png" />
+    <EmbeddedResource Include="Resources\Cards\whipworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\whitetailed.png" />
+    <EmbeddedResource Include="Resources\Cards\whitetailed_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\wildhare.png" />
+    <EmbeddedResource Include="Resources\Cards\wildhare_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\wishpoosh.png" />
+    <EmbeddedResource Include="Resources\Cards\wishpoosh_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\woodpecker.png" />
+    <EmbeddedResource Include="Resources\Cards\woodpecker_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\wyrm.png" />
+    <EmbeddedResource Include="Resources\Cards\wyrm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\wyvern.png" />
+    <EmbeddedResource Include="Resources\Cards\wyvern_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\yellowsacspider.png" />
+    <EmbeddedResource Include="Resources\Cards\yellowsacspider_emission.png" />
+    <EmbeddedResource Include="Resources\Other\antplustwo.png" />
+    <EmbeddedResource Include="Resources\Other\greycardback.png" />
+    <EmbeddedResource Include="Resources\Other\packicon.png" />
+    <EmbeddedResource Include="Resources\Other\signature.png" />
+    <EmbeddedResource Include="Resources\Other\signaturerare.png" />
+    <EmbeddedResource Include="Resources\Other\smokedecal.png" />
+    <EmbeddedResource Include="Resources\PixelCards\acelord_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\adipocere_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bellbot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bhoot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\blasttermite_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bloodysack_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bombardierbeetle_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\conjurer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\counstabot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\cowardlylion_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\crayfish_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dc_kaminski_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dc_kaycee_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dc_louis_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dc_reginald_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dicebot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\diseasedcur_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\druid_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\enchantedpine_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\enchantress_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\fennec_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\flammenwarlock_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\foddroid_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\h4wk_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\helidrone_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\hotdog_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\iieyes_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\jikininki_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\molemage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\morphmage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\moxcrafter_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\nosferat_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\oz_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\pincerknight_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\portalmage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\professor_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\prototypegiftbot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\puffin_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\ragemage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\redcap_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\scaletick_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\scarecrow_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\shieldrone_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\sparky_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\talos_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\trenchfoot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\trojan_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\vesselball_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\vessellord_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\wildboar_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\wildhare_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\fearsome_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\scarecrow_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\transformer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\twinbond_pixel.png" />
+    <EmbeddedResource Include="Resources\Sigils\Activated\trainedflier.png" />
+    <EmbeddedResource Include="Resources\Sigils\fantailed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cards\antlion.png" />
+    <EmbeddedResource Include="Resources\Cards\antlion_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bakunawa.png" />
+    <EmbeddedResource Include="Resources\Cards\bakunawa_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blackgiantsquirrel.png" />
+    <EmbeddedResource Include="Resources\Cards\blackgiantsquirrel_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\boardtentacle.png" />
+    <EmbeddedResource Include="Resources\Cards\brownrecluse.png" />
+    <EmbeddedResource Include="Resources\Cards\brownrecluse_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cactusant.png" />
+    <EmbeddedResource Include="Resources\Cards\cactusant_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cellarspider.png" />
+    <EmbeddedResource Include="Resources\Cards\cellarspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\clonegrub.png" />
+    <EmbeddedResource Include="Resources\Cards\clonegrub_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dingo.png" />
+    <EmbeddedResource Include="Resources\Cards\dingo_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dormouse.png" />
+    <EmbeddedResource Include="Resources\Cards\dormouse_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dyingspider.png" />
+    <EmbeddedResource Include="Resources\Cards\dyingspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\empusa.png" />
+    <EmbeddedResource Include="Resources\Cards\empusa_beast.png" />
+    <EmbeddedResource Include="Resources\Cards\explodingbunny.png" />
+    <EmbeddedResource Include="Resources\Cards\explodingbunny_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\grue.png" />
+    <EmbeddedResource Include="Resources\Cards\grue_cardback.png" />
+    <EmbeddedResource Include="Resources\Cards\grue_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\grue_title.png" />
+    <EmbeddedResource Include="Resources\Cards\isopod.png" />
+    <EmbeddedResource Include="Resources\Cards\isopod_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\jackal.png" />
+    <EmbeddedResource Include="Resources\Cards\jackal_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\kokyangwuti.png" />
+    <EmbeddedResource Include="Resources\Cards\kokyangwuti_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\lion.png" />
+    <EmbeddedResource Include="Resources\Cards\lion_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\littleblue.png" />
+    <EmbeddedResource Include="Resources\Cards\littleblue_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mealybug.png" />
+    <EmbeddedResource Include="Resources\Cards\mealybug_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\noeyedeer.png" />
+    <EmbeddedResource Include="Resources\Cards\noeyedeer_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\scylla.png" />
+    <EmbeddedResource Include="Resources\Cards\scylla_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\starling.png" />
+    <EmbeddedResource Include="Resources\Cards\starling_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\starnosedmole.png" />
+    <EmbeddedResource Include="Resources\Cards\starnosedmole_emission.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Cards\anansi.png" />
+    <EmbeddedResource Include="Resources\Cards\anansi_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\antlarva.png" />
+    <EmbeddedResource Include="Resources\Cards\antlarva_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\areion2.png" />
+    <EmbeddedResource Include="Resources\Cards\areion2_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\barnacle.png" />
+    <EmbeddedResource Include="Resources\Cards\barnacle_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\basilisk.png" />
+    <EmbeddedResource Include="Resources\Cards\basilisk_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\beachedwhale.png" />
+    <EmbeddedResource Include="Resources\Cards\beachedwhale_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bison.png" />
+    <EmbeddedResource Include="Resources\Cards\bison_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blackdog.png" />
+    <EmbeddedResource Include="Resources\Cards\blackdog_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blindmouse.png" />
+    <EmbeddedResource Include="Resources\Cards\blindmouse_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blindscorpion.png" />
+    <EmbeddedResource Include="Resources\Cards\blindscorpion_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bloatedleech.png" />
+    <EmbeddedResource Include="Resources\Cards\bloatedleech_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\blueringed.png" />
+    <EmbeddedResource Include="Resources\Cards\blueringed_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bobbitworm.png" />
+    <EmbeddedResource Include="Resources\Cards\bobbitworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\boneworm.png" />
+    <EmbeddedResource Include="Resources\Cards\boneworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\brollachan.png" />
+    <EmbeddedResource Include="Resources\Cards\brollachan_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bugbear.png" />
+    <EmbeddedResource Include="Resources\Cards\bugbear_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\camelspider.png" />
+    <EmbeddedResource Include="Resources\Cards\camelspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\capybara.png" />
+    <EmbeddedResource Include="Resources\Cards\capybara_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\carrionfly.png" />
+    <EmbeddedResource Include="Resources\Cards\carrionfly_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\chupacabra.png" />
+    <EmbeddedResource Include="Resources\Cards\chupacabra_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\claw_left.png" />
+    <EmbeddedResource Include="Resources\Cards\claw_left_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\claw_right.png" />
+    <EmbeddedResource Include="Resources\Cards\claw_right_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cobra.png" />
+    <EmbeddedResource Include="Resources\Cards\cobra_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\copycat.png" />
+    <EmbeddedResource Include="Resources\Cards\copycat_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cursedchild.png" />
+    <EmbeddedResource Include="Resources\Cards\cursedchild_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\debug.png" />
+    <EmbeddedResource Include="Resources\Cards\debug_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\deerlord.png" />
+    <EmbeddedResource Include="Resources\Cards\deerlord_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dermestid.png" />
+    <EmbeddedResource Include="Resources\Cards\dermestid_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dhole.png" />
+    <EmbeddedResource Include="Resources\Cards\dhole_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dodo.png" />
+    <EmbeddedResource Include="Resources\Cards\dodo_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dolphin.png" />
+    <EmbeddedResource Include="Resources\Cards\dolphin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\dudegg.png" />
+    <EmbeddedResource Include="Resources\Cards\dudegg_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\earthworm.png" />
+    <EmbeddedResource Include="Resources\Cards\earthworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\explodingant.png" />
+    <EmbeddedResource Include="Resources\Cards\explodingant_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\festeringguts.png" />
+    <EmbeddedResource Include="Resources\Cards\festeringguts_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\finch.png" />
+    <EmbeddedResource Include="Resources\Cards\finch_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\frid.png" />
+    <EmbeddedResource Include="Resources\Cards\frid_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\gadreel.png" />
+    <EmbeddedResource Include="Resources\Cards\gadreel_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\gnat.png" />
+    <EmbeddedResource Include="Resources\Cards\gnat_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\goose.png" />
+    <EmbeddedResource Include="Resources\Cards\goose_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\greenfang.png" />
+    <EmbeddedResource Include="Resources\Cards\greenfang_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\guts.png" />
+    <EmbeddedResource Include="Resources\Cards\guts_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\huntaway.png" />
+    <EmbeddedResource Include="Resources\Cards\huntaway_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\huntsman.png" />
+    <EmbeddedResource Include="Resources\Cards\huntsman_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\impossibeast.png" />
+    <EmbeddedResource Include="Resources\Cards\impossibeast_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\jumpingspider.png" />
+    <EmbeddedResource Include="Resources\Cards\jumpingspider_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\karkinos.png" />
+    <EmbeddedResource Include="Resources\Cards\karkinos_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\khepri.png" />
+    <EmbeddedResource Include="Resources\Cards\khepri_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\kingcobra.png" />
+    <EmbeddedResource Include="Resources\Cards\kingcobra_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\ladybug.png" />
+    <EmbeddedResource Include="Resources\Cards\ladybug_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\leech.png" />
+    <EmbeddedResource Include="Resources\Cards\leech_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\lonewolf.png" />
+    <EmbeddedResource Include="Resources\Cards\lonewolf_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\manmantis.png" />
+    <EmbeddedResource Include="Resources\Cards\manmantis_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\marmot.png" />
+    <EmbeddedResource Include="Resources\Cards\marmot_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mayfly.png" />
+    <EmbeddedResource Include="Resources\Cards\mayfly_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\mistake.png" />
+    <EmbeddedResource Include="Resources\Cards\mistake_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\monarch.png" />
+    <EmbeddedResource Include="Resources\Cards\monarch_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\nematode.png" />
+    <EmbeddedResource Include="Resources\Cards\nematode_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\nightmare.png" />
+    <EmbeddedResource Include="Resources\Cards\nightmarefuel.png" />
+    <EmbeddedResource Include="Resources\Cards\nightmare_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\octopus.png" />
+    <EmbeddedResource Include="Resources\Cards\octopus_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\orbweaver.png" />
+    <EmbeddedResource Include="Resources\Cards\orbweaver_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\parrot.png" />
+    <EmbeddedResource Include="Resources\Cards\parrot_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\phouka.png" />
+    <EmbeddedResource Include="Resources\Cards\phouka_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\pig.png" />
+    <EmbeddedResource Include="Resources\Cards\pig_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\poppingtoad.png" />
+    <EmbeddedResource Include="Resources\Cards\poppingtoad_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\pygarg.png" />
+    <EmbeddedResource Include="Resources\Cards\pygarg_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\rabiddog.png" />
+    <EmbeddedResource Include="Resources\Cards\rabiddog_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\reem.png" />
+    <EmbeddedResource Include="Resources\Cards\reem_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\rhinobeetle.png" />
+    <EmbeddedResource Include="Resources\Cards\rhinobeetle_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\roc.png" />
+    <EmbeddedResource Include="Resources\Cards\roc_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\salamander.png" />
+    <EmbeddedResource Include="Resources\Cards\salamander_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\scarab.png" />
+    <EmbeddedResource Include="Resources\Cards\scarab_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\selkieskin.png" />
+    <EmbeddedResource Include="Resources\Cards\selkieskin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\silkworm.png" />
+    <EmbeddedResource Include="Resources\Cards\silkworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\skinwalker.png" />
+    <EmbeddedResource Include="Resources\Cards\skinwalker_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\spectraltarsier.png" />
+    <EmbeddedResource Include="Resources\Cards\spectraltarsier_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\springbok.png" />
+    <EmbeddedResource Include="Resources\Cards\springbok_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\stonefish.png" />
+    <EmbeddedResource Include="Resources\Cards\stonefish_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\tasmaniandevil.png" />
+    <EmbeddedResource Include="Resources\Cards\tasmaniandevil_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\taurobolium.png" />
+    <EmbeddedResource Include="Resources\Cards\taurobolium_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\termite.png" />
+    <EmbeddedResource Include="Resources\Cards\termitekingcard.png" />
+    <EmbeddedResource Include="Resources\Cards\termitekingcard_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\termitequeen.png" />
+    <EmbeddedResource Include="Resources\Cards\termitequeen_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\termite_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\Terrain\web.png" />
+    <EmbeddedResource Include="Resources\Cards\Terrain\web_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\tewheke.png" />
+    <EmbeddedResource Include="Resources\Cards\tewheke_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\theblob.png" />
+    <EmbeddedResource Include="Resources\Cards\theblob_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\theflesh.png" />
+    <EmbeddedResource Include="Resources\Cards\theflesh_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\thornedcordyceps.png" />
+    <EmbeddedResource Include="Resources\Cards\thornedcordyceps_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\titanicisopod.png" />
+    <EmbeddedResource Include="Resources\Cards\titanicisopod_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\toothbug.png" />
+    <EmbeddedResource Include="Resources\Cards\toothbug_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\trapjawant.png" />
+    <EmbeddedResource Include="Resources\Cards\trapjawant_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\urchin.png" />
+    <EmbeddedResource Include="Resources\Cards\urchin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\velvetworm.png" />
+    <EmbeddedResource Include="Resources\Cards\velvetworm_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\visceratentacle.png" />
+    <EmbeddedResource Include="Resources\Cards\visceratentacle_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\whippoorwill.png" />
+    <EmbeddedResource Include="Resources\Cards\whippoorwill_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\wildboar.png" />
+    <EmbeddedResource Include="Resources\Cards\wildboar_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\yaramayhawho.png" />
+    <EmbeddedResource Include="Resources\Cards\yaramayhawho_emission.png" />
+    <EmbeddedResource Include="Resources\Nodes\raresacrifice1.png" />
+    <EmbeddedResource Include="Resources\Nodes\raresacrifice2.png" />
+    <EmbeddedResource Include="Resources\Nodes\raresacrifice3.png" />
+    <EmbeddedResource Include="Resources\Other\birdsofafeather.png" />
+    <EmbeddedResource Include="Resources\Other\bloodandbone.png" />
+    <EmbeddedResource Include="Resources\Other\boned.png" />
+    <EmbeddedResource Include="Resources\Other\damagedice.png" />
+    <EmbeddedResource Include="Resources\Other\directoroftheboard.png" />
+    <EmbeddedResource Include="Resources\Other\fireparticle.png" />
+    <EmbeddedResource Include="Resources\Other\healthdamage.png" />
+    <EmbeddedResource Include="Resources\Other\onehalfsquirrels.png" />
+    <EmbeddedResource Include="Resources\Other\packhunter.png" />
+    <EmbeddedResource Include="Resources\Other\sineater.png" />
+    <EmbeddedResource Include="Resources\Other\tentacle_title.png" />
+    <EmbeddedResource Include="Resources\Other\worldwideweb.png" />
+    <EmbeddedResource Include="Resources\PixelCards\act2emptyves_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\antlarva_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bat_tery_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\beachedwhale_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bishop_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bloatedleech_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bobbitworm_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\brollachan_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\bustedbot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\camdrone_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\capybara_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\chaosengine_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\chochin_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\chupacabra_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\clawleft_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\clawright_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\copycat_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\cremator_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\crookedwraith_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\crystalhealer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\deathsdoor_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dentalmage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dodo_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\dozer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\earthworm_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\energycube_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\feargorta_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\festeringguts_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\finch_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\firelight_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\gembrain_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\goose_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\goreygirl_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\guts_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\huntsman_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\hypermage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\jumpingspider_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\karkinos_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\leech_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_1.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_2.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_3.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_4.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_5.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_6.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_7.png" />
+    <EmbeddedResource Include="Resources\PixelCards\liliputianskeleton_pixel_8.png" />
+    <EmbeddedResource Include="Resources\PixelCards\luckycoin_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\magicbag_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\magictrap_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\mayfly_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\mermage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\nanomachines_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\nematode_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\photocopier_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\phouka_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\pidgeonbot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\poppingtoad_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\qt_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\renegadesorcerer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\rook_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\salamander_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\sluagh_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\smitemage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\spambot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\strikedrone_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\theblob_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\thegooddoctor_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\velvetworm_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\whippoorwill_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\wight_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\wiztank_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\ziburinis_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelOther\boned_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelOther\healthdamage_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\abstain_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\Activated\eternalgallop_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\Activated\flip_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\allure_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\bonedependent_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\bonespurs_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\burning_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\clawed_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\claw_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\copier_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\crookedstrikeleft_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\crookedstrikeright_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\crossbones_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\cute_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\deckedout_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\deushoof_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\diver_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\doomed_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\endangered_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\energydependent_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\explodingcorpse_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\fireresistant_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\flighty_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\gutspewer_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\harbinger_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\homerun_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\hypermorphic_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\ignition_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\lonesome_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\medicinal_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\mockery_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\organthief_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\otherside_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\ripper_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\savageritual_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\snapshot_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\toothpuller_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\trampler_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\trapjaw_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\trio_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\trophyhunter_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelSigils\tuckandroll_pixel.png" />
+    <EmbeddedResource Include="Resources\Sigils\abstain.png" />
+    <EmbeddedResource Include="Resources\Sigils\Activated\eternalgallop.png" />
+    <EmbeddedResource Include="Resources\Sigils\Activated\fetch.png" />
+    <EmbeddedResource Include="Resources\Sigils\Activated\remove.png" />
+    <EmbeddedResource Include="Resources\Sigils\allure.png" />
+    <EmbeddedResource Include="Resources\Sigils\bandageweaver.png" />
+    <EmbeddedResource Include="Resources\Sigils\bonedependent.png" />
+    <EmbeddedResource Include="Resources\Sigils\bonespurs.png" />
+    <EmbeddedResource Include="Resources\Sigils\burning.png" />
+    <EmbeddedResource Include="Resources\Sigils\claw.png" />
+    <EmbeddedResource Include="Resources\Sigils\clawed.png" />
+    <EmbeddedResource Include="Resources\Sigils\commander.png" />
+    <EmbeddedResource Include="Resources\Sigils\copier.png" />
+    <EmbeddedResource Include="Resources\Sigils\crookedstrikeleft.png" />
+    <EmbeddedResource Include="Resources\Sigils\crookedstrikeright.png" />
+    <EmbeddedResource Include="Resources\Sigils\crossbones.png" />
+    <EmbeddedResource Include="Resources\Sigils\cute.png" />
+    <EmbeddedResource Include="Resources\Sigils\deushoof.png" />
+    <EmbeddedResource Include="Resources\Sigils\diver.png" />
+    <EmbeddedResource Include="Resources\Sigils\doomed.png" />
+    <EmbeddedResource Include="Resources\Sigils\endangered.png" />
+    <EmbeddedResource Include="Resources\Sigils\energydependent.png" />
+    <EmbeddedResource Include="Resources\Sigils\enraged.png" />
+    <EmbeddedResource Include="Resources\Sigils\exceptionalsacrifice.png" />
+    <EmbeddedResource Include="Resources\Sigils\explodingcorpse.png" />
+    <EmbeddedResource Include="Resources\Sigils\fearsome.png" />
+    <EmbeddedResource Include="Resources\Sigils\fireresistant.png" />
+    <EmbeddedResource Include="Resources\Sigils\flighty.png" />
+    <EmbeddedResource Include="Resources\Sigils\frailsacrifice.png" />
+    <EmbeddedResource Include="Resources\Sigils\gutspewer.png" />
+    <EmbeddedResource Include="Resources\Sigils\harbinger.png" />
+    <EmbeddedResource Include="Resources\Sigils\haunter.png" />
+    <EmbeddedResource Include="Resources\Sigils\homerun.png" />
+    <EmbeddedResource Include="Resources\Sigils\hypermorphic.png" />
+    <EmbeddedResource Include="Resources\Sigils\ignition.png" />
+    <EmbeddedResource Include="Resources\Sigils\immortalcoil.png" />
+    <EmbeddedResource Include="Resources\Sigils\inspiringsacrifice.png" />
+    <EmbeddedResource Include="Resources\Sigils\landscaper.png" />
+    <EmbeddedResource Include="Resources\Sigils\lonesome.png" />
+    <EmbeddedResource Include="Resources\Sigils\medicinal.png" />
+    <EmbeddedResource Include="Resources\Sigils\mockery.png" />
+    <EmbeddedResource Include="Resources\Sigils\parthenogenesis.png" />
+    <EmbeddedResource Include="Resources\Sigils\placeholdersigil.png" />
+    <EmbeddedResource Include="Resources\Sigils\returnstrike.png" />
+    <EmbeddedResource Include="Resources\Sigils\ripper.png" />
+    <EmbeddedResource Include="Resources\Sigils\runningstrike.png" />
+    <EmbeddedResource Include="Resources\Sigils\savageritual.png" />
+    <EmbeddedResource Include="Resources\Sigils\sharperquills.png" />
+    <EmbeddedResource Include="Resources\Sigils\skinanimator.png" />
+    <EmbeddedResource Include="Resources\Sigils\squirreldependent.png" />
+    <EmbeddedResource Include="Resources\Sigils\termatriarch.png" />
+    <EmbeddedResource Include="Resources\Sigils\termiteking.png" />
+    <EmbeddedResource Include="Resources\Sigils\toothpuller.png" />
+    <EmbeddedResource Include="Resources\Sigils\traitor.png" />
+    <EmbeddedResource Include="Resources\Sigils\trampler.png" />
+    <EmbeddedResource Include="Resources\Sigils\transformer.png" />
+    <EmbeddedResource Include="Resources\Sigils\trapjaw.png" />
+    <EmbeddedResource Include="Resources\Sigils\triflingsacrifice.png" />
+    <EmbeddedResource Include="Resources\Sigils\trio.png" />
+    <EmbeddedResource Include="Resources\Sigils\trophyhunter.png" />
+    <EmbeddedResource Include="Resources\Sigils\tuckandroll.png" />
+    <EmbeddedResource Include="Resources\Sigils\twinbond.png" />
+    <EmbeddedResource Include="Resources\Sigils\unfocusedstrike.png" />
+    <EmbeddedResource Include="Resources\Sigils\vampiric.png" />
+    <EmbeddedResource Include="Resources\Sigils\visceral.png" />
+    <EmbeddedResource Include="Resources\Sigils\weaver.png" />
+    <EmbeddedResource Include="Resources\Sigils\web.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\deathcarddeck.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\firedeck.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\latchdeck.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\lightdeck.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\BrazenBull\brazenbull_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Cyclops\cyclops_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Cyclops\cyclops_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Cyclops\cyclops_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\DecoratorCrab\decoratorcrab_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Husky\husky_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Husky\husky_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Husky\husky_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyes.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyesblink_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_mouth.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\PallasNoctua\pallasnoctua_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stinkbug\stinkbug_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stinkbug\stinkbug_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stinkbug\stinkbug_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stoat\stoat_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stoat\stoat_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Stoat\stoat_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\StuntedWolf\stuntedwolf_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Woodmouse\woodmouse_eyesblink.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Woodmouse\woodmouse_eyes_emission.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\Act1\Woodmouse\woodmouse_mouthopen.png" />
+    <EmbeddedResource Include="Resources\TalkingCards\nnscryptionbundle" />
+    <EmbeddedResource Include="Resources\Tribes\arachnid_tribe.png" />
+    <EmbeddedResource Include="Resources\Tribes\arachnid_cardback.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\core\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\Desktop\Dependancies\Inscryption\Assembly-CSharp-nstrip.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaxyCSharp">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\GalaxyCSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Ibuprogames.OilPaintAsset">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Ibuprogames.OilPaintAsset.dll</HintPath>
+    </Reference>
+    <Reference Include="Ibuprogames.VideoGlitchesAsset">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Ibuprogames.VideoGlitchesAsset.dll</HintPath>
+    </Reference>
+    <Reference Include="Infiniscryption.PackManager">
+      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\plugins\Infiniscryption-Pack_Management_API\Infiniscryption.PackManager.dll</HintPath>
+    </Reference>
+    <Reference Include="InscryptionAPI">
+      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\plugins\API_dev-API\InscryptionAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="NevernamedsSigils">
+      <HintPath>..\..\NevernamedsSigils\NevernamedsSigils\bin\Debug\netstandard2.0\NevernamedsSigils.dll</HintPath>
+    </Reference>
+    <Reference Include="Parse">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Core">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Rewired_Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Rewired_Windows">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Rewired_Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.Attributes">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Sirenix.OdinInspector.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.OdinInspector.CompatibilityLayer">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Sirenix.OdinInspector.CompatibilityLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Sirenix.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Serialization.Config">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Sirenix.Serialization.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="Sirenix.Utilities">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Sirenix.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="SonicBloom.Koreo">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\SonicBloom.Koreo.dll</HintPath>
+    </Reference>
+    <Reference Include="SonicBloom.MIDI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\SonicBloom.MIDI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.PixelPerfect">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.2D.PixelPerfect.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Csg">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProBuilder.Csg.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.KdTree">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProBuilder.KdTree.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Poly2Tri">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProBuilder.Poly2Tri.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProBuilder.Stl">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProBuilder.Stl.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ProGrids">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.ProGrids.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
