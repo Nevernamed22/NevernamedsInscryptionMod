@@ -29,7 +29,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/impossibeast.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed_Impossibeast",
+            CardSetupUtility.NewCard("Impossibeast",
                 "Impossibeast",
                 4,
                 1,

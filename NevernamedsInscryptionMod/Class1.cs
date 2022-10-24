@@ -10,14 +10,14 @@ using HarmonyLib;
 using System.Reflection;
 using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
-using Infiniscryption.PackManagement;
+using BepInEx.Bootstrap;
 
 namespace NevernamedsInscryptionMod
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("cyantist.inscryption.api", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("nevernamed.inscryption.sigils", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("zorro.inscryption.infiniscryption.packmanager", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("zorro.inscryption.infiniscryption.packmanager", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public const string PluginGuid = "nevernamedscustominscryptioncards";
@@ -44,6 +44,9 @@ namespace NevernamedsInscryptionMod
             //Make certain sigils stackable
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.LatchBrittle).Info.canStack = true;
 
+            //Give static cards act 2 art
+            CardInfo card = CardManager.BaseGameCards.CardByName("!STATIC!GLITCH");
+            card.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/staticpixel.png"));
 
             //HIDDEN ABILITIEs
             CreateCopyOnInsects.Init();
@@ -52,7 +55,8 @@ namespace NevernamedsInscryptionMod
             GrueAttackColourOverride.Init();
             BoardWipe.Init();
             CreateCharredLump.Init();
-             //stuff and shit
+
+            //stuff and shit
             //OBELISKS
             BlankObelisk.Init();
             SquirrelObelisk.Init();
@@ -265,7 +269,17 @@ namespace NevernamedsInscryptionMod
             LeafcutterAnt.Init();
             DireBeaver.Init();
             Antingaw.Init();
-
+            PeaCrab.Init();
+            BrineShrimp.Init();
+            Hippopotamus.Init();
+            Cow.Init();
+            Anemone.Init();
+            BoneClutter.Init();
+            Hyena.Init();
+            EarlyBird.Init();
+            Livyatan.Init();
+            Warg.Init();
+            ParrotFish.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -370,12 +384,15 @@ namespace NevernamedsInscryptionMod
             Conjurer.Init();
             Dicebot.Init();
             PortalMage.Init();
+            Necrophidius.Init();
+            DrClaphamLee.Init();
 
             //ACT 3 EXCLUSIVE CARDS
             Crusher.Init();
             Undertecher.Init();
             Shieldrone.Init();
             Omnibot.Init();
+            Reavance.Init();
 
             //STARTER DECKS
             StarterDecks.Init();
@@ -383,12 +400,19 @@ namespace NevernamedsInscryptionMod
             //NODES
             //RareSacrifice.Init();
 
-            PackInfo incrediPack = PackManager.GetPackInfo("Nevernamed");
-            incrediPack.Title = "Nevernamed's Bestiary";
-            incrediPack.SetTexture(Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/packicon.png"));
-            incrediPack.Description = "A collection of all things wise and wonderful, all creatures great and small- all trapped within the paper of a card.";
-            incrediPack.ValidFor.Add(PackInfo.PackMetacategory.LeshyPack);
 
+
+
+            Debug.Log($"BeastNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed")).Count}");
+            Debug.Log($"TechNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed")).Count}");
+            Debug.Log($"DeadNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("DeadNevernamed")).Count}");
+            Debug.Log($"WizardNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("WizardNevernamed")).Count}");
+            List<CardInfo> genInfos = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("Nevernamed"));
+            Debug.Log($"Nevernamed Cards: {genInfos.Count}");
+            foreach (CardInfo inf in genInfos)
+            {
+                Debug.Log(inf.name);
+            }
         }
         public static AssetBundle LoadBundle(string path)
         {

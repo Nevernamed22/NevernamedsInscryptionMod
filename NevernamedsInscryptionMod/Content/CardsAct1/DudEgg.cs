@@ -29,7 +29,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { Tribe.Bird},
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/dudegg_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground },
-                defaultEvolutionCard: "Nevernamed Roc"
+                defaultEvolutionCard: "BeastNevernamed Roc"
                 );
 
             Texture2D tex2 = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/roc.png");

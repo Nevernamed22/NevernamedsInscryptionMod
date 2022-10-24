@@ -30,7 +30,7 @@ namespace NevernamedsInscryptionMod
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/leech_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/leech_pixel.png"),
-                defaultEvolutionCard: "Nevernamed BloatedLeech"
+                defaultEvolutionCard: "BeastNevernamed BloatedLeech"
                 );
         }
     }

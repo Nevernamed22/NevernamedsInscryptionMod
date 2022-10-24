@@ -24,8 +24,10 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/Obelisks/blankobelisk.png"),
                 abilities: new List<Ability>() { MeaninglessBond.ability, Ability.MadeOfStone },
-                traits: new List<Trait>() { NevernamedsTraits.Obelisk, NevernamedsTraits.BannedSigilTransferVictim, NevernamedsTraits.BannedFromCampfire, Trait.Terrain },
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground }
+                traits: new List<Trait>() { NevernamedsTraits.Obelisk, Trait.Terrain },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground },
+                preventSigilVictim: true,
+                preventCampfire: true
                 );
         }
     }

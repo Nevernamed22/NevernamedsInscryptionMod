@@ -26,7 +26,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Twister.ability, Ability.SplitStrike },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/macracantha_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                twisterForm: "BeastNevernamed MacracanthaTri"
                 );
 
             CardSetupUtility.NewCard("Nevernamed MacracanthaTri",
@@ -42,7 +43,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Twister.ability, Ability.TriStrike },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/macracantha_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                twisterForm: "BeastNevernamed Macracantha"
                 );
 
             CardSetupUtility.NewCard("Nevernamed Macracantha",
@@ -58,7 +60,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Twister.ability },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/macracantha_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                twisterForm: "BeastNevernamed MacracanthaBi"
                 );
         }
     }

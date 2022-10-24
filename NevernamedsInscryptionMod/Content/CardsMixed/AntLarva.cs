@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/antlarva.png");
 
             // Add the card
-           CardSetupUtility.NewCard("Nevernamed AntLarva",
+           CardSetupUtility.NewCard("AntLarva",
                 "Ant Larva",
                 0,
                 1,

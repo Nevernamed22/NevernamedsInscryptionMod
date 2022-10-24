@@ -347,7 +347,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Diver.ability, Dredge.ability },
                 defaultTex: null,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.AnimatedPortrait },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 specialAbilities: new List<SpecialTriggeredAbility>() { ability }
                 );
         }

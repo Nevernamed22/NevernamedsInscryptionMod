@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mauidolphinsub_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
-                defaultEvolutionCard: "Nevernamed MauiDolphin",
+                defaultEvolutionCard: "BeastNevernamed MauiDolphin",
                 defaultEvolutionTurns: 2
                 );
 
@@ -44,7 +44,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Twister.ability },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mauidolphin_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                twisterForm: "BeastNevernamed MauiDolphinSubmerged"
                 );
         }
     }

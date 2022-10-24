@@ -50,7 +50,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/wishpoosh_emission.png"),
-                overrideDamID: "Nevernamed GreaterDam"
+                overrideDamID: "BeastNevernamed GreaterDam"
                 );
         }
     }

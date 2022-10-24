@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
             bool isDouble = __instance.HasAbility(Ability.DoubleStrike);
             bool isSniper = __instance.HasAbility(Ability.Sniper);
 
-            if (__instance.Info.name == "Nevernamed Grue")
+            if (__instance.Info.name == "BeastNevernamed Grue")
             {
                 int snuffedCandles = 0;
                 CardSlot opposingSlot = __instance.slot.opposingSlot;

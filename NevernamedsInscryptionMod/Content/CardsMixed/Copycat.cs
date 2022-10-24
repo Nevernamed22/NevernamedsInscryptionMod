@@ -32,7 +32,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/copycat.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Copycat",
+            CardSetupUtility.NewCard("Copycat",
                 "Copycat",
                 1,
                 2,

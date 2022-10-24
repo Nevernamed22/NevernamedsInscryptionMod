@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
 
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/blindmouse.png");
             // Add the card
-           CardSetupUtility.NewCard("Nevernamed_BlindMouse",
+           CardSetupUtility.NewCard("BlindMouse",
                 "Blind Mouse",
                 1,
                 1,

@@ -26,11 +26,10 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 0,
                 bonesCost: 0,
                 defaultTex: tex,
-                abilities: new List<Ability>() { Tug.ability },
+                abilities: new List<Ability>() { EspritDeCorp.ability },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug_emission.png"),
-                appearanceBehaviour :  new List<CardAppearanceBehaviour.Appearance> { },
-                overrideBeesWithinID: "RoboSkeleton"
+                appearanceBehaviour :  new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }
     }

@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.WhackAMole, Ability.BeesOnHit },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hivecrawler.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
-                tribes: new List<Tribe>() { Tribe.Insect },
+                tribes: new List<Tribe>() { Tribe.Insect, NevernamedsTribes.Crustacean },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hivecrawler_emission.png")
                 );
         }

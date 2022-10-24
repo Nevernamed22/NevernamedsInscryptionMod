@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/whippoorwill.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Whippoorwill",
+            CardSetupUtility.NewCard("Whippoorwill",
                 "Whippoorwill",
                 1,
                 3,

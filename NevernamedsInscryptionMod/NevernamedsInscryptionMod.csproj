@@ -17,6 +17,7 @@
     <None Remove="Resources\CardsTech\helidrone.png" />
     <None Remove="Resources\CardsTech\omnibot.png" />
     <None Remove="Resources\CardsTech\pidgeonbot.png" />
+    <None Remove="Resources\CardsTech\reavance.png" />
     <None Remove="Resources\CardsTech\shieldrone.png" />
     <None Remove="Resources\CardsTech\undertecher.png" />
     <None Remove="Resources\Cards\aderynycorph.png" />
@@ -29,6 +30,8 @@
     <None Remove="Resources\Cards\alligatorgar_emission.png" />
     <None Remove="Resources\Cards\anansi.png" />
     <None Remove="Resources\Cards\anansi_emission.png" />
+    <None Remove="Resources\Cards\anemone.png" />
+    <None Remove="Resources\Cards\anemone_emission.png" />
     <None Remove="Resources\Cards\annoyingdog.png" />
     <None Remove="Resources\Cards\annoyingdog_emission.png" />
     <None Remove="Resources\Cards\antingaw.png" />
@@ -86,10 +89,13 @@
     <None Remove="Resources\Cards\bobbitworm_emission.png" />
     <None Remove="Resources\Cards\bombardierbeetle.png" />
     <None Remove="Resources\Cards\bombardierbeetle_emission.png" />
+    <None Remove="Resources\Cards\boneclutter.png" />
     <None Remove="Resources\Cards\boneworm.png" />
     <None Remove="Resources\Cards\boneworm_emission.png" />
     <None Remove="Resources\Cards\bowerbird.png" />
     <None Remove="Resources\Cards\bowerbird_emission.png" />
+    <None Remove="Resources\Cards\brineshrimp.png" />
+    <None Remove="Resources\Cards\brineshrimp_emission.png" />
     <None Remove="Resources\Cards\brollachan.png" />
     <None Remove="Resources\Cards\brollachan_emission.png" />
     <None Remove="Resources\Cards\brownrecluse.png" />
@@ -129,8 +135,10 @@
     <None Remove="Resources\Cards\conesnail_emission.png" />
     <None Remove="Resources\Cards\copycat.png" />
     <None Remove="Resources\Cards\copycat_emission.png" />
+    <None Remove="Resources\Cards\cow.png" />
     <None Remove="Resources\Cards\cowardlylion.png" />
     <None Remove="Resources\Cards\cowardlylion_emission.png" />
+    <None Remove="Resources\Cards\cow_emission.png" />
     <None Remove="Resources\Cards\crab.png" />
     <None Remove="Resources\Cards\crabspider.png" />
     <None Remove="Resources\Cards\crabspider_emission.png" />
@@ -173,7 +181,10 @@
     <None Remove="Resources\Cards\dyingspider_emission.png" />
     <None Remove="Resources\Cards\eagerhatchling.png" />
     <None Remove="Resources\Cards\eagerhatchling_emission.png" />
+    <None Remove="Resources\Cards\earlybird.png" />
+    <None Remove="Resources\Cards\earlybird_emission.png" />
     <None Remove="Resources\Cards\earthworm.png" />
+    <None Remove="Resources\Cards\earthwormsegment.png" />
     <None Remove="Resources\Cards\earthworm_emission.png" />
     <None Remove="Resources\Cards\eggsac.png" />
     <None Remove="Resources\Cards\eggsac_emission.png" />
@@ -250,6 +261,8 @@
     <None Remove="Resources\Cards\harvestman_emission.png" />
     <None Remove="Resources\Cards\heartofharts.png" />
     <None Remove="Resources\Cards\heartofharts_emission.png" />
+    <None Remove="Resources\Cards\hippopotamus.png" />
+    <None Remove="Resources\Cards\hippopotamus_emission.png" />
     <None Remove="Resources\Cards\hivecrawler.png" />
     <None Remove="Resources\Cards\hivecrawler_emission.png" />
     <None Remove="Resources\Cards\hotdog.png" />
@@ -260,6 +273,8 @@
     <None Remove="Resources\Cards\huntaway_emission.png" />
     <None Remove="Resources\Cards\huntsman.png" />
     <None Remove="Resources\Cards\huntsman_emission.png" />
+    <None Remove="Resources\Cards\hyena.png" />
+    <None Remove="Resources\Cards\hyena_emission.png" />
     <None Remove="Resources\Cards\impossibeast.png" />
     <None Remove="Resources\Cards\impossibeast_emission.png" />
     <None Remove="Resources\Cards\infectedant.png" />
@@ -301,6 +316,8 @@
     <None Remove="Resources\Cards\lion_emission.png" />
     <None Remove="Resources\Cards\littleblue.png" />
     <None Remove="Resources\Cards\littleblue_emission.png" />
+    <None Remove="Resources\Cards\livyatan.png" />
+    <None Remove="Resources\Cards\livyatan_emission.png" />
     <None Remove="Resources\Cards\locust.png" />
     <None Remove="Resources\Cards\locust_emission.png" />
     <None Remove="Resources\Cards\lonewolf.png" />
@@ -366,7 +383,13 @@
     <None Remove="Resources\Cards\orbweaver.png" />
     <None Remove="Resources\Cards\orbweaver_emission.png" />
     <None Remove="Resources\Cards\parrot.png" />
+    <None Remove="Resources\Cards\parrotfish.png" />
+    <None Remove="Resources\Cards\parrotfish_emission.png" />
     <None Remove="Resources\Cards\parrot_emission.png" />
+    <None Remove="Resources\Cards\peaclaw_left.png" />
+    <None Remove="Resources\Cards\peaclaw_right.png" />
+    <None Remove="Resources\Cards\peacrab.png" />
+    <None Remove="Resources\Cards\peacrab_emission.png" />
     <None Remove="Resources\Cards\phouka.png" />
     <None Remove="Resources\Cards\phouka_emission.png" />
     <None Remove="Resources\Cards\pig.png" />
@@ -383,6 +406,8 @@
     <None Remove="Resources\Cards\pygarg_emission.png" />
     <None Remove="Resources\Cards\rabiddog.png" />
     <None Remove="Resources\Cards\rabiddog_emission.png" />
+    <None Remove="Resources\Cards\ratling.png" />
+    <None Remove="Resources\Cards\ratling_emission.png" />
     <None Remove="Resources\Cards\redcard.png" />
     <None Remove="Resources\Cards\redmite.png" />
     <None Remove="Resources\Cards\redmite_emission.png" />
@@ -482,6 +507,8 @@
     <None Remove="Resources\Cards\visceratentacle_emission.png" />
     <None Remove="Resources\Cards\vodyanoy.png" />
     <None Remove="Resources\Cards\vodyanoy_emission.png" />
+    <None Remove="Resources\Cards\warg.png" />
+    <None Remove="Resources\Cards\warg_emission.png" />
     <None Remove="Resources\Cards\whippoorwill.png" />
     <None Remove="Resources\Cards\whippoorwill_emission.png" />
     <None Remove="Resources\Cards\whipworm.png" />
@@ -511,6 +538,7 @@
     <None Remove="Resources\Other\birdsofafeather.png" />
     <None Remove="Resources\Other\bloodandbone.png" />
     <None Remove="Resources\Other\boned.png" />
+    <None Remove="Resources\Other\buggedpackicon.png" />
     <None Remove="Resources\Other\damagedice.png" />
     <None Remove="Resources\Other\directoroftheboard.png" />
     <None Remove="Resources\Other\fireparticle.png" />
@@ -539,6 +567,7 @@
     <None Remove="Resources\PixelCards\bloodysack_pixel.png" />
     <None Remove="Resources\PixelCards\bobbitworm_pixel.png" />
     <None Remove="Resources\PixelCards\bombardierbeetle_pixel.png" />
+    <None Remove="Resources\PixelCards\boneclutter_pixel.png" />
     <None Remove="Resources\PixelCards\brollachan_pixel.png" />
     <None Remove="Resources\PixelCards\bustedbot_pixel.png" />
     <None Remove="Resources\PixelCards\camdrone_pixel.png" />
@@ -552,6 +581,7 @@
     <None Remove="Resources\PixelCards\copycat_pixel.png" />
     <None Remove="Resources\PixelCards\counstabot_pixel.png" />
     <None Remove="Resources\PixelCards\cowardlylion_pixel.png" />
+    <None Remove="Resources\PixelCards\crab_pixel.png" />
     <None Remove="Resources\PixelCards\crayfish_pixel.png" />
     <None Remove="Resources\PixelCards\cremator_pixel.png" />
     <None Remove="Resources\PixelCards\crookedwraith_pixel.png" />
@@ -566,6 +596,7 @@
     <None Remove="Resources\PixelCards\diseasedcur_pixel.png" />
     <None Remove="Resources\PixelCards\dodo_pixel.png" />
     <None Remove="Resources\PixelCards\dozer_pixel.png" />
+    <None Remove="Resources\PixelCards\drclaphamlee_pixel.png" />
     <None Remove="Resources\PixelCards\druid_pixel.png" />
     <None Remove="Resources\PixelCards\earthworm_pixel.png" />
     <None Remove="Resources\PixelCards\enchantedpine_pixel.png" />
@@ -610,9 +641,11 @@
     <None Remove="Resources\PixelCards\morphmage_pixel.png" />
     <None Remove="Resources\PixelCards\moxcrafter_pixel.png" />
     <None Remove="Resources\PixelCards\nanomachines_pixel.png" />
+    <None Remove="Resources\PixelCards\necrophidius_pixel.png" />
     <None Remove="Resources\PixelCards\nematode_pixel.png" />
     <None Remove="Resources\PixelCards\nosferat_pixel.png" />
     <None Remove="Resources\PixelCards\oz_pixel.png" />
+    <None Remove="Resources\PixelCards\peacrab_pixel.png" />
     <None Remove="Resources\PixelCards\photocopier_pixel.png" />
     <None Remove="Resources\PixelCards\phouka_pixel.png" />
     <None Remove="Resources\PixelCards\pidgeonbot_pixel.png" />
@@ -635,6 +668,7 @@
     <None Remove="Resources\PixelCards\smitemage_pixel.png" />
     <None Remove="Resources\PixelCards\spambot_pixel.png" />
     <None Remove="Resources\PixelCards\sparky_pixel.png" />
+    <None Remove="Resources\PixelCards\staticpixel.png" />
     <None Remove="Resources\PixelCards\strikedrone_pixel.png" />
     <None Remove="Resources\PixelCards\talos_pixel.png" />
     <None Remove="Resources\PixelCards\theblob_pixel.png" />
@@ -767,8 +801,10 @@
     <None Remove="Resources\Sigils\visceral.png" />
     <None Remove="Resources\Sigils\weaver.png" />
     <None Remove="Resources\Sigils\web.png" />
+    <None Remove="Resources\StarterDecks\crabdeck.png" />
     <None Remove="Resources\StarterDecks\deathcarddeck.png" />
     <None Remove="Resources\StarterDecks\firedeck.png" />
+    <None Remove="Resources\StarterDecks\glitchdeck.png" />
     <None Remove="Resources\StarterDecks\latchdeck.png" />
     <None Remove="Resources\StarterDecks\lightdeck.png" />
     <None Remove="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyesblink.png" />
@@ -806,6 +842,8 @@
     <None Remove="Resources\TalkingCards\pallasnoctua_emission.png" />
     <None Remove="Resources\Tribes\arachnid_cardback.png" />
     <None Remove="Resources\Tribes\arachnid_tribe.png" />
+    <None Remove="Resources\Tribes\crustacean_cardback.png" />
+    <None Remove="Resources\Tribes\crustacean_tribe.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -817,12 +855,18 @@
     <EmbeddedResource Include="Resources\CardsTech\helidrone.png" />
     <EmbeddedResource Include="Resources\CardsTech\omnibot.png" />
     <EmbeddedResource Include="Resources\CardsTech\pidgeonbot.png" />
+    <EmbeddedResource Include="Resources\CardsTech\reavance.png" />
     <EmbeddedResource Include="Resources\CardsTech\shieldrone.png" />
     <EmbeddedResource Include="Resources\CardsTech\undertecher.png" />
+    <EmbeddedResource Include="Resources\Cards\anemone.png" />
+    <EmbeddedResource Include="Resources\Cards\anemone_emission.png" />
     <EmbeddedResource Include="Resources\Cards\antingaw.png" />
     <EmbeddedResource Include="Resources\Cards\antingaw_emission.png" />
     <EmbeddedResource Include="Resources\Cards\blasttermite.png" />
     <EmbeddedResource Include="Resources\Cards\blasttermite_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\boneclutter.png" />
+    <EmbeddedResource Include="Resources\Cards\brineshrimp.png" />
+    <EmbeddedResource Include="Resources\Cards\brineshrimp_emission.png" />
     <EmbeddedResource Include="Resources\Cards\cagedbeasts.png" />
     <EmbeddedResource Include="Resources\Cards\cagedbeasts_emission.png" />
     <EmbeddedResource Include="Resources\Cards\charredlump.png" />
@@ -830,6 +874,8 @@
     <EmbeddedResource Include="Resources\Cards\colossalsquid_emission.png" />
     <EmbeddedResource Include="Resources\Cards\conesnail.png" />
     <EmbeddedResource Include="Resources\Cards\conesnail_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\cow.png" />
+    <EmbeddedResource Include="Resources\Cards\cow_emission.png" />
     <EmbeddedResource Include="Resources\Cards\crab.png" />
     <EmbeddedResource Include="Resources\Cards\crab_emission.png" />
     <EmbeddedResource Include="Resources\Cards\deepstaria.png" />
@@ -840,6 +886,9 @@
     <EmbeddedResource Include="Resources\Cards\diredam_emission.png" />
     <EmbeddedResource Include="Resources\Cards\diseasedcur.png" />
     <EmbeddedResource Include="Resources\Cards\diseasedcur_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\earlybird.png" />
+    <EmbeddedResource Include="Resources\Cards\earlybird_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\earthwormsegment.png" />
     <EmbeddedResource Include="Resources\Cards\eggsac.png" />
     <EmbeddedResource Include="Resources\Cards\eggsac_emission.png" />
     <EmbeddedResource Include="Resources\Cards\fennec.png" />
@@ -848,8 +897,12 @@
     <EmbeddedResource Include="Resources\Cards\glochidium_emission.png" />
     <EmbeddedResource Include="Resources\Cards\greaterdam.png" />
     <EmbeddedResource Include="Resources\Cards\greaterdam_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hippopotamus.png" />
+    <EmbeddedResource Include="Resources\Cards\hippopotamus_emission.png" />
     <EmbeddedResource Include="Resources\Cards\hummingbird.png" />
     <EmbeddedResource Include="Resources\Cards\hummingbird_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\hyena.png" />
+    <EmbeddedResource Include="Resources\Cards\hyena_emission.png" />
     <EmbeddedResource Include="Resources\Cards\jorogumo.png" />
     <EmbeddedResource Include="Resources\Cards\jorogumo_emission.png" />
     <EmbeddedResource Include="Resources\Cards\kuchipatchi.png" />
@@ -861,6 +914,8 @@
     <EmbeddedResource Include="Resources\Cards\leatherback_emission.png" />
     <EmbeddedResource Include="Resources\Cards\lionsmanejelly.png" />
     <EmbeddedResource Include="Resources\Cards\lionsmanejelly_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\livyatan.png" />
+    <EmbeddedResource Include="Resources\Cards\livyatan_emission.png" />
     <EmbeddedResource Include="Resources\Cards\macaque.png" />
     <EmbeddedResource Include="Resources\Cards\macaque_emission.png" />
   </ItemGroup>
@@ -1000,12 +1055,20 @@
     <EmbeddedResource Include="Resources\Cards\Obelisks\squirrelobelisk_emission.png" />
     <EmbeddedResource Include="Resources\Cards\oddfang.png" />
     <EmbeddedResource Include="Resources\Cards\oddfang_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\parrotfish.png" />
+    <EmbeddedResource Include="Resources\Cards\parrotfish_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\peaclaw_left.png" />
+    <EmbeddedResource Include="Resources\Cards\peaclaw_right.png" />
+    <EmbeddedResource Include="Resources\Cards\peacrab.png" />
+    <EmbeddedResource Include="Resources\Cards\peacrab_emission.png" />
     <EmbeddedResource Include="Resources\Cards\popweasel.png" />
     <EmbeddedResource Include="Resources\Cards\popweasel_emission.png" />
     <EmbeddedResource Include="Resources\Cards\pufferfish.png" />
     <EmbeddedResource Include="Resources\Cards\pufferfish_emission.png" />
     <EmbeddedResource Include="Resources\Cards\puffin.png" />
     <EmbeddedResource Include="Resources\Cards\puffin_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\ratling.png" />
+    <EmbeddedResource Include="Resources\Cards\ratling_emission.png" />
     <EmbeddedResource Include="Resources\Cards\redcard.png" />
     <EmbeddedResource Include="Resources\Cards\redmite.png" />
     <EmbeddedResource Include="Resources\Cards\redmite_emission.png" />
@@ -1045,6 +1108,8 @@
     <EmbeddedResource Include="Resources\Cards\turtledove_emission.png" />
     <EmbeddedResource Include="Resources\Cards\vodyanoy.png" />
     <EmbeddedResource Include="Resources\Cards\vodyanoy_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\warg.png" />
+    <EmbeddedResource Include="Resources\Cards\warg_emission.png" />
     <EmbeddedResource Include="Resources\Cards\whipworm.png" />
     <EmbeddedResource Include="Resources\Cards\whipworm_emission.png" />
     <EmbeddedResource Include="Resources\Cards\whitetailed.png" />
@@ -1062,6 +1127,7 @@
     <EmbeddedResource Include="Resources\Cards\yellowsacspider.png" />
     <EmbeddedResource Include="Resources\Cards\yellowsacspider_emission.png" />
     <EmbeddedResource Include="Resources\Other\antplustwo.png" />
+    <EmbeddedResource Include="Resources\Other\buggedpackicon.png" />
     <EmbeddedResource Include="Resources\Other\greycardback.png" />
     <EmbeddedResource Include="Resources\Other\packicon.png" />
     <EmbeddedResource Include="Resources\Other\signature.png" />
@@ -1074,9 +1140,11 @@
     <EmbeddedResource Include="Resources\PixelCards\blasttermite_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\bloodysack_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\bombardierbeetle_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\boneclutter_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\conjurer_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\counstabot_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\cowardlylion_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\crab_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\crayfish_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\dc_kaminski_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\dc_kaycee_pixel.png" />
@@ -1084,6 +1152,7 @@
     <EmbeddedResource Include="Resources\PixelCards\dc_reginald_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\dicebot_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\diseasedcur_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\drclaphamlee_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\druid_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\enchantedpine_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\enchantress_pixel.png" />
@@ -1098,8 +1167,10 @@
     <EmbeddedResource Include="Resources\PixelCards\molemage_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\morphmage_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\moxcrafter_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\necrophidius_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\nosferat_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\oz_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\peacrab_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\pincerknight_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\portalmage_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\professor_pixel.png" />
@@ -1111,6 +1182,7 @@
     <EmbeddedResource Include="Resources\PixelCards\scarecrow_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\shieldrone_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\sparky_pixel.png" />
+    <EmbeddedResource Include="Resources\PixelCards\staticpixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\talos_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\trenchfoot_pixel.png" />
     <EmbeddedResource Include="Resources\PixelCards\trojan_pixel.png" />
@@ -1573,8 +1645,10 @@
     <EmbeddedResource Include="Resources\Sigils\visceral.png" />
     <EmbeddedResource Include="Resources\Sigils\weaver.png" />
     <EmbeddedResource Include="Resources\Sigils\web.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\crabdeck.png" />
     <EmbeddedResource Include="Resources\StarterDecks\deathcarddeck.png" />
     <EmbeddedResource Include="Resources\StarterDecks\firedeck.png" />
+    <EmbeddedResource Include="Resources\StarterDecks\glitchdeck.png" />
     <EmbeddedResource Include="Resources\StarterDecks\latchdeck.png" />
     <EmbeddedResource Include="Resources\StarterDecks\lightdeck.png" />
     <EmbeddedResource Include="Resources\TalkingCards\Act1\BrazenBull\brazenbull_eyesblink.png" />
@@ -1611,6 +1685,8 @@
     <EmbeddedResource Include="Resources\TalkingCards\nnscryptionbundle" />
     <EmbeddedResource Include="Resources\Tribes\arachnid_tribe.png" />
     <EmbeddedResource Include="Resources\Tribes\arachnid_cardback.png" />
+    <EmbeddedResource Include="Resources\Tribes\crustacean_cardback.png" />
+    <EmbeddedResource Include="Resources\Tribes\crustacean_tribe.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -1631,9 +1707,6 @@
     </Reference>
     <Reference Include="Ibuprogames.VideoGlitchesAsset">
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Inscryption\Inscryption_Data\Managed\Ibuprogames.VideoGlitchesAsset.dll</HintPath>
-    </Reference>
-    <Reference Include="Infiniscryption.PackManager">
-      <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\plugins\Infiniscryption-Pack_Management_API\Infiniscryption.PackManager.dll</HintPath>
     </Reference>
     <Reference Include="InscryptionAPI">
       <HintPath>..\..\..\..\AppData\Roaming\Thunderstore Mod Manager\DataFolder\Inscryption\profiles\Default\BepInEx\plugins\API_dev-API\InscryptionAPI.dll</HintPath>

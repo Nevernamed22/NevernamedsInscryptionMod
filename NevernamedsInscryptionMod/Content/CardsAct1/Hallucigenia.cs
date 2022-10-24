@@ -29,7 +29,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { TransformerCustom.ability, Ability.Sharp },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hallucigenia_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed HallucigeniaFlipped"
                 );
 
             // Add the card
@@ -46,7 +47,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { TransformerCustom.ability, Ability.Sniper },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hallucigeniaflipped_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed Hallucigenia"
                 );
         }
     }

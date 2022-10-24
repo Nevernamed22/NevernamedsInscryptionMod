@@ -30,7 +30,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/octopus_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
-                defaultEvolutionCard: "Nevernamed TeWheke"
+                defaultEvolutionCard: "BeastNevernamed TeWheke"
                 );
         }
     }

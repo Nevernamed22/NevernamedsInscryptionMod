@@ -29,7 +29,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { TransformerCustom.ability, },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/redpanda_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed RedPandaSleeping"
                 );
 
             // Add the card
@@ -46,7 +47,8 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { TransformerCustom.ability, Abstain.ability },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/redpandasleeping_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed RedPanda"
                 );
         }
     }

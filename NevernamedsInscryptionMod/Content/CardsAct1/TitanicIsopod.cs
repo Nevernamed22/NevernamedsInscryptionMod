@@ -1,5 +1,6 @@
 ﻿using APIPlugin;
 using DiskCardGame;
+using NevernamedsSigils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,7 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() {  },
                 defaultTex: tex,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/titanicisopod_emission.png")
                 );

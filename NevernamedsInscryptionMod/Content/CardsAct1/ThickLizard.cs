@@ -45,7 +45,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.TailOnHit, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thicklizard_emission.png"),
-                defaultTailCard: "Nevernamed SpringyTail",
+                defaultTailCard: "BeastNevernamed SpringyTail",
                 tailLostTexture: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thicklizard_tailless.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

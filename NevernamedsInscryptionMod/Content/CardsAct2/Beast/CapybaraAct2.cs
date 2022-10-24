@@ -13,7 +13,7 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            // metaCategories determine the card pools
+           /* // metaCategories determine the card pools
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
                 //CardMetaCategory.GBCPlayable,
@@ -35,7 +35,7 @@ namespace NevernamedsInscryptionMod
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/capybara_pixel.png"),
                 tribes: new List<Tribe>() { },
                 variableStat: HealthDamage.specialStatIcon
-                );
+                );*/
         }
     }
 }

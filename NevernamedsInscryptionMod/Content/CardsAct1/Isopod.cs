@@ -1,5 +1,6 @@
 ﻿using APIPlugin;
 using DiskCardGame;
+using NevernamedsSigils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -26,10 +27,10 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 3,
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.DeathShield },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/isopod_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
-                defaultEvolutionCard: "Nevernamed TitanicIsopod"
+                defaultEvolutionCard: "BeastNevernamed TitanicIsopod"
                 );
         }
     }

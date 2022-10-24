@@ -43,7 +43,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.CreateDams },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/direbeaver_emission.png"),
-                overrideDamID: "Nevernamed DireDam"
+                overrideDamID: "BeastNevernamed DireDam"
                 );
         }
     }

@@ -26,7 +26,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { GraveyardShift.ability },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/deepstaria_emission.png"),
-                defaultFrozenCard: "Nevernamed Isopod"
+                defaultFrozenCard: "BeastNevernamed Isopod"
                 );
         }
     }

@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Evolve, },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/albatrosschick_emission.png"),
-                defaultEvolutionCard: "Nevernamed Albatross"
+                defaultEvolutionCard: "BeastNevernamed Albatross"
                 );
         }
     }

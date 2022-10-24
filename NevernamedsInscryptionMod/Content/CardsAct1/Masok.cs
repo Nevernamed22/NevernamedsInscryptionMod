@@ -23,11 +23,12 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 bonesCost: 0,
                 abilities: new List<Ability>() { TripleStrike.ability },
-                traits: new List<Trait>() { NevernamedsTraits.BannedSigilTransferVictim },
+                traits: new List<Trait>() { },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/masok.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
-                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/masok_emission.png")
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/masok_emission.png"),
+                preventSigilVictim: true
                 );
         }
     }

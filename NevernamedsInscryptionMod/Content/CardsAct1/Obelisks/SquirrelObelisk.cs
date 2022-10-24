@@ -24,9 +24,11 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 3,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/Obelisks/squirrelobelisk.png"),
                 abilities: new List<Ability>() { FriendshipBond.ability, Ability.MadeOfStone },
-                traits: new List<Trait>() { NevernamedsTraits.Obelisk, NevernamedsTraits.BannedSigilTransferVictim, NevernamedsTraits.BannedFromCampfire, Trait.Terrain },
+                traits: new List<Trait>() { NevernamedsTraits.Obelisk,  Trait.Terrain },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/Obelisks/squirrelobelisk_emission.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground },
+                preventSigilVictim: true,
+                preventCampfire: true
                 );
         }
     }

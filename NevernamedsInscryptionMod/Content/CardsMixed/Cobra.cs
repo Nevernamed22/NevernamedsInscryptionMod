@@ -29,7 +29,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cobra_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
-                defaultEvolutionCard: "Nevernamed KingCobra"
+                defaultEvolutionCard: "BeastNevernamed KingCobra"
 
                 );
         }

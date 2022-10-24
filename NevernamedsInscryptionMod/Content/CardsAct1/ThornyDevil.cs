@@ -46,7 +46,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thornydevil_emission.png"),
                 tailLostTexture: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thornydevil_tailless.png"),
-                defaultTailCard: "Nevernamed ThornyTail",
+                defaultTailCard: "BeastNevernamed ThornyTail",
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

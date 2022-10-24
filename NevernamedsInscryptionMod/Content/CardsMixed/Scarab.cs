@@ -30,7 +30,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { Tribe.Insect },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/scarab_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
-                defaultEvolutionCard: "Nevernamed Khepri"
+                defaultEvolutionCard: "BeastNevernamed Khepri"
                 );
         }
     }

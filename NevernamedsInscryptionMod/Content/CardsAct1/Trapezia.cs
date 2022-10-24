@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 0,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/trapezia.png"),
                 abilities: new List<Ability>() { CoastGuard.ability },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/trapezia_emission.png")
                 );
         }

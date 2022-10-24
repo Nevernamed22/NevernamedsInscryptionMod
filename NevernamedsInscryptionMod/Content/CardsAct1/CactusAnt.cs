@@ -23,7 +23,7 @@ namespace NevernamedsInscryptionMod
                 4,
                 new List<CardMetaCategory> { CardMetaCategory.Rare },
                 CardTemple.Nature,
-                description: "A friendly ant covered in sharp thorns. She seems like a valuable companion.",
+                description: "A friendly ant covered in sharp thorns. It seems like a valuable companion.",
                 bloodCost: 2,
                 bonesCost: 0,
                 abilities: new List<Ability>() { SharperQuills.ability, Cute.ability },

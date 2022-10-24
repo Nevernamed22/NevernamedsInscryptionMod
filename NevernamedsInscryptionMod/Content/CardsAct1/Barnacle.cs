@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 3,
                 defaultTex: tex,
                 abilities: new List<Ability>() { ReturnStrike.ability, Abstain.ability },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/barnacle_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

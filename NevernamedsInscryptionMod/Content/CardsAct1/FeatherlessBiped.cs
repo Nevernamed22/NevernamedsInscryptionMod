@@ -46,7 +46,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/featherlessbiped_emission.png"),
-                defaultEvolutionCard: "Nevernamed FeatherlessBipedMan",
+                defaultEvolutionCard: "BeastNevernamed FeatherlessBipedMan",
                 defaultEvolutionTurns: 2
                 );
         }

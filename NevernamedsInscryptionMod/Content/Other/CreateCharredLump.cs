@@ -35,7 +35,7 @@ namespace NevernamedsInscryptionMod
 		{
 			yield return new WaitForSeconds(0.35f);
 
-			CardInfo lump = CardLoader.GetCardByName("Nevernamed CharredLump");
+			CardInfo lump = CardLoader.GetCardByName("BeastNevernamed CharredLump");
 			lump.Mods.Add(base.PlayableCard.CondenseMods());
             lump.Mods.Add(new CardModificationInfo(0, kills));
 

@@ -28,7 +28,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/earthworm.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Earthworm",
+            CardSetupUtility.NewCard("Earthworm",
                 "Earthworm",
                 0,
                 1,
@@ -42,7 +42,7 @@ namespace NevernamedsInscryptionMod
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/earthworm_emission.png"),
                 pixelTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/earthworm_pixel.png"),
                 tribes: new List<Tribe>() {  },
-                defaultEvolutionCard: "Nevernamed GiantEarthworm"
+                defaultEvolutionCard: "BeastNevernamed GiantEarthworm"
                 );
         }
     }

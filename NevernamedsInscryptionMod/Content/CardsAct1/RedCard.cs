@@ -29,8 +29,11 @@ namespace NevernamedsInscryptionMod
                 onePerDeck: true,
                 decals: new List<Texture>() { Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/redcard.png") },
                 specialAbilities: new List<SpecialTriggeredAbility>() { BoardWipe.ability },
-                traits: new List<Trait>() { NevernamedsTraits.BannedSigilTransferVictim, NevernamedsTraits.BannedFromCampfire, NevernamedsTraits.BannedSigilTransferTarget },
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                traits: new List<Trait>() { },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                preventSigilVictim: true,
+                preventSigilHost: true,
+                preventCampfire: true
                 );
         }
     }

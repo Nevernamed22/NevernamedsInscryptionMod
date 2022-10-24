@@ -29,7 +29,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/explodingant.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Exploding_Ant",
+            CardSetupUtility.NewCard("Exploding_Ant",
                 "Exploding Ant",
                 0,
                 2,

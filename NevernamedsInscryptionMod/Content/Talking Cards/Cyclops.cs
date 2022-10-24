@@ -321,7 +321,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Snapshot.ability },
                 defaultTex: null,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.AnimatedPortrait, CardAppearanceBehaviour.Appearance.RareCardBackground },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 specialAbilities: new List<SpecialTriggeredAbility>() { ability }
                 );
         }

@@ -43,7 +43,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/eagerhatchling_emission.png"),
-                defaultEvolutionCard: "Nevernamed Wyvern"
+                defaultEvolutionCard: "BeastNevernamed Wyvern"
                 );
         }
     }

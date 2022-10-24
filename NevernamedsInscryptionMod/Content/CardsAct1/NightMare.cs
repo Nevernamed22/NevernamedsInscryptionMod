@@ -32,7 +32,8 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 defaultEvolutionName: "Waking Night Mare",
-                flipPortraitWhenStrafing: true
+                flipPortraitWhenStrafing: true,
+                tramplerLeaveBehind: "BeastNevernamed NightmareFuel"
                 );
         }
     }

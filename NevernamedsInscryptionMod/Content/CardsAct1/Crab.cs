@@ -25,7 +25,8 @@ namespace NevernamedsInscryptionMod
                 //energyCost: 5,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/crab.png"),
                 abilities: new List<Ability>() { Ability.DeathShield, Ability.Strafe },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
+                pixelTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/crab_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/crab_emission.png")
                 );
         }

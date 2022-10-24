@@ -45,7 +45,7 @@ namespace NevernamedsInscryptionMod
                 specialAbilities: new List<SpecialTriggeredAbility>() { SpecialTriggeredAbility.Ant },
                 traits: new List<Trait>() { Trait.Ant },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/leafcutterant_emission.png"),
-                overrideDamID: "Nevernamed LeafyBarricade"
+                overrideDamID: "BeastNevernamed LeafyBarricade"
                 );
         }
     }

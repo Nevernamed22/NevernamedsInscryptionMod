@@ -25,8 +25,11 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/Obelisks/mendingobelisk.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/Obelisks/mendingobelisk_emission.png"),
                 abilities: new List<Ability>() { TenderBond.ability, Ability.MadeOfStone },
-                traits: new List<Trait>() { NevernamedsTraits.Obelisk, NevernamedsTraits.BannedSigilTransferVictim, NevernamedsTraits.BannedFromCampfire, Trait.Terrain },
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground }
+                traits: new List<Trait>() { NevernamedsTraits.Obelisk, Trait.Terrain },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.TerrainBackground },
+                preventSigilVictim: true,
+                preventCampfire: true
+
                 );
         }
     }

@@ -26,7 +26,7 @@ namespace NevernamedsInscryptionMod
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/garroe_emission.png"),
                 abilities: new List<Ability>() {Caustic.ability, Ability.Evolve },
                 tribes: new List<Tribe>() {  },
-                defaultEvolutionCard: "Nevernamed AlligatorGar"
+                defaultEvolutionCard: "BeastNevernamed AlligatorGar"
                 );
 
             CardSetupUtility.NewCard("Nevernamed AlligatorGar",
@@ -41,7 +41,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/alligatorgar.png"),
                 abilities: new List<Ability>() { Ability.TailOnHit, },
                 tribes: new List<Tribe>() {  },
-                defaultTailCard: "Nevernamed GarRoe",
+                defaultTailCard: "BeastNevernamed GarRoe",
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/alligatorgar_emission.png")
                 );
         }

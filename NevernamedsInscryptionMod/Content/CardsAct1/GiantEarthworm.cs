@@ -13,8 +13,16 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-
-            Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giantearthworm.png");
+            CardSetupUtility.NewCard("Nevernamed EarthwormSegment",
+                "Earthworm Segment",
+                0,
+                1,
+                new List<CardMetaCategory> { },
+                CardTemple.Nature,
+                description: "",
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/earthwormsegment.png"),
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
+                );
 
             // Add the card
             CardSetupUtility.NewCard("Nevernamed GiantEarthworm",
@@ -27,11 +35,12 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 1,
                 bonesCost: 0,
                 abilities: new List<Ability>() { Harbinger.ability },
-                defaultTex: tex,
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giantearthworm.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giantearthworm_emission.png"),
-                decals: new List<Texture>() { Plugin.raresignaturetex }
+                decals: new List<Texture>() { Plugin.raresignaturetex },
+                harbingerLeaveBehind: "BeastNevernamed EarthwormSegment"
                 );
         }
     }

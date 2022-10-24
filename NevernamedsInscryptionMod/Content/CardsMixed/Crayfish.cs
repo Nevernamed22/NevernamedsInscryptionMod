@@ -27,10 +27,11 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 defaultTex: tex,
                 abilities: new List<Ability>() { TransformerCustom.ability, Ability.SplitStrike },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/crayfish_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/crayfish_pixel.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed CrayfishDuo"
                 );
 
             // Add the card
@@ -45,10 +46,11 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 defaultTex: tex,
                 abilities: new List<Ability>() { TransformerCustom.ability, Ability.DoubleStrike },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Crustacean },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/crayfish_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/crayfish_pixel.png"),
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
+                transformerForm: "BeastNevernamed CrayfishBi"
                 );
         }
     }
