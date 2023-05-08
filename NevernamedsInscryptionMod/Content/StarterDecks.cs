@@ -52,6 +52,41 @@ namespace NevernamedsInscryptionMod
 
             StarterDeckManager.Add("nevernamedscustominscryptioncards", CrabStarters, unlockLevel: 6);
 
+            StarterDeckInfo TermiteStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            TermiteStarters.title = "TermiteStarters";
+            TermiteStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/termitedeck.png"));
+            TermiteStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("SigilNevernamed Termite"), CardLoader.GetCardByName("BeastNevernamed TermiteKing"), CardLoader.GetCardByName("BeastNevernamed TermiteQueen") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", TermiteStarters, unlockLevel: 7);
+
+            StarterDeckInfo RNGStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            RNGStarters.title = "RNGStarters";
+            RNGStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/rngdeck.png"));
+            RNGStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("BeastNevernamed SandDollar"), CardLoader.GetCardByName("BeastNevernamed MethuselahMouse"), CardLoader.GetCardByName("BeastNevernamed SnakeEyes") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", RNGStarters, unlockLevel: 2);
+
+            StarterDeckInfo RodentStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            RodentStarters.title = "RodentStarters";
+            RodentStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/rodentdeck.png"));
+            RodentStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("BeastNevernamed StarvedRat"), CardLoader.GetCardByName("BeastNevernamed DireRat"), CardLoader.GetCardByName("FieldMouse") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", RodentStarters, unlockLevel: 3);
+
+            StarterDeckInfo ShittyStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            ShittyStarters.title = "ShittyStarters";
+            ShittyStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/shittydeck.png"));
+            ShittyStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("SigilNevernamed Mess"), CardLoader.GetCardByName("BeastNevernamed DyingSpider"), CardLoader.GetCardByName("BeastNevernamed Mistake") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", ShittyStarters, unlockLevel: 1);
+
+            StarterDeckInfo ItemStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            ItemStarters.title = "ItemStarters";
+            ItemStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/itemdeck.png"));
+            ItemStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("PackRat"), CardLoader.GetCardByName("BeastNevernamed ItemTentacle"), CardLoader.GetCardByName("BeastNevernamed Bluebottle") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", ItemStarters, unlockLevel: 7);
+
             /*    StarterDeckInfo LightStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
                 LightStarters.title = "LightStarters";
                 LightStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/lightdeck.png"));

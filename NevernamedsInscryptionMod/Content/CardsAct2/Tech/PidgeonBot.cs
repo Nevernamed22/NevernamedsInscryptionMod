@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Pidgeon?",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, Plugin.P03KayceesNatureRegion },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, Plugin.P03KayceesNatureRegion, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,

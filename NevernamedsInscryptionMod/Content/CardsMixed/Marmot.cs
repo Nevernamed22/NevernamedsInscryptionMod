@@ -36,7 +36,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/marmot_emission.png"),
-                tribes: new List<Tribe>() { Tribe.Squirrel },
+                tribes: new List<Tribe>() { Tribe.Squirrel, NevernamedsTribes.Rodent  },
                 specialAbilities: new List<SpecialTriggeredAbility>() { OneHalfSquirrels.ability },
                 variableStat : OneHalfSquirrels.specialStatIcon
                 );

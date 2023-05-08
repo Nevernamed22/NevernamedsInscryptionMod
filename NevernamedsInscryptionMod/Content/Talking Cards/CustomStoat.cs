@@ -191,7 +191,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 onePerDeck: true,
                 animatedPortrait: Face, // You need to set the 'animatedPortrait' variable of the CardInfo to the static reference of the Card Face at the top of this file.
-                abilities: new List<Ability>() { },
+                abilities: new List<Ability>() {  },
                 defaultTex: null,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.AnimatedPortrait }, // You need to give the card the AnimatedPortrait appearance behaviour
                 tribes: new List<Tribe>() { },

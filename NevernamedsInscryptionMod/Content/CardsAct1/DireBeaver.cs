@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Sharp },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance>() { CardAppearanceBehaviour.Appearance.TerrainBackground, CardAppearanceBehaviour.Appearance.TerrainLayout },
                 traits: new List<Trait>() { Trait.Terrain },
-                tribes: new List<Tribe>() { }
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent }
                 );
 
             CardSetupUtility.NewCard("Nevernamed DireBeaver",

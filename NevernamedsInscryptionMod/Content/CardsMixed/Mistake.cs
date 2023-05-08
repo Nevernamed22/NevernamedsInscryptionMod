@@ -31,6 +31,7 @@ namespace NevernamedsInscryptionMod
                 traits: new List<Trait>() { Trait.KillsSurvivors},
                 onePerDeck: true,
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mistake_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/mistake_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 defaultEvolutionName: "Really Big Mistake"
                 );

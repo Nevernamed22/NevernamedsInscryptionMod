@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Reavance",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,

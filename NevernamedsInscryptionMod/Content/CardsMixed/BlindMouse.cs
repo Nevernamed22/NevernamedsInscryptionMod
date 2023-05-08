@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 defaultTex: tex,
                 abilities: new List<Ability>() { UnfocusedStrike.ability, Trio.ability },
-                tribes: new List<Tribe>() {  },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/blindmouse_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }

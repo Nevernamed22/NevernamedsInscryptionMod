@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Helidrone",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,

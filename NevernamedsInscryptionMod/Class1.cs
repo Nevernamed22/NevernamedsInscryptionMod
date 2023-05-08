@@ -10,19 +10,20 @@ using HarmonyLib;
 using System.Reflection;
 using InscryptionAPI.Card;
 using InscryptionAPI.Guid;
+using NevernamedsSigils;
 using BepInEx.Bootstrap;
+using BepInEx.Configuration;
 
 namespace NevernamedsInscryptionMod
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("cyantist.inscryption.api", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("nevernamed.inscryption.sigils", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("zorro.inscryption.infiniscryption.packmanager", BepInDependency.DependencyFlags.SoftDependency)]
     public class Plugin : BaseUnityPlugin
     {
         public const string PluginGuid = "nevernamedscustominscryptioncards";
         private const string PluginName = "Nevernamed's Deck";
-        private const string PluginVersion = "1.0.0.0";
+        private const string PluginVersion = "1.3.0.0";
         public static Texture2D signaturetex;
         public static Texture2D raresignaturetex;
 
@@ -47,6 +48,13 @@ namespace NevernamedsInscryptionMod
             //Give static cards act 2 art
             CardInfo card = CardManager.BaseGameCards.CardByName("!STATIC!GLITCH");
             card.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/staticpixel.png"));
+
+            CardInfo packrat = CardManager.BaseGameCards.CardByName("PackRat");
+            packrat.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/packrat_pixel.png"));
+
+            CardManager.BaseGameCards.CardByName("SentinelOrange").metaCategories.Add(CardMetaCategory.GBCPlayable);
+
+            arachnophobiaMode = base.Config.Bind<bool>("General", "Arachnophobia Mode", false, "Replaces the portraits of Arachnid cards to be less realistic.");
 
             //HIDDEN ABILITIEs
             CreateCopyOnInsects.Init();
@@ -280,6 +288,67 @@ namespace NevernamedsInscryptionMod
             Livyatan.Init();
             Warg.Init();
             ParrotFish.Init();
+            Fjalar.Init();
+            Gullinkambi.Init();
+            BeastOfExmoor.Init();
+            WhirlingWhimpus.Init();
+            Helhest.Init();
+            GhostNudi.Init();
+            Cockle.Init();
+            Coral.Init();
+            Chicken.Init();
+            Aspidochelone.Init();
+            Hammerkop.Init();
+            Sphinx.Init();
+            Gibbon.Init();
+            Hafgufa.Init();
+            Neocarus.Init();
+            Megaladaptis.Init();
+            Goldfinch.Init();
+            GoldenCalf.Init();
+            SpiderMonkey.Init();
+            FrogCrab.Init();
+            Ibis.Init();
+            Minokawa.Init();
+            Terrashot.Init();
+            Hugag.Init();
+            Crucibulum.Init();
+            Roperite.Init();
+            Wapaloosie.Init();
+            StrangeTurtle.Init();
+            Balaur.Init();
+            Zmeu.Init();
+            Shagamaw.Init();
+            Lemur.Init();
+            Pachylemur.Init();
+            CactusCat.Init();
+            Snoligoster.Init();
+            MoleCrab.Init();
+            Loris.Init();
+            Peccary.Init();
+            KillerBeehive.Init();
+            WanderingSpider.Init();
+            BatBomb.Init();
+            ItemTentacle.Init();
+            Bluebottle.Init();
+            Buzzard.Init();
+            MethuselahMouse.Init();
+            Bolotnik.Init();
+            Calygreyhound.Init();
+            Bandito.Init();
+            Skua.Init();
+            Candiru.Init();
+            DungBeetle.Init();
+            Shrimp.Init();
+            Prawn.Init();
+            Lobster.Init();
+            Sandhopper.Init();
+            LittleMiss.Init();
+            ItsyBitsy.Init();
+            GastricBrooder.Init();
+            Archerfish.Init();
+            DraculaAnt.Init();
+            VampireBat.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -296,7 +365,37 @@ namespace NevernamedsInscryptionMod
             Leatherback.Init();
             Woodpecker.Init();
             MantaRay.Init();
-
+            Bannana.Init();
+            AngelShark.Init();
+            FishingCat.Init();
+            Batfly.Init();
+            Camazotz.Init();
+            Anaconda.Init();
+            DynaMite.Init();
+            Chameleon.Init();
+            Deathstalker.Init();
+            Theow.Init();
+            SunWukong.Init();
+            PrarieDog.Init();
+            Dove.Init();
+            Takahe.Init();
+            Bellbird.Init();
+            BlackKite.Init();
+            Darter.Init();
+            Pidgeon.Init();
+            Chuman.Init();
+            SeaNettle.Init();
+            Hogfish.Init();
+            Scapegoat.Init();
+            Gazelle.Init();
+            StuntedGrizzly.Init();
+            BoxJelly.Init();
+            DropBear.Init();
+            MoonJelly.Init();
+            Copepod.Init();
+            Anteater.Init();
+            Cowbird.Init();
+                 
             //ACT 1 TALKING CARDS
             if (bundle != null)
             {
@@ -310,6 +409,9 @@ namespace NevernamedsInscryptionMod
                 Woodmouse.Init();
                 BrazenBull.Init();
             }
+
+            //ACT 2 TALKING CARDS
+            Keepers.Init();
 
             //ACT 2 EXCLUSIVE CARDS
             TheBlobAct2.Init();
@@ -386,6 +488,34 @@ namespace NevernamedsInscryptionMod
             PortalMage.Init();
             Necrophidius.Init();
             DrClaphamLee.Init();
+            SanguineSlime.Init();
+            Yorick.Init();
+            Pishacha.Init();
+            PalidOoze.Init();
+            Forevenant.Init();
+            Vila.Init();
+            Viscount.Init();
+            Suangi.Init();
+            Shtriga.Init();
+            Mavka.Init();
+            Vrykolakas.Init();
+            Pricolici.Init();
+            MagicHat.Init();
+            Pawn.Init();
+            Tallock.Init();
+            Babai.Init();
+            Lobasta.Init();
+            Strigoi.Init();
+            ChickenBones.Init();
+            ChiralCrawler.Init();
+            Vodyanitsa.Init();
+            ZhaleznyChalavek.Init();
+            Cubit.Init();
+            GolemArm.Init();
+            FisherMage.Init();
+            Kodoku.Init();
+            Nixie.Init();
+            TestGhost.Init();
 
             //ACT 3 EXCLUSIVE CARDS
             Crusher.Init();
@@ -393,6 +523,24 @@ namespace NevernamedsInscryptionMod
             Shieldrone.Init();
             Omnibot.Init();
             Reavance.Init();
+            Growbot.Init();
+            Balloondroid.Init();
+            LazySusan.Init();
+            RemoteBot.Init();
+            PylonBot.Init();
+            TripleGunner.Init();
+            MiniModulo.Init();
+            ToyRobot.Init();
+            Scoopy.Init();
+            DocBuzz.Init();
+            CatalogueKeeper.Init();
+            Energunner.Init();
+            Sc0rp10.Init();
+            Submachine.Init();
+            Magnetick.Init();
+            Orbot.Init();
+
+            //GRIMORA CARDS
 
             //STARTER DECKS
             StarterDecks.Init();
@@ -402,9 +550,18 @@ namespace NevernamedsInscryptionMod
 
 
 
-
             Debug.Log($"BeastNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed")).Count}");
+            Debug.Log($"    Canine: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Canine)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Canine)).Count}");
+            Debug.Log($"    Avian: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Bird)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Bird)).Count}");
+            Debug.Log($"    Reptile: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Reptile)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Reptile)).Count}");
+            Debug.Log($"    Hooved: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Hooved)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Hooved)).Count}");
+            Debug.Log($"    Insect: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Insect)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Insect)).Count}");
+            Debug.Log($"    Arachnid: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Arachnid)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Arachnid)).Count}");
+            Debug.Log($"    Crustacean: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Crustacean)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Crustacean)).Count}");
+            Debug.Log($"    Rodent: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Rodent)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Rodent)).Count}");
+            Debug.Log($"    None: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Count == 0).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Count == 0 && x.temple == CardTemple.Nature).Count}");
             Debug.Log($"TechNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed")).Count}");
+            Debug.Log($"    With Act 3 Art: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed") && x.portraitTex != null).Count}");
             Debug.Log($"DeadNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("DeadNevernamed")).Count}");
             Debug.Log($"WizardNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("WizardNevernamed")).Count}");
             List<CardInfo> genInfos = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("Nevernamed"));
@@ -427,6 +584,7 @@ namespace NevernamedsInscryptionMod
             //SetupCustomEncounters.Init();
 
         }
+        internal static ConfigEntry<bool> arachnophobiaMode;
 
         public static readonly CardMetaCategory P03KayceesWizardRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "WizardRegionCards");
         public static readonly CardMetaCategory P03KayceesBastionRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "TechRegionCards");

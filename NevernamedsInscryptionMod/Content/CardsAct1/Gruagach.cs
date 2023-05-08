@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -17,7 +18,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/gruagach.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Gruagach",
+       CardInfo card =     CardSetupUtility.NewCard("Nevernamed Gruagach",
                 "Gruagach",
                 2,
                 1,
@@ -33,6 +34,7 @@ namespace NevernamedsInscryptionMod
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/gruagach_emission.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex }
                 );
+            card.SetExtendedProperty("CustomGiftBearerSpawnsRare", "Yes");
         }
     }
 }

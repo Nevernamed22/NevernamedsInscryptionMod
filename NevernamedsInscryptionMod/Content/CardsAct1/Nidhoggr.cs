@@ -17,13 +17,13 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/nidhoggr.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Nidhoggr",
-                "Nidhoggr",
+            CardSetupUtility.NewCard("Nevernamed Nithhoggr",
+                "Nithhoggr",
                 2,
                 3,
                 new List<CardMetaCategory> { CardMetaCategory.Rare },
                 CardTemple.Nature,
-                description: "The wicked Nidhoggr. It gnaws the bones of the damned from it's prison, deep beneath",
+                description: "The wicked Nithhoggr. It gnaws the bones of the damned from it's prison, deep beneath",
                 bloodCost: 2,
                 bonesCost: 0,
                 abilities: new List<Ability>() { EnlargeCustom.ability },

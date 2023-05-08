@@ -11,6 +11,17 @@ namespace NevernamedsInscryptionMod
 {
     class CardSetupUtility
     {
+        public static Dictionary<Tribe, string> TribalTailDefault = new Dictionary<Tribe, string>()
+        {
+            {Tribe.Canine, "Tail_Furry" },
+            {Tribe.Bird, "Tail_Bird" },
+            {Tribe.Insect, "Tail_Insect" },
+            {Tribe.Hooved, "Tail_Furry" },
+            {Tribe.Squirrel, "Tail_Furry" },
+            {NevernamedsTribes.Crustacean, "SigilNevernamed WrigglingPereiopod" },
+            {NevernamedsTribes.Arachnid, "Tail_Insect" },
+            {NevernamedsTribes.Rodent, "SigilNevernamed WormyTail" },
+        };
         public static Dictionary<CardTemple, string> templeToPrefix = new Dictionary<CardTemple, string>()
         {
             {CardTemple.Nature, "BeastNevernamed"},
@@ -26,7 +37,7 @@ namespace NevernamedsInscryptionMod
             string overrideRabbitHoleSpawn = null, string overrideAntSpawnerSpawn = null, string overrideBellistID = null, string overrideBellistBlockedDialogue = null, string overrideSquirrelShedderId = null, string overrideSkeletonCrewID = null, string overrideBeesWithinID = null,
             string twisterForm = null, string transformerForm = null, string overrideLeftClaw = null, string overrideRightClaw = null, string customDoomedLifespan = null, string customGutSpewerGuts = null, string customExplodingCorpseGuts = null, string customOrganThiefGuts = null,
             string harbingerLeaveBehind = null, string tramplerLeaveBehind = null, string flightyLeaveBehind = null, string parthenogenesisOverride = null, string sigilShedderDef = null, bool preventBones = false, bool preventCampfire = false, bool preventSigilVictim = false, bool preventSigilHost = false, bool customGiftBearerSpawnsRares = false,
-           string erraticLeaveBehind = null, bool preventPlay = false, string fatalFlankDef = null, bool allStrikesDoubled = false)
+           string erraticLeaveBehind = null, bool preventPlay = false, string fatalFlankDef = null, bool allStrikesDoubled = false, string phantasmicLeaveBehind = null, bool preventCampfireHealth = false, bool preventCampfireDamage = false, string venatorForm = null)
         {
             internalName = internalName.Replace("Nevernamed ", "");
             internalName = $"{(templeToPrefix.ContainsKey(temple) ? templeToPrefix[temple] : "Nevernamed")} {internalName}";
@@ -53,6 +64,10 @@ namespace NevernamedsInscryptionMod
             if (!string.IsNullOrEmpty(defaultEvolutionCard)) newInfo.SetEvolve(defaultEvolutionCard, defaultEvolutionTurns);
             if (!string.IsNullOrEmpty(defaultFrozenCard)) newInfo.SetIceCube(defaultFrozenCard);
             if (!string.IsNullOrEmpty(defaultTailCard)) newInfo.tailParams = new TailParams() { tail = CardLoader.GetCardByName(defaultTailCard) };
+            else if (newInfo.tribes.Count > 0 && TribalTailDefault.ContainsKey(newInfo.tribes[0]))
+            {
+                newInfo.tailParams = new TailParams() { tail = CardLoader.GetCardByName(TribalTailDefault[newInfo.tribes[0]]) };
+            }
 
             //Special override properties
             if (!string.IsNullOrEmpty(overrideDamID)) newInfo.SetExtendedProperty("CustomDamDefinition", overrideDamID);
@@ -66,6 +81,7 @@ namespace NevernamedsInscryptionMod
             if (!string.IsNullOrEmpty(overrideSkeletonCrewID)) newInfo.SetExtendedProperty("CustomSkeletonCrewDefinition", overrideSkeletonCrewID);
             if (!string.IsNullOrEmpty(overrideBeesWithinID)) newInfo.SetExtendedProperty("CustomBeesWithinDefinition", overrideBeesWithinID);
             if (!string.IsNullOrEmpty(twisterForm)) newInfo.SetExtendedProperty("TwisterTransformation", twisterForm);
+            if (!string.IsNullOrEmpty(venatorForm)) newInfo.SetExtendedProperty("VenatorTransformation", venatorForm);
             if (!string.IsNullOrEmpty(transformerForm)) newInfo.SetExtendedProperty("CustomTransformerTransformation", transformerForm);
             if (!string.IsNullOrEmpty(overrideLeftClaw)) newInfo.SetExtendedProperty("ClawedLeftClawOverride", overrideLeftClaw);
             if (!string.IsNullOrEmpty(overrideRightClaw)) newInfo.SetExtendedProperty("ClawedRightClawOverride", overrideRightClaw);
@@ -80,11 +96,14 @@ namespace NevernamedsInscryptionMod
             if (!string.IsNullOrEmpty(tramplerLeaveBehind)) newInfo.SetExtendedProperty("TramplerLeaveBehind", tramplerLeaveBehind);
             if (!string.IsNullOrEmpty(flightyLeaveBehind)) newInfo.SetExtendedProperty("FlightyLeaveBehind", flightyLeaveBehind);
             if (!string.IsNullOrEmpty(erraticLeaveBehind)) newInfo.SetExtendedProperty("ErraticLeaveBehind", erraticLeaveBehind);
+            if (!string.IsNullOrEmpty(phantasmicLeaveBehind)) newInfo.SetExtendedProperty("PhantasmicLeaveBehind", phantasmicLeaveBehind);
 
             if (!string.IsNullOrEmpty(customDoomedLifespan)) newInfo.SetExtendedProperty("CustomDoomedDuration", customDoomedLifespan);
 
             if (preventBones == true) { newInfo.SetExtendedProperty("PreventBones", "Yes"); }
             if (preventCampfire == true) { newInfo.SetExtendedProperty("BannedFromCampfire", "Yes"); }
+            if (preventCampfireDamage == true) { newInfo.SetExtendedProperty("BannedFromCampfireDamage", "Yes"); }
+            if (preventCampfireHealth == true) { newInfo.SetExtendedProperty("BannedFromCampfireHealth", "Yes"); }
             if (preventSigilVictim == true) { newInfo.SetExtendedProperty("BannedSigilTransferVictim", "Yes"); }
             if (preventSigilHost == true) { newInfo.SetExtendedProperty("BannedSigilTransferTarget", "Yes"); }
             if (customGiftBearerSpawnsRares == true) { newInfo.SetExtendedProperty("CustomGiftBearerSpawnsRare", "Yes"); }
@@ -99,7 +118,7 @@ namespace NevernamedsInscryptionMod
             if (altTextureEmission != null) newInfo.SetEmissiveAltPortrait(altTextureEmission);
             if (titleGraphic != null) newInfo.titleGraphic = titleGraphic;
 
-            //if (tailLostTexture != null) newInfo.SetLostTailPortrait(tailLostTexture, FilterMode.Point);
+            if (tailLostTexture != null) newInfo.SetLostTailPortrait(tailLostTexture, FilterMode.Point);
             //else if (defaultTex != null && !string.IsNullOrEmpty(defaultTailCard)) newInfo.SetLostTailPortrait(defaultTex, FilterMode.Point);
 
             newInfo.hideAttackAndHealth = hideStats;

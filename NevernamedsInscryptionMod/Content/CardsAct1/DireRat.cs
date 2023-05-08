@@ -27,8 +27,9 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 4,
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.DoubleStrike, Frail.ability },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/direrat_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/direrat_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

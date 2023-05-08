@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 1,
                 new List<CardMetaCategory> { CardMetaCategory.Rare },
                 CardTemple.Nature,
-                description: "The omnilegged crawler, the Ararach never settles on a definitive strategy of attack for long...",
+                description: "The infinilegged crawler, the Ararach never settles on a definitive strategy of attack for long...",
                 bloodCost: 0,
                 bonesCost: 5,
                 abilities: new List<Ability>() { ChaosStrike.ability },

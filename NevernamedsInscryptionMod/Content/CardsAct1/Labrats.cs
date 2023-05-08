@@ -19,6 +19,7 @@ namespace NevernamedsInscryptionMod
                1,
                new List<CardMetaCategory> { },
                CardTemple.Nature,
+               tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                description: "",
                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/ratling.png"),
                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/ratling_emission.png")
@@ -36,7 +37,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() {  },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/labrats.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 specialAbilities: new List<SpecialTriggeredAbility>() { SigilShedder.ability },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/labrats_emission.png"),
                 sigilShedderDef: "BeastNevernamed Ratling"

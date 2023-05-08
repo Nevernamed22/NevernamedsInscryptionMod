@@ -27,7 +27,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 defaultTex: tex,
                 abilities: new List<Ability>() { SquirrelDependent.ability },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/blackgiantsquirrel_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

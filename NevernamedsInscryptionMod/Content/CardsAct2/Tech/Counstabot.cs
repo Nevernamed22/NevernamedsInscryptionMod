@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Counstabot",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,

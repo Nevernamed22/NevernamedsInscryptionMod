@@ -48,7 +48,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.CreateDams, Ability.BuffNeighbours },
                 defaultTex: tex,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/wishpoosh_emission.png"),
                 overrideDamID: "BeastNevernamed GreaterDam"
                 );

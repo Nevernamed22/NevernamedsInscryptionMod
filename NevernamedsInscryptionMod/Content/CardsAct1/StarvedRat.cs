@@ -27,8 +27,9 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 1,
                 defaultTex: tex,
                 abilities: new List<Ability>() { Frail.ability },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/starvedrat_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/starvedrat_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

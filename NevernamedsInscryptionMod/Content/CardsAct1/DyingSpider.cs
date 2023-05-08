@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Doomed.ability },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/dyingspider_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dyingspider_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

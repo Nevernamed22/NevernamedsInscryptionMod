@@ -21,7 +21,7 @@ namespace NevernamedsInscryptionMod
                 "Snake Eyes",
                 0,
                 3,
-                categories: new List<CardMetaCategory>() { CardMetaCategory.TraderOffer, CardMetaCategory.ChoiceNode },
+                categories: new List<CardMetaCategory>() { CardMetaCategory.TraderOffer, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "Double ones. Snake Eyes. Roll again, gambler.",
                 bloodCost: 2,
@@ -30,6 +30,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/snakeeyes_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/snakeeyes_pixel.png"),
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 specialAbilities: new List<SpecialTriggeredAbility>() { DamageDice.ability },
                 variableStat: DamageDice.specialStatIcon

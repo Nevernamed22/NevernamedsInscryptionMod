@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Energy Cube",
                 0,
                 6,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,

@@ -17,13 +17,13 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cactusant.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed CactusAnt",
-                "Cactus Ant",
+            CardSetupUtility.NewCard("Nevernamed SpinyAnt",
+                "Spiny Ant",
                 0,
                 4,
                 new List<CardMetaCategory> { CardMetaCategory.Rare },
                 CardTemple.Nature,
-                description: "A friendly ant covered in sharp thorns. It seems like a valuable companion.",
+                description: "A friendly ant covered in sharp thorns.",
                 bloodCost: 2,
                 bonesCost: 0,
                 abilities: new List<Ability>() { SharperQuills.ability, Cute.ability },

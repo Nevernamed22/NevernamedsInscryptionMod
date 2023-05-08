@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -29,7 +30,7 @@ namespace NevernamedsInscryptionMod
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/impossibeast.png");
 
             // Add the card
-            CardSetupUtility.NewCard("Impossibeast",
+      CardInfo inf =      CardSetupUtility.NewCard("Impossibeast",
                 "Impossibeast",
                 4,
                 1,
@@ -45,9 +46,10 @@ namespace NevernamedsInscryptionMod
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/impossibeast_emission.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 tribes: new List<Tribe>() { },
-                traits: new List<Trait>() { NevernamedsTraits.InherentRepulsive },
+                traits: new List<Trait>() {  },
                 defaultEvolutionName: "Impractabeast"
                 );
+            inf.SetExtendedProperty("InherentRepulsive", "yes");
         }
     }
 }

@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -13,24 +14,28 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            
+
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug.png");
             // Add the card
-            CardSetupUtility.NewCard("De Bug",
-                "De Bug",
-                1,
-                1,
-                new List<CardMetaCategory>{}, //DONT FUCKING COPY THIS YOU NUMPTY
-                CardTemple.Nature,
-                description: "What... is that?",
-                bloodCost: 0,
-                bonesCost: 0,
-                defaultTex: tex,
-                abilities: new List<Ability>() { EspritDeCorp.ability },
-                tribes: new List<Tribe>() { },
-                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug_emission.png"),
-                appearanceBehaviour :  new List<CardAppearanceBehaviour.Appearance> { }
-                );
+            CardInfo inf = CardSetupUtility.NewCard("De Bug",
+                  "De Bug",
+               1,
+                  1,
+                  new List<CardMetaCategory> {   }, //DONT FUCKING COPY THIS YOU NUMPTY
+                  CardTemple.Nature,
+                  description: "What... is that?",
+                  bloodCost: 0,
+                  bonesCost: 0,
+                  defaultTex: tex,
+                  abilities: new List<Ability>() { Gorge.ability },
+                  tribes: new List<Tribe>() { },
+                  emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/debug_pixel.png"),
+                  appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> {  }
+                  );
+            inf.mods.Add(new CardModificationInfo() { gemify = true });
+            inf.SetExtendedProperty("CustomDocileCounter", "5");
+            //inf.SetExtendedProperty("CustomValuablePayoutAmount", "20");
         }
     }
 }

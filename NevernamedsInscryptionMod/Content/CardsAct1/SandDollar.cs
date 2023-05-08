@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Flip.ability },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/sanddollar_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/sanddollar_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }
