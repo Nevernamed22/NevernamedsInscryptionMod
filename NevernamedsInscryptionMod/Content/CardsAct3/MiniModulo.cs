@@ -25,7 +25,8 @@ namespace NevernamedsInscryptionMod
                  energyCost: 0,
                  tribes: new List<Tribe>() { },
                  abilities: new List<Ability>() {  },
-                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/minimodulotail.png")
+                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/minimodulotail.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/minimodulotail_pixel.png")
                  );
 
             CardSetupUtility.NewCard("Nevernamed MiniModulo",
@@ -42,6 +43,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.TailOnHit },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/minimodulo.png"),
                 tailLostTexture: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/minimodulo_notail.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/minimodulo_pixel.png"),
                 defaultTailCard: "TechNevernamed MiniModuloTail"
                 );
         }

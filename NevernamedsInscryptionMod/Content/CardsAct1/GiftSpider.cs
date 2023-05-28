@@ -16,8 +16,8 @@ namespace NevernamedsInscryptionMod
 
             Texture2D tex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giftspider.png");
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed Gift Spider",
-                "GiftSpider",
+            CardSetupUtility.NewCard("Nevernamed GiftSpider",
+                "Gift Spider",
                 1,
                 2,
                 new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },

@@ -21,10 +21,10 @@ namespace NevernamedsInscryptionMod
                 CardTemple.Nature,
                 description: "Too cowardly to remain for long, the cowbird is always eager to cause trouble.",
                 bloodCost: 0,
-                bonesCost: 4,
+                bonesCost: 3,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cowbird.png"),
                 abilities: new List<Ability>() { Ability.CreateEgg, InstantEffect.ability },
-                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance>() { CardAppearanceBehaviour.Appearance.TerrainLayout, CustomAppearances.InstantEffectBackground},
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance>() { CustomAppearances.HiddenStats, CustomAppearances.InstantEffectBackground},
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cowbird_emission.png")
                 );

@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -13,7 +14,7 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            CardSetupUtility.NewCard("Nevernamed AderynYCorph",
+          CardInfo aderyn =  CardSetupUtility.NewCard("Nevernamed AderynYCorph",
                 "Aderyn Y corph",
                 2,
                 2,
@@ -28,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/aderynycorph_emission.png")
                 );
+            aderyn.SetExtendedProperty("GiftBearerCustomPoolIdentifier", "AderynYCorphGiftBearerPool");
         }
     }
 }

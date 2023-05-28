@@ -16,9 +16,9 @@ namespace NevernamedsInscryptionMod
             // Add the card
             CardSetupUtility.NewCard("Nevernamed TestGhost",
                 "Test Ghost",
+                0,
                 1,
-                1,
-                new List<CardMetaCategory> {  },
+                new List<CardMetaCategory> { },
                 CardTemple.Undead,
                 description: "",
                 bloodCost: 0,
@@ -26,9 +26,9 @@ namespace NevernamedsInscryptionMod
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/testsquare.png"),
-                abilities: new List<Ability>() { /*HaunterCustom.ability, Immaterial.ability*/ Gorge.ability, Traitor.ability },
+                abilities: new List<Ability>() { /*HaunterCustom.ability, Immaterial.ability*/ Ability.TailOnHit, Traitor.ability },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/testghost_pixel.png"),
-                  appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> {  }
+                  appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }
     }

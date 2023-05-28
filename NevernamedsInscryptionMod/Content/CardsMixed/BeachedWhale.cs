@@ -40,7 +40,8 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 pixelTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/beachedwhale_pixel.png"),
                 abilities: new List<Ability>() { ExplodingCorpseCustom.ability, },
-                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/beachedwhale_emission.png")
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/beachedwhale_emission.png"),
+                defaultEvolutionCard: "BeastNevernamed BlueWhale"
                 );
         }
     }

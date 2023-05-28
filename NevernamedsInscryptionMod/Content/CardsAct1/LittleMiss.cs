@@ -22,7 +22,7 @@ namespace NevernamedsInscryptionMod
                 description: "She sits so peacefully- but it is best she not be startled...",
                 bloodCost: 2,
                 bonesCost: 0,
-                abilities: new List<Ability>() { SplitSentry.ability, Sentriple.ability, BloodBorn.ability },
+                abilities: new List<Ability>() { SplitSentry.ability, Sentriple.ability },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/littlemiss.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },

@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Chicken",
                 1,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "A vindictive, nasty little bird.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Twister.ability },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/chicken_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/chicken_pixel.png"),
                 twisterForm: "BeastNevernamed ChickenSwarm"
                 );
 
@@ -45,6 +46,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { TransformerCustom.ability, Ability.TriStrike },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/chickenswarm_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/chickenswarm_pixel.png"),
                 transformerForm: "BeastNevernamed Chicken"
                 );
             swarm.SetExtendedProperty("WaitsForOneTurnOnCustomTransform", "Yes");

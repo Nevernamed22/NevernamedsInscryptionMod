@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
             ability = SpecialTriggeredAbilityManager.Add("nevernamedscustominscryptioncards", "OpposedShifter", typeof(OpposedShifter)).Id;
         
 
-        BeastPortrait = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/empusa_beast.png"));
+        BeastPortrait = Plugin.arachnophobiaMode.Value ? Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/ArachnophobiaMode/empusaphobia.png")) : Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/empusa_beast.png"));
             BeastForm = new CardModificationInfo();
             BeastForm.attackAdjustment = 2;
             BeastForm.negateAbilities.Add(Cute.ability);

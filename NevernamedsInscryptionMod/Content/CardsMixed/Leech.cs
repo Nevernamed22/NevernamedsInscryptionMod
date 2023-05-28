@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 "Leech",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
                 CardTemple.Nature,
                 description: "The disquieting leech. Though it is but a juvenile, it's bloodsucking habits will surely reap great rewards.",
                 bloodCost: 0,

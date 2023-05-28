@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 "Mayfly",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
                 CardTemple.Nature,
                 description: "The fleeting mayfly. It lives only to die after one turn. A grim parable.",
                 bloodCost: 0,

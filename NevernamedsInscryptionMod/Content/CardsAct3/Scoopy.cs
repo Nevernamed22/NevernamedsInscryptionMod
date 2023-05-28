@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Scoopy",
                 2,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -25,7 +25,8 @@ namespace NevernamedsInscryptionMod
                 energyCost: 6, 
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.StrafeSwap },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/scoopy.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/scoopy.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/scoopy_pixel.png")
                 );
         }
     }

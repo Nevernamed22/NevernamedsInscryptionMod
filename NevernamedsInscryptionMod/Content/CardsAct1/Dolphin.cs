@@ -20,15 +20,16 @@ namespace NevernamedsInscryptionMod
                 "Dolphin",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The playful dolphin. It tactically strikes down the strongest targets.",
                 bloodCost: 1,
-                bonesCost: 0,
+                bonesCost: 3,
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.Submerge, TrophyHunter.ability },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/dolphin_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dolphin_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

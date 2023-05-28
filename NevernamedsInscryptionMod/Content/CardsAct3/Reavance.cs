@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Reavance",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,7 +26,8 @@ namespace NevernamedsInscryptionMod
                 energyCost: 4,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Eager.ability },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/reavance.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/reavance.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/reavance_pixel.png")
                 );
         }
     }

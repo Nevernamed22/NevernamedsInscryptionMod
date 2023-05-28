@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Mayfly Swarm",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "A thick swarm of insects, desperate in their mating flight.",
                 bloodCost: 1,
@@ -26,7 +26,8 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mayflyswarm.png"),
                 abilities: new List<Ability>() { Ability.Flying, BuzzOff.ability },
                 tribes: new List<Tribe>() { Tribe.Insect },
-                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mayflyswarm_emission.png")
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mayflyswarm_emission.png"),
+                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/mayflyswarm_pixel.png")
                 );
         }
     }

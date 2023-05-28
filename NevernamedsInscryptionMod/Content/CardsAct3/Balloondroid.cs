@@ -25,14 +25,15 @@ namespace NevernamedsInscryptionMod
                 energyCost: 3, //5
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.Flying },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/balloondroid_puffed.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/balloondroid_puffed.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/balloondroid_puffed_pixel.png")
                 );
 
             CardSetupUtility.NewCard("Nevernamed Balloondroid",
                 "Balloondroid",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -41,6 +42,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.Evolve, Ability.Flying },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/balloondroid.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/balloondroid_pixel.png"),
                 defaultEvolutionCard: "TechNevernamed BalloondroidPuffed"
                 );
         }

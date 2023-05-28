@@ -24,6 +24,7 @@ namespace NevernamedsInscryptionMod
     bloodCost: 0,
     bonesCost: 0,
     defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/greaterdam.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/greaterdam_pixel.png"),
     emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/greaterdam_emission.png"),
     abilities: new List<Ability>() { },
     appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance>() { CardAppearanceBehaviour.Appearance.TerrainBackground, CardAppearanceBehaviour.Appearance.TerrainLayout },
@@ -40,7 +41,7 @@ namespace NevernamedsInscryptionMod
                 "Wishpoosh",
                 2,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The dreadful Wishpoosh, master of the rivers, both earth and water tremble at his name.",
                 bloodCost: 3,
@@ -50,6 +51,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { NevernamedsTribes.Rodent },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/wishpoosh_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/wishpoosh_pixel.png"),
                 overrideDamID: "BeastNevernamed GreaterDam"
                 );
         }

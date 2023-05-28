@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Triple Gunner",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.Rare , CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable},
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,7 +26,8 @@ namespace NevernamedsInscryptionMod
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.TriStrike },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/triplegunner.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/triplegunner.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/triplegunner_pixel.png")
                 );
         }
     }

@@ -25,14 +25,15 @@ namespace NevernamedsInscryptionMod
                 energyCost: 4, //5
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() {  },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/growbot_grown.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/growbot_grown.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/growbot_grown_pixel.png")
                 );
 
             CardSetupUtility.NewCard("Nevernamed Growbot",
                 "Growbot",
                 1,
                 1,
-                new List<CardMetaCategory> {  CardMetaCategory.Part3Random, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> {  CardMetaCategory.Part3Random, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -41,7 +42,8 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.Evolve },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/growbot.png"),
-                defaultEvolutionCard: "TechNevernamed GrowbotGrown"
+                defaultEvolutionCard: "TechNevernamed GrowbotGrown",
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/growbot_pixel.png")
                 );
         }
     }

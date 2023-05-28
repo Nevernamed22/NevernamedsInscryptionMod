@@ -17,9 +17,7 @@ namespace NevernamedsInscryptionMod
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
                 CardMetaCategory.ChoiceNode,
-                CardMetaCategory.TraderOffer,
-                CardMetaCategory.GBCPack,
-                CardMetaCategory.GBCPlayable
+                CardMetaCategory.TraderOffer
             };
 
 

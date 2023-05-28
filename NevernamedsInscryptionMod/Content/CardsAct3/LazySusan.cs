@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Lazy Susan",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,7 +26,9 @@ namespace NevernamedsInscryptionMod
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Revolve.ability },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/lazysusan.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/lazysusan.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/lazysusan_pixel.png")
+
                 );
         }
     }

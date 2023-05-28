@@ -19,16 +19,17 @@ namespace NevernamedsInscryptionMod
             // Add the card
             CardInfo inf = CardSetupUtility.NewCard("De Bug",
                   "De Bug",
-               1,
-                  1,
-                  new List<CardMetaCategory> {   }, //DONT FUCKING COPY THIS YOU NUMPTY
+              0,
+                  4,
+                  new List<CardMetaCategory> {  CardMetaCategory.GBCPlayable  }, //DONT FUCKING COPY THIS YOU NUMPTY
                   CardTemple.Nature,
                   description: "What... is that?",
                   bloodCost: 0,
                   bonesCost: 0,
                   defaultTex: tex,
-                  abilities: new List<Ability>() { Gorge.ability },
+                  abilities: new List<Ability>() { Ability.SteelTrap },
                   tribes: new List<Tribe>() { },
+                  specialAbilities: new List<SpecialTriggeredAbility>() {  },
                   emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug_emission.png"),
                   pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/debug_pixel.png"),
                   appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> {  }

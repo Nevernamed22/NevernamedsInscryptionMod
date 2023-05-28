@@ -87,6 +87,13 @@ namespace NevernamedsInscryptionMod
 
             StarterDeckManager.Add("nevernamedscustominscryptioncards", ItemStarters, unlockLevel: 7);
 
+            StarterDeckInfo ChaosCardStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
+            ChaosCardStarters.title = "ChaosCardStarters";
+            ChaosCardStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/chaoscarddeck.png"));
+            ChaosCardStarters.cards = new List<CardInfo>() { CardLoader.GetCardByName("BeastNevernamed ChaosCard"), CardLoader.GetCardByName("BeastNevernamed ChaosCard"), CardLoader.GetCardByName("BeastNevernamed ChaosCard") };
+
+            StarterDeckManager.Add("nevernamedscustominscryptioncards", ChaosCardStarters, unlockLevel: 4);
+
             /*    StarterDeckInfo LightStarters = ScriptableObject.CreateInstance<StarterDeckInfo>();
                 LightStarters.title = "LightStarters";
                 LightStarters.iconSprite = Tools.GenerateAct2Portrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/StarterDecks/lightdeck.png"));

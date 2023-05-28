@@ -6,6 +6,7 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {   
@@ -25,7 +26,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/kaycee.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dc_kaycee_pixel.png"),
                 abilities: new List<Ability>() { Ability.SplitStrike, Ability.Sharp, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxReginald",
                 "Reginald",
@@ -38,7 +39,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/reginald.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dc_reginald_pixel.png"),
                 abilities: new List<Ability>() { Ability.Deathtouch, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxLouis",
                 "Louis",
@@ -51,7 +52,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/louis.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dc_louis_pixel.png"),
                 abilities: new List<Ability>() { Ability.Strafe, Ability.Submerge, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxKaminski",
                 "Kaminski",
@@ -64,7 +65,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/kaminski.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dc_kaminski_pixel.png"),
                 abilities: new List<Ability>() { Ability.GuardDog, Ability.Sharp, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxJonah",
                 "Jonah",
@@ -76,7 +77,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 3,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/jonah.png"),
                 abilities: new List<Ability>() { Ability.BeesOnHit, Ability.Sharp, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxKevin",
                 "Kevin",
@@ -88,7 +89,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/kevin.png"),
                 abilities: new List<Ability>() { Ability.StrafeSwap, Ability.TailOnHit, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxSean",
                 "Sean",
@@ -100,7 +101,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/sean.png"),
                 abilities: new List<Ability>() { Ability.Reach, Ability.Deathtouch, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxTamara",
                 "Tamara",
@@ -112,7 +113,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/tamara.png"),
                 abilities: new List<Ability>() { Ability.StrafePush, Ability.TailOnHit, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxDaniel",
                 "Daniel",
@@ -124,7 +125,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/daniel.png"),
                 abilities: new List<Ability>() { Ability.DoubleStrike, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxCody",
                 "Cody",
@@ -136,7 +137,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/cody.png"),
                 abilities: new List<Ability>() { Ability.WhackAMole, Ability.TailOnHit, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxDavid",
                 "David",
@@ -148,7 +149,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/davidtahnee.png"),
                 abilities: new List<Ability>() { Ability.StrafePush, Ability.Sharp, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxTahnee",
                 "Tahnee",
@@ -160,7 +161,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/davidtahnee.png"),
                 abilities: new List<Ability>() { Ability.TriStrike, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxBerke",
                 "Berke",
@@ -172,7 +173,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 2,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/berke.png"),
                 abilities: new List<Ability>() { Ability.IceCube, Ability.GuardDog, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
             CardSetupUtility.NewCard("Nevernamed FauxLuke",
                 "Luke",
@@ -184,9 +185,9 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 4,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/luke.png"),
                 abilities: new List<Ability>() { Ability.Sniper, }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
 
-            
+
 
             CardSetupUtility.NewCard("Nevernamed FauxYou",
                 "You",
@@ -199,7 +200,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/FauxDeathcards/you.png"),
                 abilities: new List<Ability>() { Ability.Strafe, },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CustomAppearances.GreyBackground }
-                );
+                ).SetExtendedProperty("AderynYCorphGiftBearerPool", "true");
         }
     }
 }

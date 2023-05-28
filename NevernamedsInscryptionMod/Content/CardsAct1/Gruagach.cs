@@ -22,7 +22,7 @@ namespace NevernamedsInscryptionMod
                 "Gruagach",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The hairy gruagach, a curious beast indeed. It lives only to serve.",
                 bloodCost: 2,
@@ -32,6 +32,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/gruagach_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/gruagach_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex }
                 );
             card.SetExtendedProperty("CustomGiftBearerSpawnsRare", "Yes");

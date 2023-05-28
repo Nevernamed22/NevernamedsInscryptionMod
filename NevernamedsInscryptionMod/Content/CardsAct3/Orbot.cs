@@ -24,7 +24,9 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 energyCost: 0,
                 abilities: new List<Ability>() { Abstain.ability, Doomed.ability, Annihilation.ability },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/plasmablast.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/plasmablast.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/scoopy_pixel.png")
+
                 );
 
             CardSetupUtility.NewCard("Nevernamed IncomingStrike",
@@ -39,6 +41,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 0,
                 abilities: new List<Ability>() {Immaterial.ability, Abstain.ability, Ability.Evolve  },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/incomingstrike.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/incomingstrike_pixel.png"),
                 defaultEvolutionCard: "TechNevernamed PlasmaBlast",
                 defaultEvolutionTurns: 2
                 );
@@ -47,7 +50,7 @@ namespace NevernamedsInscryptionMod
                 "Orbot",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -55,6 +58,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 4,
                 abilities: new List<Ability>() { Ability.Flying, GraveyardShift.ability },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/orbot.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/orbot_pixel.png"),
                 defaultFrozenCard: "TechNevernamed IncomingStrike"
                 );
         }

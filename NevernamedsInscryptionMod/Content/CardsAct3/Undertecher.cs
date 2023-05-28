@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Undertecher",
                 2,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,7 +26,8 @@ namespace NevernamedsInscryptionMod
                 energyCost: 5,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Harbinger.ability },
-                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/undertecher.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/undertecher.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/undertecher_pixel.png")
                 );
         }
     }

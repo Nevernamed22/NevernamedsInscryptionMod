@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed Tallock",
                 "Tallock",
                 0,
-                3,
+                4,
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Wizard,
                 description: "",

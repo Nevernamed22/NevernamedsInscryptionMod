@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Hive Crawler",
                 0,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "A peculiar crustacean that cultivates a hive of bees upon it's back.",
                 bloodCost: 1,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hivecrawler.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Insect, NevernamedsTribes.Crustacean },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/hivecrawler_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/hivecrawler_emission.png")
                 );
         }

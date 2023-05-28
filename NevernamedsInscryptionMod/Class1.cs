@@ -52,9 +52,9 @@ namespace NevernamedsInscryptionMod
             CardInfo packrat = CardManager.BaseGameCards.CardByName("PackRat");
             packrat.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/packrat_pixel.png"));
 
-            CardManager.BaseGameCards.CardByName("SentinelOrange").metaCategories.Add(CardMetaCategory.GBCPlayable);
+            // CardManager.BaseGameCards.CardByName("SentinelOrange").metaCategories.Add(CardMetaCategory.GBCPlayable);
 
-            arachnophobiaMode = base.Config.Bind<bool>("General", "Arachnophobia Mode", false, "Replaces the portraits of Arachnid cards to be less realistic.");
+            arachnophobiaMode = base.Config.Bind<bool>("General", "Arachnophobia Mode", false, "Replaces the portraits of spider and spiderlike cards to be less realistic.");
 
             //HIDDEN ABILITIEs
             CreateCopyOnInsects.Init();
@@ -63,6 +63,7 @@ namespace NevernamedsInscryptionMod
             GrueAttackColourOverride.Init();
             BoardWipe.Init();
             CreateCharredLump.Init();
+            ChaosCardBehaviour.Init();
 
             //stuff and shit
             //OBELISKS
@@ -158,7 +159,6 @@ namespace NevernamedsInscryptionMod
             Gadreel.Init();
             Gnat.Init();
             RhinoBeetle.Init();
-            Dolphin.Init();
             BlackDog.Init();
             Boneworm.Init();
             CarrionFly.Init();
@@ -349,6 +349,23 @@ namespace NevernamedsInscryptionMod
             Archerfish.Init();
             DraculaAnt.Init();
             VampireBat.Init();
+            BlueWhale.Init();
+            WhiteWhale.Init();
+            Changeling.Init();
+            AmorphousShame.Init();
+            FetchCard.Init();
+            ChaosCard.Init();
+            BlackEgg.Init();
+            TummyBug.Init();            
+            SeaLouse.Init();
+            Ahuizotl.Init();
+            Mongoose.Init();
+            Krill.Init();
+            Gorilla.Init();
+            Chimpanzee.Init();
+            Piure.Init();
+            Sicarius.Init();
+            WastingDeer.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -395,7 +412,11 @@ namespace NevernamedsInscryptionMod
             Copepod.Init();
             Anteater.Init();
             Cowbird.Init();
-                 
+            Dolphin.Init();
+            Tapeworm.Init();
+            Tarantula.Init();
+            Kusimanse.Init();
+
             //ACT 1 TALKING CARDS
             if (bundle != null)
             {
@@ -408,6 +429,7 @@ namespace NevernamedsInscryptionMod
                 Husky.Init();
                 Woodmouse.Init();
                 BrazenBull.Init();
+                HappyFaceSpider.Init();
             }
 
             //ACT 2 TALKING CARDS
@@ -516,6 +538,33 @@ namespace NevernamedsInscryptionMod
             Kodoku.Init();
             Nixie.Init();
             TestGhost.Init();
+            SpoonBender.Init();
+            MagisterGeneral.Init();
+            Merle.Init();
+            Diviner.Init();
+            GoblinMage.Init();
+            FleshPillar.Init();
+            WhiteMage.Init();
+            Jester.Init();
+            EsotericMox.Init();
+            SurgemMagister.Init();
+            ArtfulMagister.Init();
+            MagnusMagister.Init();
+            Catron.Init();
+            RitualFlesh.Init();
+            SorcerersApprentice.Init();
+            WickedWitch.Init();
+            Vaconda.Init();
+            WonderousWall.Init();
+            Clanklion.Init();
+            Witchfinder.Init();
+            Bloodbag.Init();
+            Jumpscare.Init();
+            Ghost.Init();
+            GhostTrain.Init();
+            HodgePodge.Init();
+            Unravelled.Init();
+            P4kBot.Init();
 
             //ACT 3 EXCLUSIVE CARDS
             Crusher.Init();
@@ -539,6 +588,8 @@ namespace NevernamedsInscryptionMod
             Submachine.Init();
             Magnetick.Init();
             Orbot.Init();
+            TestDummy.Init();
+            BotPrinter.Init();
 
             //GRIMORA CARDS
 
@@ -570,7 +621,59 @@ namespace NevernamedsInscryptionMod
             {
                 Debug.Log(inf.name);
             }
+
+            CardManager.ModifyCardList += delegate (List<CardInfo> cards)
+            {
+                if (Plugin.arachnophobiaMode.Value == true)
+                {
+                    Debug.Log("Arachnophobia Mode Enabled: Modifying Spider Portraits");
+                    foreach (CardInfo idv in cards.FindAll(x => arachnophobiaModifications.ContainsKey(x.name)))
+                    {
+                        idv.ArachnophobiaMode(arachnophobiaModifications[idv.name]);
+                    }
+                }
+                foreach (CardInfo idv in cards)
+                { 
+                    if (card.name == "SigilNevernamed MoreFish") { card.metaCategories.Add(CardMetaCategory.Rare); }
+                }
+                    return cards;
+            };
         }
+        public static Dictionary<string, string> arachnophobiaModifications = new Dictionary<string, string>()
+        {
+            {"BeastNevernamed Anansi", "anansi"},
+            {"BeastNevernamed Ararach", "ararach"},
+            {"BeastNevernamed BlackWidow", "blackwidow"},
+            {"BeastNevernamed BrownRecluse", "brownrecluse"},
+            {"BeastNevernamed Bugbear", "bugbear"},
+            {"BeastNevernamed CamelSpider", "camelspider"},
+            {"BeastNevernamed CellarSpider", "cellarspider"},
+            {"BeastNevernamed CrabSpider", "crabspider"},
+            {"BeastNevernamed CrayfishDuo", "crayfish"},
+            {"BeastNevernamed CrayfishBi", "crayfish"},
+            {"BeastNevernamed Deathstalker", "deathstalker"},
+            {"BeastNevernamed DyingSpider", "dyingspider"},
+            {"BeastNevernamed Emmet", "emmet"},
+            {"BeastNevernamed GiftSpider", "giftspider"},
+            {"BeastNevernamed Huntsman", "huntsman"},
+            {"BeastNevernamed Isopod", "isopod"},
+            {"BeastNevernamed ItsyBitsy", "itsybitsy"},
+            {"BeastNevernamed Jorogumo", "jorogumo"},
+            {"BeastNevernamed JumpingSpider", "jumpingspider"},
+            {"BeastNevernamed Kokyangwuti", "kokyangwuti"},
+            {"BeastNevernamed LengSpider", "lengspider"},
+            {"BeastNevernamed LittleMiss", "littlemiss"},
+            {"BeastNevernamed Tarantula", "tarantula"},
+            {"BeastNevernamed Sicarius", "sicarius"},
+            {"BeastNevernamed SicariusBuried", "sicariusburied"},
+        };
+        public static Dictionary<string, string> arachnophobiaModificationsPixel = new Dictionary<string, string>()
+        {
+            {"BeastNevernamed CrayfishDuo", "crayfish"},
+            {"BeastNevernamed CrayfishBi", "crayfish"},
+            {"BeastNevernamed DyingSpider", "dyingspider"},
+            {"BeastNevernamed Huntsman", "huntsman"},
+        };
         public static AssetBundle LoadBundle(string path)
         {
             using (Stream s = Assembly.GetExecutingAssembly().GetManifestResourceStream(path.Replace("\\", ".").Replace("/", ".")))
@@ -586,10 +689,16 @@ namespace NevernamedsInscryptionMod
         }
         internal static ConfigEntry<bool> arachnophobiaMode;
 
+        //P03Kaycees
         public static readonly CardMetaCategory P03KayceesWizardRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "WizardRegionCards");
         public static readonly CardMetaCategory P03KayceesBastionRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "TechRegionCards");
         public static readonly CardMetaCategory P03KayceesNatureRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "NatureRegionCards");
         public static readonly CardMetaCategory P03KayceesUndeadRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "UndeadRegionCards");
+     
+        //Act2Endless
+        public static readonly CardMetaCategory ExcludeFromAct2Endless = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("mrfantastik.inscryption.infact2", "ExcludeFromAct2Endless");
 
+        //Grimora
+        public static readonly CardMetaCategory GrimoraChoiceNode = GuidManager.GetEnumValue<CardMetaCategory>("arackulele.inscryption.grimoramod", "GrimoraModChoiceNode");
     }
 }
