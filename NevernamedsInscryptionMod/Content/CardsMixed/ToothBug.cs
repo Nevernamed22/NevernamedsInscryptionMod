@@ -17,6 +17,8 @@ namespace NevernamedsInscryptionMod
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
                 CardMetaCategory.Rare,
+                CardMetaCategory.GBCPlayable,
+                CardMetaCategory.GBCPack
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>
             {
@@ -43,6 +45,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { ToothPuller.ability, ToothPuller.ability },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
 
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/toothbug_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/toothbug_emission.png"),
                 tribes: new List<Tribe>() { Tribe.Insect }
                 );

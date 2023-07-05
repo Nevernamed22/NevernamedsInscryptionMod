@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 gemsCost: new List<GemType>() { GemType.Orange },
                 bonesCost: 0,
                 tribes: new List<Tribe>() { },
-                abilities: new List<Ability>() { Ability.CorpseEater, },
+                abilities: new List<Ability>() { Ability.CorpseEater },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/redcap_pixel.png")
                 );
         }

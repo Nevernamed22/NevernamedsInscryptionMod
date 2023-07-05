@@ -17,6 +17,8 @@ namespace NevernamedsInscryptionMod
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
                 CardMetaCategory.Rare,
+                CardMetaCategory.GBCPack,
+                CardMetaCategory.GBCPlayable
                 //CardMetaCategory.TraderOffer,
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>
@@ -32,7 +34,7 @@ namespace NevernamedsInscryptionMod
             // Add the card
             CardSetupUtility.NewCard("Nevernamed TeWheke",
                 "Te Wheke",
-                1,
+                2,
                 5,
                 metaCategories,
                 CardTemple.Nature,
@@ -43,6 +45,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { UnfocusedStrike.ability, Ability.TriStrike, Ability.Submerge },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/tewheke_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/tewheke_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex }
                 );
         }

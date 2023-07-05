@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Octopus",
                 3,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The slippery octopus. It's dexterous tentacles can reach any card, but they act almost with a mind of their own.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { UnfocusedStrike.ability, Ability.Submerge },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/octopus_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/octopus_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 defaultEvolutionCard: "BeastNevernamed TeWheke"
                 );

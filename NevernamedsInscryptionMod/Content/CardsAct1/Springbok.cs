@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Springbok",
                 2,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The fast and fearsome Springbok. While it's movement requires careful planning, it's offensive capabilities are beyond predictable.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.Strafe, HomeRun.ability },
                 tribes: new List<Tribe>() { Tribe.Hooved },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/springbok_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/springbok_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

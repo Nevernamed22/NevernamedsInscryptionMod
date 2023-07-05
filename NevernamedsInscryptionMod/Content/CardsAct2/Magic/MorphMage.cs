@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 gemsCost: new List<GemType>() { GemType.Blue },
                 bonesCost: 0,
                 tribes: new List<Tribe>() { },
-                abilities: new List<Ability>() { Act2Amorphous.ability },
+                abilities: new List<Ability>() { Ability.RandomAbility },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/morphmage_pixel.png")
                 );
         }

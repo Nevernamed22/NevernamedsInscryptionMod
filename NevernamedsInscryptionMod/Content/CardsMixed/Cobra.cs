@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 "Cobra",
                 0,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The swift cobra. Usually passive, but it delivers a nasty bite when startled.",
                 bloodCost: 1,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Sentry },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cobra_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/cobra_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 defaultEvolutionCard: "BeastNevernamed KingCobra"
 

@@ -7,6 +7,7 @@ using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
 using System.Linq;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -36,7 +37,7 @@ namespace NevernamedsInscryptionMod
                 specialAbilities: new List<SpecialTriggeredAbility>() { BloodAndBone.ability },
                 variableStat: BloodAndBone.specialStatIcon,
                 titleGraphic: title
-                );
+                ).SetExtendedProperty("ValidSquidTentacleAct1", "true");
 
          /*List<string> squids =   SubmergeSquid.SQUIDS.ToList();
             squids.Add("Nevernamed VisceraTentacle");

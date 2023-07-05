@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 "Tasmanian Devil",
                 2,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The aggressive tasmanian devil. It's temperament is liable to turn on a dime.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.SwapStats },
                 tribes: new List<Tribe>() {  },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/tasmaniandevil_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/tasmaniandevil_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 defaultEvolutionName: "Tasmanian Angel"
                 );

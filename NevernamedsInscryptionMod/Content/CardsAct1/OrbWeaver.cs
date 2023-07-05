@@ -24,7 +24,7 @@ namespace NevernamedsInscryptionMod
                 CardTemple.Nature,
                 description: "The dedicated Orb Weaver. It spins defensive webs as it moves across the board.",
                 bloodCost: 0,
-                bonesCost: 3,
+                bonesCost: 4,
                 defaultTex: tex,
                 abilities: new List<Ability>() { Weaver.ability },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },

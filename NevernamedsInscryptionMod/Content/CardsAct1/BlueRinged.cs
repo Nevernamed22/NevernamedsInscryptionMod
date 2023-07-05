@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Blue-Ringed",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The Blue-Ringed Octopus. It's venom is one of the most potent in the world...",
                 bloodCost: 1,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
 
                 abilities: new List<Ability>() { UnfocusedStrike.ability, Ability.Deathtouch, Ability.Submerge },
                 tribes: new List<Tribe>() { },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/blueringed_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/blueringed_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

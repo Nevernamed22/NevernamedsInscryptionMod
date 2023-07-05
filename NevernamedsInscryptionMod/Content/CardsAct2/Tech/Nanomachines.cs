@@ -18,14 +18,12 @@ namespace NevernamedsInscryptionMod
                 "Nanomachines",
                 3,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.P03KayceesBastionRegion },
                 CardTemple.Tech,
                 description: "",
-                bloodCost: 0,
-                bonesCost: 0,
                 energyCost: 6, 
-                tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Hypermorphic.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/nanomachines.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/nanomachines_pixel.png")
                 );
         }

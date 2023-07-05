@@ -13,19 +13,16 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            // Add the card
             CardSetupUtility.NewCard("Nevernamed ChaosEngine",
                 "Chaos Engine",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode, Plugin.P03KayceesNeutralRegion },
                 CardTemple.Tech,
                 description: "",
-                bloodCost: 0,
-                bonesCost: 0,
-                energyCost: 4, //5
-                tribes: new List<Tribe>() { },
+                energyCost: 4, 
                 abilities: new List<Ability>() { Hypermorphic.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/chaosengine.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/chaosengine_pixel.png")
                 );
         }

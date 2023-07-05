@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed H4wk",
                 "H4wk",
                 3,
-                2,
+                1,
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",

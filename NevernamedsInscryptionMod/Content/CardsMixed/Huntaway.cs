@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Huntaway",
                 2,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer,  CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable},
                 CardTemple.Nature,
                 description: "The energetic Huntaway. Why dont you throw it a bone?",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Fetch.ability },
                 tribes: new List<Tribe>() { Tribe.Canine },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/huntaway_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/huntaway_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 defaultEvolutionName: "Tatum"
                 );

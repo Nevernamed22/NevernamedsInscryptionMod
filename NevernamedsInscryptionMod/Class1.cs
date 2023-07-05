@@ -44,6 +44,10 @@ namespace NevernamedsInscryptionMod
 
             //Make certain sigils stackable
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.LatchBrittle).Info.canStack = true;
+            AbilityManager.BaseGameAbilities.AbilityByID(Ability.GainBattery).Info.canStack = true;
+            AbilityManager.BaseGameAbilities.AbilityByID(Ability.QuadrupleBones).Info.canStack = true;
+            AbilityManager.BaseGameAbilities.AbilityByID(Ability.DrawRabbits).Info.canStack = true;
+            AbilityManager.BaseGameAbilities.AbilityByID(Ability.Loot).Info.canStack = true;
 
             //Give static cards act 2 art
             CardInfo card = CardManager.BaseGameCards.CardByName("!STATIC!GLITCH");
@@ -52,7 +56,13 @@ namespace NevernamedsInscryptionMod
             CardInfo packrat = CardManager.BaseGameCards.CardByName("PackRat");
             packrat.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/packrat_pixel.png"));
 
-            // CardManager.BaseGameCards.CardByName("SentinelOrange").metaCategories.Add(CardMetaCategory.GBCPlayable);
+            CardManager.BaseGameCards.CardByName("BatteryBot").SetExtendedProperty("GBCMycologistFusedVersion", "TechNevernamed SporenergyBot");
+            CardManager.BaseGameCards.CardByName("Family").SetExtendedProperty("GBCMycologistFusedVersion", "DeadNevernamed TheSporekers");
+            CardManager.BaseGameCards.CardByName("Warren").SetExtendedProperty("GBCMycologistFusedVersion", "BeastNevernamed Sporren");
+            CardManager.BaseGameCards.CardByName("MasterOrlu").SetExtendedProperty("GBCMycologistFusedVersion", "WizardNevernamed MasterSporlu");
+
+            //CardManager.BaseGameCards.CardByName("Lice").metaCategories.Add(CardMetaCategory.GBCPlayable);
+            //CardManager.BaseGameCards.CardByName("Amalgam").metaCategories.Add(CardMetaCategory.GBCPlayable);
 
             arachnophobiaMode = base.Config.Bind<bool>("General", "Arachnophobia Mode", false, "Replaces the portraits of spider and spiderlike cards to be less realistic.");
 
@@ -64,6 +74,7 @@ namespace NevernamedsInscryptionMod
             BoardWipe.Init();
             CreateCharredLump.Init();
             ChaosCardBehaviour.Init();
+            WizardOfOz.Init();
 
             //stuff and shit
             //OBELISKS
@@ -356,7 +367,7 @@ namespace NevernamedsInscryptionMod
             FetchCard.Init();
             ChaosCard.Init();
             BlackEgg.Init();
-            TummyBug.Init();            
+            TummyBug.Init();
             SeaLouse.Init();
             Ahuizotl.Init();
             Mongoose.Init();
@@ -366,6 +377,12 @@ namespace NevernamedsInscryptionMod
             Piure.Init();
             Sicarius.Init();
             WastingDeer.Init();
+            AxehandleHound.Init();
+            Gull.Init();
+            WorldTurtle.Init();
+            Macrobacterium.Init();
+            GiftHorse.Init();
+            Kiwi.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -416,8 +433,11 @@ namespace NevernamedsInscryptionMod
             Tapeworm.Init();
             Tarantula.Init();
             Kusimanse.Init();
+            YetiCrab.Init();
+            Hagfish.Init();
 
             //ACT 1 TALKING CARDS
+
             if (bundle != null)
             {
                 PallasNoctua.Init();
@@ -565,6 +585,106 @@ namespace NevernamedsInscryptionMod
             HodgePodge.Init();
             Unravelled.Init();
             P4kBot.Init();
+            MrNeedlemouth.Init();
+            ElectricEel.Init();
+            TinMan.Init();
+            StageMagician.Init();
+            SelflessCell.Init();
+            KnightCell.Init();
+            BloodKnight.Init();
+            Octomancer.Init();
+            GlueMage.Init();
+            CrimsonPaladin.Init();
+            HostileInjector.Init();
+            LiveWire.Init();
+            StimulantConduit.Init();
+            Composer.Init();
+            MirrorLord.Init();
+            Gristle.Init();
+            MotherMatryoshka.Init();
+            Tr1ckb0t.Init();
+            Hambone.Init();
+            EnchantedBlade.Init();
+            ShadowChild.Init();
+            FalseProphet.Init();
+            Handmaster.Init();
+            GiftConduit.Init();
+            BustedConduit.Init();
+            GrimChanter.Init();
+            TurtleMine.Init();
+            AxeMurderer.Init();
+            Energem.Init();
+            Recyclotron.Init();
+            FileShredder.Init();
+            Malbot.Init();
+            PupilOfGun.Init();
+            Famine.Init();
+            Death.Init();
+            Boil.Init();
+            Pestilence.Init();
+            War.Init();
+            Mandrake.Init();
+            FlankGunner.Init();
+            GiantClam.Init();
+            FogMachine.Init();
+            ShieldMage.Init();
+            Turret.Init();
+            MysteryGolem.Init();
+            Techromancer.Init();
+            BloodWitch.Init();
+            VortexCaster.Init();
+            GrandHighIllusionist.Init();
+            Tlamacazqui.Init();
+            Techtacles.Init();
+            Molly.Init();
+            Replicant.Init();
+            StandardBearer.Init();
+            PracticeSage.Init();
+            Mageskull.Init();
+            Dowser.Init();
+            ClumsyPupil.Init();
+            JumperCable.Init();
+            Automamox.Init();
+            LunarCell.Init();
+            GreenArchmage.Init();
+            Mourner.Init();
+            FrogR.Init();
+            GemFrog.Init();
+            BloodCell.Init();
+            Lockbot.Init();
+            Necravager.Init();
+            ZombieRaider.Init();
+            Drawtomaton.Init();
+            Lancer.Init();
+            Mandroid.Init();
+            ThePunishment.Init();
+            BodySnatcher.Init();
+            HighCalibre.Init();
+            CattleRustler.Init();
+            Belladin.Init();
+            BindWarden.Init();
+            Tim.Init();
+            Voltcaster.Init();
+            FileSearcher.Init();
+            SentryConduit.Init();
+            QuillConduit.Init();
+            NanoConduit.Init();
+            SteamConduit.Init();
+            Speyeral.Init();
+            MastersBones.Init();
+            SpinyCell.Init();
+            DiceGoblin.Init();
+            SpiritWalker.Init();
+            Sibyl.Init();
+            IronMaiden.Init();
+            BoneCell.Init();
+            StimCell.Init();
+            InstallationWizard.Init();
+            PinnacleMox.Init();
+            Skelemagnus.Init();
+
+            //Make clear mox cost later
+            MobiusGolem.Init();
 
             //ACT 3 EXCLUSIVE CARDS
             Crusher.Init();
@@ -590,8 +710,25 @@ namespace NevernamedsInscryptionMod
             Orbot.Init();
             TestDummy.Init();
             BotPrinter.Init();
+            CodeThief.Init();
+            ShockTrooper.Init();
+            Rover.Init();
+            DrainDrone.Init();
+            ViridescentDroid.Init();
+            WildCell.Init();
+            Rockette.Init();
+            Enginoid.Init();
+            Lvl2FactoryConduit.Init();
+            Omegear.Init();
+            Flammaball.Init();
 
-            //GRIMORA CARDS
+            //SPORE CARDS
+            SporenergyBot.Init();
+            Sporren.Init();
+            TheSporekers.Init();
+            MasterSporlu.Init();
+
+            //GRIMORA CARDS 
 
             //STARTER DECKS
             StarterDecks.Init();
@@ -600,27 +737,6 @@ namespace NevernamedsInscryptionMod
             //RareSacrifice.Init();
 
 
-
-            Debug.Log($"BeastNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed")).Count}");
-            Debug.Log($"    Canine: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Canine)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Canine)).Count}");
-            Debug.Log($"    Avian: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Bird)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Bird)).Count}");
-            Debug.Log($"    Reptile: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Reptile)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Reptile)).Count}");
-            Debug.Log($"    Hooved: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Hooved)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Hooved)).Count}");
-            Debug.Log($"    Insect: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(Tribe.Insect)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(Tribe.Insect)).Count}");
-            Debug.Log($"    Arachnid: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Arachnid)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Arachnid)).Count}");
-            Debug.Log($"    Crustacean: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Crustacean)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Crustacean)).Count}");
-            Debug.Log($"    Rodent: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Contains(NevernamedsTribes.Rodent)).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Contains(NevernamedsTribes.Rodent)).Count}");
-            Debug.Log($"    None: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed") && x.tribes.Count == 0).Count} / {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.tribes.Count == 0 && x.temple == CardTemple.Nature).Count}");
-            Debug.Log($"TechNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed")).Count}");
-            Debug.Log($"    With Act 3 Art: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed") && x.portraitTex != null).Count}");
-            Debug.Log($"DeadNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("DeadNevernamed")).Count}");
-            Debug.Log($"WizardNevernamed Cards: {ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("WizardNevernamed")).Count}");
-            List<CardInfo> genInfos = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.name.StartsWith("Nevernamed"));
-            Debug.Log($"Nevernamed Cards: {genInfos.Count}");
-            foreach (CardInfo inf in genInfos)
-            {
-                Debug.Log(inf.name);
-            }
 
             CardManager.ModifyCardList += delegate (List<CardInfo> cards)
             {
@@ -633,11 +749,16 @@ namespace NevernamedsInscryptionMod
                     }
                 }
                 foreach (CardInfo idv in cards)
-                { 
-                    if (card.name == "SigilNevernamed MoreFish") { card.metaCategories.Add(CardMetaCategory.Rare); }
+                {
+                    if (idv.name == "SigilNevernamed MoreFish") { idv.metaCategories.Add(CardMetaCategory.Rare); }
+
+                    
                 }
-                    return cards;
+
+                return cards;
             };
+
+            StartCoroutine(Late());
         }
         public static Dictionary<string, string> arachnophobiaModifications = new Dictionary<string, string>()
         {
@@ -666,6 +787,19 @@ namespace NevernamedsInscryptionMod
             {"BeastNevernamed Tarantula", "tarantula"},
             {"BeastNevernamed Sicarius", "sicarius"},
             {"BeastNevernamed SicariusBuried", "sicariusburied"},
+            {"BeastNevernamed Neocarus", "neocarus"},
+            {"BeastNevernamed NeocarusTwo", "neocarus"},
+            {"BeastNevernamed NeocarusThree", "neocarus"},
+            {"BeastNevernamed Macracantha", "macracantha"},
+            {"BeastNevernamed MacracanthaBi", "macracantha"},
+            {"BeastNevernamed MacracanthaTri", "macracantha"},
+            {"BeastNevernamed OrbWeaver", "orbweaver"},
+            {"BeastNevernamed SeaSpider", "seaspider"},
+            {"BeastNevernamed WhiteTailed", "whitetailed"},
+            {"BeastNevernamed WanderingSpider", "wanderingspider"},
+            {"BeastNevernamed Bannana", "bannana"},
+            {"BeastNevernamed Harvestman", "harvestman"},
+            {"BeastNevernamed YellowSacSpider", "yellowsacspider"},
         };
         public static Dictionary<string, string> arachnophobiaModificationsPixel = new Dictionary<string, string>()
         {
@@ -674,6 +808,7 @@ namespace NevernamedsInscryptionMod
             {"BeastNevernamed DyingSpider", "dyingspider"},
             {"BeastNevernamed Huntsman", "huntsman"},
         };
+
         public static AssetBundle LoadBundle(string path)
         {
             using (Stream s = Assembly.GetExecutingAssembly().GetManifestResourceStream(path.Replace("\\", ".").Replace("/", ".")))
@@ -687,6 +822,108 @@ namespace NevernamedsInscryptionMod
             //SetupCustomEncounters.Init();
 
         }
+        public static IEnumerator Late()
+        {
+            yield return null;
+            List<CardInfo> BeastCards = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.temple == CardTemple.Nature);
+            List<CardInfo> TechCards = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.temple == CardTemple.Tech);
+            List<CardInfo> UndeadCards = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.temple == CardTemple.Undead);
+            List<CardInfo> MoxCards = ScriptableObjectLoader<CardInfo>.AllData.FindAll((CardInfo x) => x.temple == CardTemple.Wizard);
+
+            List<CardInfo> ModBeasts = BeastCards.FindAll((CardInfo x) => x.name.StartsWith("BeastNevernamed"));
+            List<CardInfo> ModTech = TechCards.FindAll((CardInfo x) => x.name.StartsWith("TechNevernamed"));
+            List<CardInfo> ModUndead = UndeadCards.FindAll((CardInfo x) => x.name.StartsWith("DeadNevernamed"));
+            List<CardInfo> ModWizards = MoxCards.FindAll((CardInfo x) => x.name.StartsWith("WizardNevernamed"));
+
+            List<CardInfo> CommonBeasts = BeastCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(CardMetaCategory.TraderOffer));
+            List<CardInfo> CommonModdedBeasts = ModBeasts.FindAll(x => x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(CardMetaCategory.TraderOffer));
+            List<CardInfo> RareBeasts = BeastCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareModdedBeasts = ModBeasts.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+
+            List<CardInfo> CommonWizards = MoxCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> CommonModdedWizards = ModWizards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareWizards = MoxCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareModdedWizards = ModWizards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && x.metaCategories.Contains(CardMetaCategory.Rare));
+
+            List<CardInfo> CommonUndead = UndeadCards.FindAll(x => !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> CommonModdedUndead = ModUndead.FindAll(x => !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareUndead = UndeadCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareModdedUndead = ModUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+
+            List<CardInfo> CommonTech = TechCards.FindAll(x => !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareTech = TechCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> CommonModdedTech = ModTech.FindAll(x => !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareModdedTech = ModTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Rare));
+
+            List<CardInfo> CommonTech2 = CommonTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable));
+            List<CardInfo> RareTech2 = RareTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable));
+            List<CardInfo> CommonModdedTech2 = CommonModdedTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable));
+            List<CardInfo> RareModdedTech2 = RareModdedTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable));
+
+            List<CardInfo> CommonBeasts2 = BeastCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> CommonModdedBeasts2 = ModBeasts.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && !x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareBeasts2 = BeastCards.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && x.metaCategories.Contains(CardMetaCategory.Rare));
+            List<CardInfo> RareModdedBeasts2 = ModBeasts.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable) && x.metaCategories.Contains(CardMetaCategory.Rare));
+
+            List<CardInfo> CommonTech3 = CommonTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Part3Random) || x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(Plugin.P03KayceesBastionRegion) || x.metaCategories.Contains(Plugin.P03KayceesNatureRegion) || x.metaCategories.Contains(Plugin.P03KayceesUndeadRegion) || x.metaCategories.Contains(Plugin.P03KayceesWizardRegion));
+            List<CardInfo> RareTech3 = RareTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Part3Random) || x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(Plugin.P03KayceesBastionRegion) || x.metaCategories.Contains(Plugin.P03KayceesNatureRegion) || x.metaCategories.Contains(Plugin.P03KayceesUndeadRegion) || x.metaCategories.Contains(Plugin.P03KayceesWizardRegion));
+            List<CardInfo> CommonModdedTech3 = CommonModdedTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Part3Random) || x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(Plugin.P03KayceesBastionRegion) || x.metaCategories.Contains(Plugin.P03KayceesNatureRegion) || x.metaCategories.Contains(Plugin.P03KayceesUndeadRegion) || x.metaCategories.Contains(Plugin.P03KayceesWizardRegion));
+            List<CardInfo> RareModdedTech3 = RareModdedTech.FindAll(x => x.metaCategories.Contains(CardMetaCategory.Part3Random) || x.metaCategories.Contains(CardMetaCategory.ChoiceNode) || x.metaCategories.Contains(Plugin.P03KayceesBastionRegion) || x.metaCategories.Contains(Plugin.P03KayceesNatureRegion) || x.metaCategories.Contains(Plugin.P03KayceesUndeadRegion) || x.metaCategories.Contains(Plugin.P03KayceesWizardRegion));
+
+            Debug.Log($"All Cards Total: {ModBeasts.Count + ModTech.Count + ModUndead.Count + ModWizards.Count}/{BeastCards.Count + TechCards.Count + UndeadCards.Count + MoxCards.Count}");
+
+            Debug.Log($"BeastNevernamed Cards Total: {ModBeasts.Count}/{BeastCards.Count}\n");
+            Debug.Log($"    Act 1 Total: Common({CommonModdedBeasts.Count}/{CommonBeasts.Count}) Rare({RareModdedBeasts.Count}/{RareBeasts.Count}) All({CommonModdedBeasts.Count + RareModdedBeasts.Count}/{CommonBeasts.Count + RareBeasts.Count})");
+            PrintForTribe("Canine", Tribe.Canine, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Bird", Tribe.Bird, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Reptile", Tribe.Reptile, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Hooved", Tribe.Hooved, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Insect", Tribe.Insect, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Squirrel", Tribe.Squirrel, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Arachnid", NevernamedsTribes.Arachnid, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Crustacean", NevernamedsTribes.Crustacean, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            PrintForTribe("Rodent", NevernamedsTribes.Rodent, CommonBeasts, RareBeasts, CommonModdedBeasts, RareModdedBeasts);
+            Debug.Log($"        Untribed: Common ({CommonModdedBeasts.FindAll(x => x.tribes.Count == 0).Count}/{CommonBeasts.FindAll(x => x.tribes.Count == 0).Count}) Rare ({RareModdedBeasts.FindAll(x => x.tribes.Count == 0).Count}/{RareBeasts.FindAll(x => x.tribes.Count == 0).Count}) All ({CommonModdedBeasts.FindAll(x => x.tribes.Count == 0).Count + RareModdedBeasts.FindAll(x => x.tribes.Count == 0).Count}/{CommonBeasts.FindAll(x => x.tribes.Count == 0).Count + RareBeasts.FindAll(x => x.tribes.Count == 0).Count})\n");
+            Debug.Log($"    Act 2 Total: Common({CommonModdedBeasts2.Count}/{CommonBeasts2.Count}) Rare({RareModdedBeasts2.Count}/{RareBeasts2.Count}) All({CommonModdedBeasts2.Count + RareModdedBeasts2.Count}/{CommonBeasts2.Count + RareBeasts2.Count})");
+
+            Debug.Log($"----------------------------------------------------------------");
+
+            Debug.Log($"TechNevernamed Cards Total: {ModTech.Count}/{TechCards.Count}\n");
+            Debug.Log($"    Act 2 Total: Common ({CommonModdedTech2.Count}/{CommonTech2.Count}) Rare ({RareModdedTech2.Count}/{RareTech2.Count}) All({CommonModdedTech2.Count + RareModdedTech2.Count}/{CommonTech2.Count + RareTech2.Count})");
+            Debug.Log($"    Act 3 Total: Common ({CommonModdedTech3.Count}/{CommonTech3.Count}) Rare ({RareModdedTech3.Count}/{RareTech3.Count}) All({CommonModdedTech3.Count + RareModdedTech3.Count}/{CommonTech3.Count + RareTech3.Count})");
+            Debug.Log($"----------------------------------------------------------------");
+
+            Debug.Log($"DeadNevernamed Cards Total: {ModUndead.Count}/{UndeadCards.Count}\n");
+            Debug.Log($"    Act 2 Total: Common({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}) Rare({RareModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{RareUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}) All({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count + RareModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count + RareUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count})");
+            Debug.Log($"    Grimoramod Total: Common({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}) Rare({RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}) All({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count + RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count + RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count})");
+            Debug.Log($"----------------------------------------------------------------");
+
+            Debug.Log($"WizardNevernamed Cards Total: {ModWizards.Count}/{MoxCards.Count}\n");
+            Debug.Log($"    Act 2 Total: Common({CommonModdedWizards.Count}/{CommonWizards.Count}) Rare({RareModdedWizards.Count}/{RareWizards.Count}) All({CommonModdedWizards.Count + RareModdedWizards.Count}/{CommonWizards.Count + RareWizards.Count})");
+            Debug.Log($"        Free: Common({CommonModdedWizards.FindAll(x => x.gemsCost.Count == 0).Count}/{CommonWizards.FindAll(x => x.gemsCost.Count == 0).Count}) Rare({RareModdedWizards.FindAll(x => x.gemsCost.Count == 0).Count}/{RareWizards.FindAll(x => x.gemsCost.Count == 0).Count})");
+            Debug.Log($"        Blue: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue })).Count})");
+            Debug.Log($"        Green: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Green })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Green })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Green })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Green })).Count})");
+            Debug.Log($"        Orange: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange })).Count})");
+            Debug.Log($"        Blue/Green: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue, GemType.Green })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue, GemType.Green })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue, GemType.Green })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Blue, GemType.Green })).Count})");
+            Debug.Log($"        Green/Orange: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Green })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Green })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Green })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Green })).Count})");
+            Debug.Log($"        Green/Blue: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue })).Count})");
+            Debug.Log($"        All Mox: Common({CommonModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue, GemType.Green })).Count}/{CommonWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue, GemType.Green })).Count}) Rare({RareModdedWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue, GemType.Green })).Count}/{RareWizards.FindAll(x => isJustGems(x, new List<GemType>() { GemType.Orange, GemType.Blue, GemType.Green })).Count})");
+
+
+            yield break;
+        }
+        public static void PrintForTribe(string name, Tribe tribe, List<CardInfo> commons, List<CardInfo> rares, List<CardInfo> moddedcommons, List<CardInfo> moddedrares)
+        {
+            Debug.Log($"        {name}: Common ({moddedcommons.FindAll(x => x.IsOfTribe(tribe)).Count}/{commons.FindAll(x => x.IsOfTribe(tribe)).Count}) Rare ({moddedrares.FindAll(x => x.IsOfTribe(tribe)).Count}/{rares.FindAll(x => x.IsOfTribe(tribe)).Count}) All ({moddedcommons.FindAll(x => x.IsOfTribe(tribe)).Count + moddedrares.FindAll(x => x.IsOfTribe(tribe)).Count}/{commons.FindAll(x => x.IsOfTribe(tribe)).Count + rares.FindAll(x => x.IsOfTribe(tribe)).Count})");
+        }
+        public static bool isJustGems(CardInfo inf, List<GemType> gems)
+        {
+            bool inconsistency = true;
+            if (gems.Contains(GemType.Blue) != inf.gemsCost.Contains(GemType.Blue)) { inconsistency = false; }
+            if (gems.Contains(GemType.Green) != inf.gemsCost.Contains(GemType.Green)) { inconsistency = false; }
+            if (gems.Contains(GemType.Orange) != inf.gemsCost.Contains(GemType.Orange)) { inconsistency = false; }
+            return inconsistency;
+        }
         internal static ConfigEntry<bool> arachnophobiaMode;
 
         //P03Kaycees
@@ -694,7 +931,8 @@ namespace NevernamedsInscryptionMod
         public static readonly CardMetaCategory P03KayceesBastionRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "TechRegionCards");
         public static readonly CardMetaCategory P03KayceesNatureRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "NatureRegionCards");
         public static readonly CardMetaCategory P03KayceesUndeadRegion = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "UndeadRegionCards");
-     
+        public static readonly CardMetaCategory P03KayceesNeutralRegion = GuidManager.GetEnumValue<CardMetaCategory>("zorro.inscryption.infiniscryption.p03kayceerun", "NeutralRegionCards");
+
         //Act2Endless
         public static readonly CardMetaCategory ExcludeFromAct2Endless = (CardMetaCategory)GuidManager.GetEnumValue<CardMetaCategory>("mrfantastik.inscryption.infact2", "ExcludeFromAct2Endless");
 

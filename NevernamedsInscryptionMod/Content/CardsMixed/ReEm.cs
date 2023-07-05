@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Re'em",
                 2,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The ever-moving Re'em. It attacks anything opposing it's desired destination.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { RunningStrike.ability },
                 tribes: new List<Tribe>() { Tribe.Hooved },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/reem_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/reem_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

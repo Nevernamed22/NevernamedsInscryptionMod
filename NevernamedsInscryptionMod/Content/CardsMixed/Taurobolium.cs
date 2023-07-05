@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Taurobolium",
                 1,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.Rare, },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The Taurobolium... raised from a calf for use in rituals, but sacrificing it may be more difficult than anticipated.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { SavageRitual.ability, Ability.Sacrificial },
                 tribes: new List<Tribe>() { Tribe.Hooved },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/taurobolium_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/taurobolium_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );

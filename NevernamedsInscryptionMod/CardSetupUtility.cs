@@ -37,7 +37,7 @@ namespace NevernamedsInscryptionMod
             string overrideRabbitHoleSpawn = null, string overrideAntSpawnerSpawn = null, string overrideBellistID = null, string overrideBellistBlockedDialogue = null, string overrideSquirrelShedderId = null, string overrideSkeletonCrewID = null, string overrideBeesWithinID = null,
             string twisterForm = null, string transformerForm = null, string overrideLeftClaw = null, string overrideRightClaw = null, string customDoomedLifespan = null, string customGutSpewerGuts = null, string customExplodingCorpseGuts = null, string customOrganThiefGuts = null,
             string harbingerLeaveBehind = null, string tramplerLeaveBehind = null, string flightyLeaveBehind = null, string parthenogenesisOverride = null, string sigilShedderDef = null, bool preventBones = false, bool preventCampfire = false, bool preventSigilVictim = false, bool preventSigilHost = false, bool customGiftBearerSpawnsRares = false,
-           string erraticLeaveBehind = null, bool preventPlay = false, string fatalFlankDef = null, bool allStrikesDoubled = false, string phantasmicLeaveBehind = null, bool preventCampfireHealth = false, bool preventCampfireDamage = false, string venatorForm = null)
+           string erraticLeaveBehind = null, bool preventPlay = false, string fatalFlankDef = null, bool allStrikesDoubled = false, string phantasmicLeaveBehind = null, bool preventCampfireHealth = false, bool preventCampfireDamage = false, string venatorForm = null, string bloodbornForm = null)
         {
             internalName = internalName.Replace("Nevernamed ", "");
             internalName = $"{(templeToPrefix.ContainsKey(temple) ? templeToPrefix[temple] : "Nevernamed")} {internalName}";
@@ -82,6 +82,7 @@ namespace NevernamedsInscryptionMod
             if (!string.IsNullOrEmpty(overrideBeesWithinID)) newInfo.SetExtendedProperty("CustomBeesWithinDefinition", overrideBeesWithinID);
             if (!string.IsNullOrEmpty(twisterForm)) newInfo.SetExtendedProperty("TwisterTransformation", twisterForm);
             if (!string.IsNullOrEmpty(venatorForm)) newInfo.SetExtendedProperty("VenatorTransformation", venatorForm);
+            if (!string.IsNullOrEmpty(bloodbornForm)) newInfo.SetExtendedProperty("BloodBornTransformation", bloodbornForm);
             if (!string.IsNullOrEmpty(transformerForm)) newInfo.SetExtendedProperty("CustomTransformerTransformation", transformerForm);
             if (!string.IsNullOrEmpty(overrideLeftClaw)) newInfo.SetExtendedProperty("ClawedLeftClawOverride", overrideLeftClaw);
             if (!string.IsNullOrEmpty(overrideRightClaw)) newInfo.SetExtendedProperty("ClawedRightClawOverride", overrideRightClaw);
@@ -144,35 +145,5 @@ namespace NevernamedsInscryptionMod
 
             return newInfo;
         }
-    }
-
-    [HarmonyPatch]
-    public static class AscensionCardManager
-    {
-        public static Dictionary<string, int> AscensionUnlockedCards = new Dictionary<string, int>() { };
-
-  public static void RegisterAscensionCard(CardInfo card, int unlockLevel = 0)
-        {
-            card?.metaCategories?.Add(CardMetaCategory.AscensionUnlock);
-            RegisterAscensionCard(card?.name, unlockLevel);
-        }
-
-        public static void RegisterAscensionCard(string card, int unlockLevel = 0)
-        {
-            if (!string.IsNullOrEmpty(card) && !AscensionUnlockedCards.ContainsKey(card))
-            {
-                AscensionUnlockedCards.Add(card, unlockLevel);
-            }
-        }
-
-        [HarmonyPatch(typeof(AscensionUnlockSchedule), nameof(AscensionUnlockSchedule.CardIsUnlocked))]
-        [HarmonyPostfix]
-        public static void CardIsUnlocked(ref bool __result, string name)
-        {
-            if (!__result && AscensionUnlockedCards.ContainsKey(name) && AscensionUnlockedCards[name] <= AscensionSaveData.Data.challengeLevel)
-            {
-                __result = true;
-            }
-        }
-    }
+    }   
 }

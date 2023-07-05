@@ -14,22 +14,24 @@ namespace NevernamedsInscryptionMod
         public static void Init()
         {
             // Add the card
-            CardSetupUtility.NewCard("Nevernamed TestGhost",
+            CardInfo inf = CardSetupUtility.NewCard("Nevernamed TestGhost",
                 "Test Ghost",
                 0,
-                1,
-                new List<CardMetaCategory> { },
+                6,
+                new List<CardMetaCategory> { CardMetaCategory.GBCPlayable },
                 CardTemple.Undead,
                 description: "",
                 bloodCost: 0,
                 bonesCost: 0,//7,
                 energyCost: 0,
-                tribes: new List<Tribe>() { },
+                gemsCost: new List<GemType>() { },
+                tribes: new List<Tribe>() {  },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/testsquare.png"),
-                abilities: new List<Ability>() { /*HaunterCustom.ability, Immaterial.ability*/ Ability.TailOnHit, Traitor.ability },
+                abilities: new List<Ability>() { /*HaunterCustom.ability, Immaterial.ability*/ Traitor.ability, Ability.BoneDigger, Ability.BoneDigger, Ability.ActivatedDrawSkeleton  },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/testghost_pixel.png"),
                   appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
+            inf.mods.Add(new CardModificationInfo() { gemify = true });
         }
     }
 }

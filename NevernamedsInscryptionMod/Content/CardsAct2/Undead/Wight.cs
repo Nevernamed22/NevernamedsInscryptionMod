@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Wight",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
                 CardTemple.Undead,
                 description: "",
                 bloodCost: 0,

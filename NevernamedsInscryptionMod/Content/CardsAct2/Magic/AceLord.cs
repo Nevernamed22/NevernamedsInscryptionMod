@@ -13,7 +13,6 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            // Add the card
             CardSetupUtility.NewCard("Nevernamed AceLord",
                 "Ace Lord",
                 0,
@@ -21,11 +20,7 @@ namespace NevernamedsInscryptionMod
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
                 CardTemple.Wizard,
                 description: "",
-                bloodCost: 0,
-                bonesCost: 0,
-                energyCost: 0,
                 gemsCost: new List<GemType>() { GemType.Green, GemType.Orange },
-                tribes: new List<Tribe>() { },
                 variableStat: SpecialStatIcon.CardsInHand,
                 specialAbilities: new List<SpecialTriggeredAbility>() { SpecialTriggeredAbility.CardsInHand },
                 abilities: new List<Ability>() {  },

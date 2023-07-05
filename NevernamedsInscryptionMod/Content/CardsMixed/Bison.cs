@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Bison",
                 1,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The trampling Bison. It destroys anything in it's path, and becomes more enraged as it becomes more soaked with blood...",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Trampler.ability },
                 tribes: new List<Tribe>() { Tribe.Hooved },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/bison_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bison_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> {  },
                 defaultEvolutionName: "Trison"
                 );

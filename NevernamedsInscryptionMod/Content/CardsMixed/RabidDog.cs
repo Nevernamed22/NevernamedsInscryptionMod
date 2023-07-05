@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Rabid Dog",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The pitiful rabid dog... it's maddened fury only grows when it is provoked.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { Enraged.ability },
                 tribes: new List<Tribe>() { Tribe.Canine },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/rabiddog_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/rabiddog_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

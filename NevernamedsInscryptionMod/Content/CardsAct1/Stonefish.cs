@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 "Stonefish",
                 1,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The stonefish, it's venom is debilitatingly painful when delivered through it's wicked spines.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Sharp, Ability.Deathtouch },
                 tribes: new List<Tribe>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/stonefish_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/stonefish_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

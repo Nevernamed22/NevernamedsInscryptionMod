@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Parrot",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer,  CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable},
                 CardTemple.Nature,
                 description: "The playful parrot. It can copy the power of other creatures using it's talent for mimicry.",
                 bloodCost: 1,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Mockery.ability, Ability.Flying },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/parrot_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/parrot_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
 
                 );

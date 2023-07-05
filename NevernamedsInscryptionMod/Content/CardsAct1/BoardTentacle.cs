@@ -6,6 +6,8 @@ using System.IO;
 using System.Text;
 using UnityEngine;
 using NevernamedsSigils;
+using System.Reflection;
+using InscryptionAPI.Card;
 
 namespace NevernamedsInscryptionMod
 {
@@ -35,7 +37,8 @@ namespace NevernamedsInscryptionMod
                 specialAbilities: new List<SpecialTriggeredAbility>() { DirectorOfTheBoard.ability },
                 variableStat: DirectorOfTheBoard.specialStatIcon,
                 titleGraphic: title
-                );
+                ).SetExtendedProperty("ValidSquidTentacleAct1", "true");
         }
+        
     }
 }

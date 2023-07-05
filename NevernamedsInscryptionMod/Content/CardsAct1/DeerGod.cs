@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Deer Lord",
                 2,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The noble deer lord, messiah of all that walks upon cloven hooves.",
                 bloodCost: 3,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { DeusHoof.ability, Ability.Strafe },
                 tribes: new List<Tribe>() { Tribe.Hooved },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/deerlord_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/deerlord_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );

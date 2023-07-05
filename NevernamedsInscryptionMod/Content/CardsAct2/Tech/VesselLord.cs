@@ -25,7 +25,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
-                abilities: new List<Ability>() { Act2VesselPrinter.ability, },
+                abilities: new List<Ability>() { Ability.DrawVesselOnHit, },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/vessellord_pixel.png")
                 );
         }

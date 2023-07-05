@@ -17,6 +17,8 @@ namespace NevernamedsInscryptionMod
             {
                 CardMetaCategory.ChoiceNode,
                 CardMetaCategory.TraderOffer,
+                CardMetaCategory.GBCPack,
+                CardMetaCategory.GBCPlayable
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance> { };
 
@@ -43,6 +45,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.ExplodeOnDeath },
                 tribes: new List<Tribe>() { Tribe.Insect },
                 emissionTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/explodingant_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/explodingant_pixel.png"),
                 variableStat : SpecialStatIcon.Ants,
                 traits : new List<Trait>() { Trait.Ant }
                 );

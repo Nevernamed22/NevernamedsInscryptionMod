@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "King Cobra",
                 3,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "Far deadlier than it's common counterpart, the King Cobra inspires allegiance in nearby beasts...",
                 bloodCost: 3,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Commander.ability },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/kingcobra_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/kingcobra_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
 
                 );

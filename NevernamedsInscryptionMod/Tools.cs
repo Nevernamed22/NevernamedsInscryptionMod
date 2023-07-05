@@ -9,11 +9,12 @@ using BepInEx.Logging;
 using System.Collections;
 using Pixelplacement;
 using NevernamedsSigils;
+using InscryptionAPI.Resource;
 
 namespace NevernamedsInscryptionMod
 {
     public static class Tools
-    {
+    {     
         public static CardModificationInfo CondenseMods(this PlayableCard card, List<Ability> excludedabilities = null)
         {
             CardModificationInfo mod = new CardModificationInfo();
@@ -42,13 +43,13 @@ namespace NevernamedsInscryptionMod
         {
             if (!reverse)
             {
-            Vector3 startval = obj.transform.position;
-            obj.transform.position += new Vector3(0, 5, 0);
-            Tween.Position(obj.transform, startval, time, 0f, Tween.EaseBounce);
+                Vector3 startval = obj.transform.position;
+                obj.transform.position += new Vector3(0, 5, 0);
+                Tween.Position(obj.transform, startval, time, 0f, Tween.EaseBounce);
             }
             else
             {
-                Vector3 targetval = obj.transform.position + new Vector3(0,5,0);
+                Vector3 targetval = obj.transform.position + new Vector3(0, 5, 0);
                 Tween.Position(obj.transform, targetval, time, 0f, Tween.EaseIn);
             }
         }
@@ -365,7 +366,7 @@ namespace NevernamedsInscryptionMod
             return strongest;
         }
         public static Texture2D LoadTex(string path)
-        {            
+        {
             byte[] imgBytes = ExtractEmbeddedResource(path);
             Texture2D tex = new Texture2D(2, 2);
             tex.LoadImage(imgBytes);

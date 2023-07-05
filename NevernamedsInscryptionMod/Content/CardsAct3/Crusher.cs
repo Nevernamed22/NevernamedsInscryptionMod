@@ -13,7 +13,6 @@ namespace NevernamedsInscryptionMod
     {
         public static void Init()
         {
-            // Add the card
             CardSetupUtility.NewCard("Nevernamed Crusher",
                 "Crusher",
                 1,
@@ -21,10 +20,7 @@ namespace NevernamedsInscryptionMod
                 new List<CardMetaCategory> {  CardMetaCategory.Part3Random, Plugin.P03KayceesUndeadRegion, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
-                bloodCost: 0,
-                bonesCost: 0,
                 energyCost: 6,
-                tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.CorpseEater },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/crusher.png")
                 );

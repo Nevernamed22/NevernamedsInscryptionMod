@@ -20,10 +20,7 @@ namespace NevernamedsInscryptionMod
                 new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Tech,
                 description: "",
-                bloodCost: 0,
-                bonesCost: 0,
                 energyCost: 5,
-                tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.Strafe, Allure.ability },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/magnetick.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/magnetick_pixel.png")

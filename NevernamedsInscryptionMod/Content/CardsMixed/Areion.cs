@@ -19,8 +19,8 @@ namespace NevernamedsInscryptionMod
            CardSetupUtility.NewCard("Nevernamed Areion",
                 "Areion",
                 3,
-                1,
-                new List<CardMetaCategory> { CardMetaCategory.Rare, },
+                2,
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The eternally running Areion. It loyally moves wherever it's owner demands it in the blink of an eye.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { EternalGallop.ability },
                 tribes: new List<Tribe>() { Tribe.Hooved },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/areion2_emission.png"),
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/areion_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );

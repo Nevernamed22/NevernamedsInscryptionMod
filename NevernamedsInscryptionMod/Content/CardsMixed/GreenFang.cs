@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Green Fang",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "A peculiar reptile. It controls it's firey breath with artistic precision.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Sniper, Ignition.ability },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/greenfang_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/greenfang_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );

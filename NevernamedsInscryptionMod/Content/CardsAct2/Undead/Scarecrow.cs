@@ -25,6 +25,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 6,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
+                specialAbilities: new List<SpecialTriggeredAbility>() { WizardOfOz.ability },
                 abilities: new List<Ability>() { Fearsome.ability },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/scarecrow_pixel.png")
                 );
