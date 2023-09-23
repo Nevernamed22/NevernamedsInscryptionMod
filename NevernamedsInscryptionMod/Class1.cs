@@ -383,6 +383,7 @@ namespace NevernamedsInscryptionMod
             Macrobacterium.Init();
             GiftHorse.Init();
             Kiwi.Init();
+            Caracal.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -435,6 +436,8 @@ namespace NevernamedsInscryptionMod
             Kusimanse.Init();
             YetiCrab.Init();
             Hagfish.Init();
+            Bobcat.Init();
+            TurtleFrog.Init();
 
             //ACT 1 TALKING CARDS
 
@@ -682,6 +685,7 @@ namespace NevernamedsInscryptionMod
             InstallationWizard.Init();
             PinnacleMox.Init();
             Skelemagnus.Init();
+            Ribcage.Init();
 
             //Make clear mox cost later
             MobiusGolem.Init();

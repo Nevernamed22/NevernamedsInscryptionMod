@@ -234,6 +234,8 @@
     <None Remove="Resources\Cards\boardtentacle.png" />
     <None Remove="Resources\Cards\bobbitworm.png" />
     <None Remove="Resources\Cards\bobbitworm_emission.png" />
+    <None Remove="Resources\Cards\bobcat.png" />
+    <None Remove="Resources\Cards\bobcat_emission.png" />
     <None Remove="Resources\Cards\bolotnik.png" />
     <None Remove="Resources\Cards\bolotnik_emission.png" />
     <None Remove="Resources\Cards\bombardierbeetle.png" />
@@ -275,6 +277,8 @@
     <None Remove="Resources\Cards\canopichawk_emission.png" />
     <None Remove="Resources\Cards\capybara.png" />
     <None Remove="Resources\Cards\capybara_emission.png" />
+    <None Remove="Resources\Cards\caracal.png" />
+    <None Remove="Resources\Cards\caracal_emission.png" />
     <None Remove="Resources\Cards\carrionfly.png" />
     <None Remove="Resources\Cards\carrionfly_emission.png" />
     <None Remove="Resources\Cards\cellarspider.png" />
@@ -861,6 +865,8 @@
     <None Remove="Resources\Cards\tummybug_emission.png" />
     <None Remove="Resources\Cards\turtledove.png" />
     <None Remove="Resources\Cards\turtledove_emission.png" />
+    <None Remove="Resources\Cards\turtlefrog.png" />
+    <None Remove="Resources\Cards\turtlefrog_emission.png" />
     <None Remove="Resources\Cards\urchin.png" />
     <None Remove="Resources\Cards\urchin_emission.png" />
     <None Remove="Resources\Cards\vampirebat.png" />
@@ -1677,6 +1683,8 @@
     <EmbeddedResource Include="Resources\Cards\bluebottle_emission.png" />
     <EmbeddedResource Include="Resources\Cards\bluewhale.png" />
     <EmbeddedResource Include="Resources\Cards\bluewhale_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\bobcat.png" />
+    <EmbeddedResource Include="Resources\Cards\bobcat_emission.png" />
     <EmbeddedResource Include="Resources\Cards\bolotnik.png" />
     <EmbeddedResource Include="Resources\Cards\bolotnik_emission.png" />
     <EmbeddedResource Include="Resources\Cards\boneclutter.png" />
@@ -1698,6 +1706,8 @@
     <EmbeddedResource Include="Resources\Cards\camazotz_emission.png" />
     <EmbeddedResource Include="Resources\Cards\candiru.png" />
     <EmbeddedResource Include="Resources\Cards\candiru_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\caracal.png" />
+    <EmbeddedResource Include="Resources\Cards\caracal_emission.png" />
     <EmbeddedResource Include="Resources\Cards\chameleon.png" />
     <EmbeddedResource Include="Resources\Cards\chameleon_emission.png" />
     <EmbeddedResource Include="Resources\Cards\changeling.png" />
@@ -2134,6 +2144,8 @@
     <EmbeddedResource Include="Resources\Cards\tummybug_emission.png" />
     <EmbeddedResource Include="Resources\Cards\turtledove.png" />
     <EmbeddedResource Include="Resources\Cards\turtledove_emission.png" />
+    <EmbeddedResource Include="Resources\Cards\turtlefrog.png" />
+    <EmbeddedResource Include="Resources\Cards\turtlefrog_emission.png" />
     <EmbeddedResource Include="Resources\Cards\vampirebat.png" />
     <EmbeddedResource Include="Resources\Cards\vampirebat_emission.png" />
     <EmbeddedResource Include="Resources\Cards\vodyanoy.png" />

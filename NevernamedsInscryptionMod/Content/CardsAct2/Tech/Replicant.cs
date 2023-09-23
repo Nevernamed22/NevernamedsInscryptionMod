@@ -24,6 +24,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.DrawCopy },
                 specialAbilities: new List<SpecialTriggeredAbility>() { SpecialTriggeredAbility.Ant },
                 variableStat: SpecialStatIcon.Ants,
+                traits: new List<Trait>() { Trait.Ant },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/replicant_pixel.png")
                 );
         }

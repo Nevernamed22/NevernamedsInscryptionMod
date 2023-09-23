@@ -15,14 +15,14 @@ namespace NevernamedsInscryptionMod
         {
             CardSetupUtility.NewCard("Nevernamed Ribcage",
                 "Ribcage",
-               0,
-                2,
+              1,
+                4,
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Undead,
                 description: "",
-                bonesCost: 1,
-                abilities: new List<Ability>() { UnderPressure.ability },
-                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/boil_pixel.png")
+                bonesCost: 7,
+                abilities: new List<Ability>() { Snare.ability, Ability.WhackAMole },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/ribcage_pixel.png")
                 );
         }
     }
