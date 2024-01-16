@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Basilisk",
                 2,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack  },
                 CardTemple.Nature,
                 description: "The grim basilisk. Life withers and dies under it's mere gaze.",
                 bloodCost: 3,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/basilisk.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() {Tribe.Reptile, Tribe.Bird },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/basilisk_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/basilisk_emission.png")
                 );
         }

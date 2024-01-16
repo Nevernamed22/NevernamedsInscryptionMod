@@ -21,7 +21,7 @@ namespace NevernamedsInscryptionMod
                 "Dingo",
                 2,
                 0,
-                new List<CardMetaCategory>{CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer,},
+                new List<CardMetaCategory>{CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack},
                 CardTemple.Nature,
                 description: "The wild dingo, scavenging nuisance of the land down under.",
                 bloodCost: 2,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/dingo_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dingo_pixel.png"),
                 tribes: new List<Tribe>() { Tribe.Canine },
                 specialAbilities: new List<SpecialTriggeredAbility>() { Boned.ability },
                 variableStat: Boned.specialStatIcon

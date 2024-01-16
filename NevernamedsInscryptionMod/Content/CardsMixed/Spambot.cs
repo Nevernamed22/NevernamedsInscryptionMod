@@ -18,15 +18,17 @@ namespace NevernamedsInscryptionMod
                 "Spambot",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, CardMetaCategory.Part3Random, Plugin.P03KayceesNeutralRegion },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
                 bonesCost: 0,
-                energyCost: 5,
+                energyCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Trio.ability },
-                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/spambot_pixel.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/spambot.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/spambot_pixel.png"),
+                decals: new List<Texture>() {  }
                 );
         }
     }

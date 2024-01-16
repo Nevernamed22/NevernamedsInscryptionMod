@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Yara-Ma-Yha-Who",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The boated arboreal Yara-Ma-Yha-Who. Practically ballooned with blood from it's gluttonous feeding...",
                 bloodCost: 1,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { ExceptionalSacrifice.ability, Visceral.ability },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/yaramayawho_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/yaramayhawho_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );

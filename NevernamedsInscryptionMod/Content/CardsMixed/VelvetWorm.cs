@@ -17,8 +17,8 @@ namespace NevernamedsInscryptionMod
             {
                 CardMetaCategory.ChoiceNode,
                 CardMetaCategory.TraderOffer,
-                CardMetaCategory.GBCPack,
-                CardMetaCategory.GBCPlayable,
+               // CardMetaCategory.GBCPack,
+               // CardMetaCategory.GBCPlayable,
             };
 
 

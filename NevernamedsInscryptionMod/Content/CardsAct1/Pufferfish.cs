@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Pufferfish",
                 1,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "A deadly pufferfish. Should you strike one of it's spines as you wade... you are in grave peril.",
                 bloodCost: 1,
@@ -30,6 +30,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() {  },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/pufferfish_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/pufferfish_emission.png")
                 );
         }

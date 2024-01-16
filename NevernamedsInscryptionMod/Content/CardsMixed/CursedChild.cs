@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
             // metaCategories determine the card pools
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
-                CardMetaCategory.Rare
+                CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack
             };
 
             // Load the image into a Texture2D object
@@ -34,6 +34,7 @@ namespace NevernamedsInscryptionMod
                 bonesCost: 0,
                 defaultTex: tex,
                 abilities: new List<Ability>() { },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/cursedchild_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/cursedchild_emission.png"),
                 tribes: new List<Tribe>() { },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },

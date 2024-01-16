@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Crab Spider",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The hardy crab spider, it clings relentlessly to any source of food or warmth.",
                 bloodCost: 1,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.MoveBeside },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/crabspider_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/crabspider_emission.png"),
 
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }

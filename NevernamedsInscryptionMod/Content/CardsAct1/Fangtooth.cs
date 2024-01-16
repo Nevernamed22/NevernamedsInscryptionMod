@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Fangtooth",
                 2,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The thorny fangtooth. It lurks deep beneath the surface of the water, waiting...",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { SubaquaticSpines.ability },
                 tribes: new List<Tribe>() {  },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/fangtooth_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/fangtooth_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

@@ -129,11 +129,19 @@ namespace NevernamedsInscryptionMod
 
             //Handle Decals
             List<Texture> finalDecals = new List<Texture>();
-            if (decals != null) finalDecals = decals;
+            if (temple == CardTemple.Tech) { finalDecals.AddRange(new List<Texture>() { Plugin.blankDecal, Plugin.blankDecal2 }); }
+            if (decals != null) finalDecals.AddRange(decals);
             if (!preventSignature)
             {
-                if (appearanceBehaviour != null && appearanceBehaviour.Contains(CardAppearanceBehaviour.Appearance.RareCardBackground)) finalDecals.Add(Plugin.raresignaturetex);
-                else finalDecals.Add(Plugin.signaturetex);
+                if (temple == CardTemple.Nature)
+                {
+                    if (appearanceBehaviour != null && appearanceBehaviour.Contains(CardAppearanceBehaviour.Appearance.RareCardBackground)) finalDecals.Add(Plugin.raresignaturetex);
+                    else finalDecals.Add(Plugin.signaturetex);
+                }
+                else if (temple == CardTemple.Tech)
+                {
+                    finalDecals.Add(Plugin.techsignature);
+                }
             }
             newInfo.decals = finalDecals;
 
@@ -145,5 +153,5 @@ namespace NevernamedsInscryptionMod
 
             return newInfo;
         }
-    }   
+    }
 }

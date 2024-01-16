@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 2,
                 new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
                 CardTemple.Nature,
-                description: "The mongoose. Already particularly nasty, it is animated by extreme fury at the right of it's mortal enemies...",
+                description: "The mongoose. Already particularly nasty, it is animated by extreme fury at the sight of it's mortal enemies...",
                 bloodCost: 2,
                 bonesCost: 0,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/mongoose.png"),

@@ -24,7 +24,7 @@ namespace NevernamedsInscryptionMod
                 "Viscera Tentacle",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "What on earth... who slipped this into my cards?",
                 bloodCost: 1,
@@ -32,12 +32,13 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { },
                 tribes: new List<Tribe>() { },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/visceratentacle_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/visceratentacle_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { },
                 specialAbilities: new List<SpecialTriggeredAbility>() { BloodAndBone.ability },
                 variableStat: BloodAndBone.specialStatIcon,
                 titleGraphic: title
-                ).SetExtendedProperty("ValidSquidTentacleAct1", "true");
+                ).SetExtendedProperty("ValidSquidTentacleAct1", "true").SetExtendedProperty("ValidSquidTentacleAct2", "true");
 
          /*List<string> squids =   SubmergeSquid.SQUIDS.ToList();
             squids.Add("Nevernamed VisceraTentacle");

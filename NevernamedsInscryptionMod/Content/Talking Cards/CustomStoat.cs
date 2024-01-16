@@ -62,7 +62,7 @@ namespace NevernamedsInscryptionMod
             //Adjusts the card's voice
             face.voiceSoundId = "female1_voice"; //Other viable voices are 'kobold_voice' and 'cat_voice'. Most talking cards just use female1_voice, however, and change the pitch.
             face.voiceSoundPitch = 1; //The pitch of the card's voice. Increase the number to make the voice higher, decrease it to make the voice deeper.
-            face.eyes.blinkRate = 1.5f; //Controls how often the card blinks. Higher number means more blinking.
+            face.eyes.blinkRate = 3f; //Controls how often the card blinks. Higher number means more blinking.
 
             int offscreen = LayerMask.NameToLayer("CardOffscreen");
             foreach (Transform t in Face.GetComponentsInChildren<Transform>()) { t.gameObject.layer = offscreen; }

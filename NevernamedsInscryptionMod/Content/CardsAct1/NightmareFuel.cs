@@ -25,6 +25,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 0,
                 bonesCost: 0,
                 defaultTex: tex,
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/nightmarefuel_pixel.png"),
                 abilities: new List<Ability>() { },
                 tribes: new List<Tribe>() {  },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }

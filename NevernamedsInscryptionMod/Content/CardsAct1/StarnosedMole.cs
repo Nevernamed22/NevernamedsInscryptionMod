@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Star-Nosed Mole",
                 2,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The... disquieting star-nosed mole... it slashes blindly at whatever wounds it's sensitive feelers.",
                 bloodCost: 2,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { Ability.WhackAMole, ReturnStrike.ability },
                 tribes: new List<Tribe>() { },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/starnosedmole_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/starnosedmole_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Scylla",
                 4,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The omniheaded Scylla... each of her heads hunts a different prey.",
                 bloodCost: 4,
@@ -30,6 +30,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/scylla_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/scylla_emission.png")
                 );
         }

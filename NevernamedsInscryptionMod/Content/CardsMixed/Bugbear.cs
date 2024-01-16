@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
             // metaCategories determine the card pools
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
-                CardMetaCategory.Rare,
+                CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>
             {
@@ -42,6 +42,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() { Fearsome.ability },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/bugbear_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bugbear_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 tribes : new List<Tribe>() { Tribe.Insect }
                 );

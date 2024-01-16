@@ -17,11 +17,11 @@ namespace NevernamedsInscryptionMod
             // metaCategories determine the card pools
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
-                CardMetaCategory.Rare,
+                CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>
             {
-                CardAppearanceBehaviour.Appearance.RareCardBackground,
+                CardAppearanceBehaviour.Appearance.RareCardBackground, CustomAppearances.PixelRepulsiveDecal
             };
 
 
@@ -44,8 +44,9 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { },
                 
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/impossibeast_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/impossibeast_pixel.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
-                tribes: new List<Tribe>() { },
+                tribes: new List<Tribe>() {  },
                 traits: new List<Trait>() {  },
                 defaultEvolutionName: "Impractabeast"
                 );

@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
                 "Bakunawa",
                 4,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The lengthy Bakunawa, terror of the sea and skies.",
                 bloodCost: 2,
@@ -25,6 +25,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/bakunawa.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bakunawa_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/bakunawa_emission.png")
                 );
         }

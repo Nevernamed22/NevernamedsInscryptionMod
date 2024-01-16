@@ -25,7 +25,10 @@ namespace NevernamedsInscryptionMod
         private const string PluginName = "Nevernamed's Deck";
         private const string PluginVersion = "1.3.0.0";
         public static Texture2D signaturetex;
+        public static Texture2D techsignature;
         public static Texture2D raresignaturetex;
+        public static Texture2D blankDecal;
+        public static Texture2D blankDecal2;
 
 
         public static AssetBundle bundle;
@@ -38,7 +41,10 @@ namespace NevernamedsInscryptionMod
             harmony.PatchAll();
 
             signaturetex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/signature.png");
+            techsignature = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/techsignature.png");
             raresignaturetex = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/signaturerare.png");
+            blankDecal = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/blankdecaltex.png");
+            blankDecal2 = Tools.LoadTex("NevernamedsInscryptionMod/Resources/Other/blankdecaltex.png");
 
             //Talking Card Faces
 
@@ -50,11 +56,11 @@ namespace NevernamedsInscryptionMod
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.Loot).Info.canStack = true;
 
             //Give static cards act 2 art
-            CardInfo card = CardManager.BaseGameCards.CardByName("!STATIC!GLITCH");
-            card.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/staticpixel.png"));
+            CardManager.BaseGameCards.CardByName("!STATIC!GLITCH").SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/staticpixel.png"));
+            CardManager.BaseGameCards.CardByName("PackRat").SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/packrat_pixel.png"));
+            CardManager.BaseGameCards.CardByName("Boulder").SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/boulder_pixel.png"));
 
-            CardInfo packrat = CardManager.BaseGameCards.CardByName("PackRat");
-            packrat.SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/packrat_pixel.png"));
+
 
             CardManager.BaseGameCards.CardByName("BatteryBot").SetExtendedProperty("GBCMycologistFusedVersion", "TechNevernamed SporenergyBot");
             CardManager.BaseGameCards.CardByName("Family").SetExtendedProperty("GBCMycologistFusedVersion", "DeadNevernamed TheSporekers");
@@ -686,6 +692,8 @@ namespace NevernamedsInscryptionMod
             PinnacleMox.Init();
             Skelemagnus.Init();
             Ribcage.Init();
+            TempleTrap.Init();
+            Vitrioleuse.Init();
 
             //Make clear mox cost later
             MobiusGolem.Init();
@@ -811,6 +819,11 @@ namespace NevernamedsInscryptionMod
             {"BeastNevernamed CrayfishBi", "crayfish"},
             {"BeastNevernamed DyingSpider", "dyingspider"},
             {"BeastNevernamed Huntsman", "huntsman"},
+            {"BeastNevernamed Bugbear", "bugbear"},
+            {"BeastNevernamed Kokyangwuti", "kokyangwuti"},
+            {"BeastNevernamed Emmet", "emmet"},
+            {"BeastNevernamed CrabSpider", "crabspider"},
+            {"BeastNevernamed LengSpider", "lengspider"},
         };
 
         public static AssetBundle LoadBundle(string path)
@@ -823,8 +836,8 @@ namespace NevernamedsInscryptionMod
         private void Start()
         {
             //Encounters
-            //SetupCustomEncounters.Init();
-
+            MayflyEncounter.Init();
+            ThickLizardEncounter.Init();
         }
         public static IEnumerator Late()
         {

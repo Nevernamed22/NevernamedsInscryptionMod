@@ -24,6 +24,7 @@ namespace NevernamedsInscryptionMod
                 bloodCost: 0,
                 bonesCost: 0,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/springytail.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/springytail_pixel.png"),
                 abilities: new List<Ability>() { Ability.WhackAMole, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
@@ -36,7 +37,7 @@ namespace NevernamedsInscryptionMod
                 "Thick Lizard",
                 1,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "A remarkably hefty reptile. It's tail writhes with exceptional vigour.",
                 bloodCost: 2,
@@ -45,6 +46,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.TailOnHit, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thicklizard_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/thicklizard_pixel.png"),
                 defaultTailCard: "BeastNevernamed SpringyTail",
                 tailLostTexture: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/thicklizard_tailless.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }

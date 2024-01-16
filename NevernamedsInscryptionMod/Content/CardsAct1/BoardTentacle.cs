@@ -24,7 +24,7 @@ namespace NevernamedsInscryptionMod
                 "Board Tentacle",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "Another one emerges...",
                 bloodCost: 2,
@@ -35,9 +35,10 @@ namespace NevernamedsInscryptionMod
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground },
                 specialAbilities: new List<SpecialTriggeredAbility>() { DirectorOfTheBoard.ability },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/boardtentacle_pixel.png"),
                 variableStat: DirectorOfTheBoard.specialStatIcon,
                 titleGraphic: title
-                ).SetExtendedProperty("ValidSquidTentacleAct1", "true");
+                ).SetExtendedProperty("ValidSquidTentacleAct1", "true").SetExtendedProperty("ValidSquidTentacleAct2", "true");
         }
         
     }

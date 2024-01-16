@@ -28,7 +28,6 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Revolve.ability },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/lazysusan.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/lazysusan_pixel.png")
-
                 );
         }
     }

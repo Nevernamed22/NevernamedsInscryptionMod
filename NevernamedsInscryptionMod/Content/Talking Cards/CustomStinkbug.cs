@@ -38,9 +38,9 @@ namespace NevernamedsInscryptionMod
                    // eyesClosedEmission = Tools.ConvertTexToSprite(Tools.LoadTex("NevernamedsInscryptionMod/Resources/TalkingCards/Act1/Stoat/pallasnoctua_eyesblink_emission.png"), new Vector2(0.5f, 0f)),
                     mouthOpen = Tools.ConvertTexToSprite(Tools.LoadTex("NevernamedsInscryptionMod/Resources/TalkingCards/Act1/Stinkbug/stinkbug_mouthopen.png"), new Vector2(0.5f, 0f)),
                 }};
-            face.voiceSoundId = "female1_voice"; //Others are kobold_voice , cat_voice, crushBlip5
-            face.voiceSoundPitch = 1.2f;
-            face.eyes.blinkRate = 2f;
+            face.voiceSoundId = "grimora_voice"; //Others are kobold_voice , cat_voice, crushBlip5, grimora_voice, barkeep_voice
+            face.voiceSoundPitch = 1f;
+            face.eyes.blinkRate = 3f;
 
             int offscreen = LayerMask.NameToLayer("CardOffscreen");
             foreach (Transform t in Face.GetComponentsInChildren<Transform>())

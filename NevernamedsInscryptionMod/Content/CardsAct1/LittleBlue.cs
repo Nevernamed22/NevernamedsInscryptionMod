@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Little Blue",
                 1,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The little blue penguin. Though small, it has the hunting prowess of a wolf... for fish.",
                 bloodCost: 1,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: tex,
                 abilities: new List<Ability>() {  Diver.ability },
                 tribes: new List<Tribe>() { Tribe.Bird },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/littleblue_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/littleblue_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

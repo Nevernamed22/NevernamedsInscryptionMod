@@ -22,16 +22,16 @@ namespace NevernamedsInscryptionMod
                 CardTemple.Undead,
                 description: "",
                 bloodCost: 0,
-                bonesCost: 0,//7,
+                bonesCost: 7,//7,
                 energyCost: 0,
                 gemsCost: new List<GemType>() { },
                 tribes: new List<Tribe>() {  },
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/testsquare.png"),
-                abilities: new List<Ability>() { /*HaunterCustom.ability, Immaterial.ability*/ Traitor.ability, Ability.BoneDigger, Ability.BoneDigger, Ability.ActivatedDrawSkeleton  },
+                abilities: new List<Ability>() {  Rememberance.ability },
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/testghost_pixel.png"),
                   appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
-            inf.mods.Add(new CardModificationInfo() { gemify = true });
+            //inf.mods.Add(new CardModificationInfo() { gemify = true });
         }
     }
 }

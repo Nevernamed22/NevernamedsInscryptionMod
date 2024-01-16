@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
             // metaCategories determine the card pools
             List<CardMetaCategory> metaCategories = new List<CardMetaCategory>
             {
-                CardMetaCategory.Rare,
+                CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack
             };
             List<CardAppearanceBehaviour.Appearance> appearanceBehaviour = new List<CardAppearanceBehaviour.Appearance>
             {
@@ -39,6 +39,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: appearanceBehaviour,
                 defaultTex: tex,
                 abilities: new List<Ability>() { },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/emmet_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/emmet_emission.png"),
                 tribes: new List<Tribe>() {Tribe.Insect },
                 variableStat: AntPlusTwo.specialStatIcon,

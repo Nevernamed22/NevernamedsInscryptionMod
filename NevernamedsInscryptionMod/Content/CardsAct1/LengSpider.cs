@@ -21,7 +21,7 @@ namespace NevernamedsInscryptionMod
                 "Leng Spider",
                 2,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "The vicious otherworldly spider of leng. It salivates with venom for it's next feast...",
                 bloodCost: 2,
@@ -31,6 +31,7 @@ namespace NevernamedsInscryptionMod
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { NevernamedsTribes.Arachnid },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/lengspider_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/lengspider_emission.png")
                 );
         }
