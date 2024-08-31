@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Ability.Flying, Ability.Reach },
                 tribes: new List<Tribe>() { Tribe.Bird },
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/baldeagle_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/baldeagle_pixel.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );
         }

@@ -17,11 +17,12 @@ namespace NevernamedsInscryptionMod
                 "Stimulant Conduit",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.ChoiceNode, Plugin.P03KayceesBastionRegion },
                 CardTemple.Tech,
                 description: "",
-                energyCost: 2,
+                energyCost: 3,
                 abilities: new List<Ability>() { StimConduit.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/stimulantconduit.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/stimulantconduit_pixel.png")
                 );
         }

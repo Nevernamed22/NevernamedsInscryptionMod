@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Bellbot",
                 0,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, CardMetaCategory.ChoiceNode, Plugin.P03KayceesNeutralRegion },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -28,6 +28,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() {  },
                 specialAbilities: new List<SpecialTriggeredAbility>() { SpecialTriggeredAbility.BellProximity},
                 variableStat: SpecialStatIcon.Bell,
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/bellbot.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bellbot_pixel.png")
                 );
         }

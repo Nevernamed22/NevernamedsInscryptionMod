@@ -17,11 +17,13 @@ namespace NevernamedsInscryptionMod
                 "Boil",
                0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable},
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "A festering little blotch.",
                 bonesCost: 1,
                 abilities: new List<Ability>() { UnderPressure.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/boil.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/boil_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/boil_pixel.png")
                 );
         }

@@ -17,11 +17,12 @@ namespace NevernamedsInscryptionMod
                 "Clanklion",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.ChoiceNode, Plugin.P03KayceesNatureRegion },
                 CardTemple.Tech,
                 description: "",
                 energyCost: 4,
                 abilities: new List<Ability>() { Allure.ability, Ability.SteelTrap },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/clanklion.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/clanklion_pixel.png")
                 );
         }

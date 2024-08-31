@@ -20,6 +20,7 @@ namespace NevernamedsInscryptionMod
                 new List<CardMetaCategory> { },
                 CardTemple.Nature,
                 description: "",
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/earthwormsegment_pixel.png"),
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/earthwormsegment.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground }
                 );
@@ -29,7 +30,7 @@ namespace NevernamedsInscryptionMod
                 "Giant Earthworm",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "A rare giant earthworm. It leaves it's long body behind it as it moves to find food.",
                 bloodCost: 1,
@@ -38,6 +39,7 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giantearthworm.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() {  },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/giantearthworm_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/giantearthworm_emission.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex },
                 harbingerLeaveBehind: "BeastNevernamed EarthwormSegment"

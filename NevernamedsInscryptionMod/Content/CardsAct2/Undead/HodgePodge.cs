@@ -16,15 +16,17 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed HodgePodge",
                 "Hodge Podge",
                 1,
-                2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                3,
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "Such fun to rearrange! Although to be struck by it is most infuriating...",
                 bloodCost: 0,
                 bonesCost: 2,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Motivator.ability, UnfocusedStrike.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/hodgepodge.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/hodgepodge_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/hodgepodge_pixel.png")
                 );
         }

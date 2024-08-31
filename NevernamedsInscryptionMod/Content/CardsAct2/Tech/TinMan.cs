@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Tin Man",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.ChoiceNode, CardMetaCategory.Part3Random, Plugin.P03KayceesNatureRegion },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 specialAbilities: new List<SpecialTriggeredAbility>() { WizardOfOz.ability },
                 abilities: new List<Ability>() { Cleaving.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/tinman.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/tinman_pixel.png")
                 );
         }

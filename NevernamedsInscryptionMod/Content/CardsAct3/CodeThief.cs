@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
                 "Code Thief",
                 1,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
+                new List<CardMetaCategory> { CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode, Plugin.P03KayceesNeutralRegion },
                 CardTemple.Tech,
                 description: "",
                 energyCost: 6,

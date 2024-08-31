@@ -21,7 +21,7 @@ namespace NevernamedsInscryptionMod
                 CardTemple.Wizard,
                 description: "",
                 bloodCost: 0,
-                gemsCost: new List<GemType>() { GemType.Green, GemType.Blue },
+                gemsCost: new List<GemType>() { GemType.Green, GemType.Orange },
                 bonesCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.SplitStrike, Ability.BuffEnemy },

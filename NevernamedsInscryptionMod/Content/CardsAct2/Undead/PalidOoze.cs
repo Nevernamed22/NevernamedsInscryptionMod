@@ -17,14 +17,16 @@ namespace NevernamedsInscryptionMod
                 "Palid Ooze",
                 0,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable},
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode},
                 CardTemple.Undead,
-                description: "",
+                description: "Such nasty goo- in an advanced state of decomposition.",
                 bloodCost: 0,
                 bonesCost: 4,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.CorpseEater, Harbinger.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/palidooze.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/palidooze_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/palidooze_pixel.png")
                 );
         }

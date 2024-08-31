@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Photocopier",
                 0,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.P03KayceesUndeadRegion, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode, CardMetaCategory.Part3Random },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 4, //5
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Mockery.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/photocopier.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/photocopier_pixel.png")
                 );
         }

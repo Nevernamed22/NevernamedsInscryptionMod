@@ -18,14 +18,16 @@ namespace NevernamedsInscryptionMod
                 "Ziburinis",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "Poor burning bones. He died in a fire, and now he lives forever in one as well.",
                 bloodCost: 0,
                 bonesCost: 2,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ignition.ability, Ability.Brittle },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/ziburinis.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/ziburinis_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/ziburinis_pixel.png")
                 );
         }

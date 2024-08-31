@@ -15,16 +15,19 @@ namespace NevernamedsInscryptionMod
         {
             // Add the card
             CardSetupUtility.NewCard("Nevernamed IIEyes",
-                "I.I.",
+                "II",
                 2,
-                3,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                2,
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "Giant eyes- no doubt from a cadaver of awe inspiring magnitude! They always come in pairs.",
                 bloodCost: 0,
                 bonesCost: 5,
                 tribes: new List<Tribe>() { },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 abilities: new List<Ability>() { TwinBond.ability, Flighty.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/iieyes.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/iieyes_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/iieyes_pixel.png")
                 );
         }

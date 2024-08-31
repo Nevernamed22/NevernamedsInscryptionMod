@@ -17,14 +17,16 @@ namespace NevernamedsInscryptionMod
                 "Viscount",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "Not quite a vampire lord... yet.",
                 bloodCost: 0,
-                bonesCost: 6,
+                bonesCost: 4,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { BloodGusher.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/viscount.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/viscount_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/viscount_pixel.png")
                 );
         }

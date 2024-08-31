@@ -21,7 +21,7 @@ namespace NevernamedsInscryptionMod
                 "Myrmecoleon",
                 2,
                 4,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The vicious myrmecoleon, an aberration of nature. The true Ant Lion.",
                 bloodCost: 2,
@@ -31,6 +31,7 @@ namespace NevernamedsInscryptionMod
                 traits: new List<Trait>() { Trait.Ant },
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Insect },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/myrmecoleon_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/myrmecoleon_emission.png"),
                 decals: new List<Texture>() { Plugin.raresignaturetex }
                 );

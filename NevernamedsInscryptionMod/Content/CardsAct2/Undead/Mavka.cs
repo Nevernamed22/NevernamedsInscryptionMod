@@ -17,14 +17,16 @@ namespace NevernamedsInscryptionMod
                 "Mavka",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "The poor girl... she died a tragic, lonely death. It brings me some small solace to give her new companionship as a card.",
                 bloodCost: 0,
                 bonesCost: 7,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { TripleStrike.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/mavka.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/mavka_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/mavka_pixel.png")
                 );
         }

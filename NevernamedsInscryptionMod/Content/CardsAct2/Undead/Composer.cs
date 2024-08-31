@@ -24,6 +24,8 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { },
                 traits: new List<Trait>() { Trait.Terrain },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/tubularbell.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/tubularbell_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/tubularbells_pixel.png")
                 );
 
@@ -31,13 +33,16 @@ namespace NevernamedsInscryptionMod
                 "Composer",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "A master of the art. Don't interfere with the harmony of his bells, or you'll live to regret it.",
                 bonesCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Erratic.ability },
                 specialAbilities: new List<SpecialTriggeredAbility>() { SpecialTriggeredAbility.Daus },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/composer.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/composer_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/composer_pixel.png"),
                 erraticLeaveBehind: "DeadNevernamed TubularBells"
                 );

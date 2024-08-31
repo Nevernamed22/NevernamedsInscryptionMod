@@ -21,16 +21,17 @@ namespace NevernamedsInscryptionMod
                 "Nithhoggr",
                 2,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Nature,
                 description: "The wicked Nithhoggr. It gnaws the bones of the damned from it's prison, deep beneath",
                 bloodCost: 2,
                 bonesCost: 0,
-                abilities: new List<Ability>() { EnlargeCustom.ability },
+                abilities: new List<Ability>() { Ability.ActivatedStatsUp },
                 defaultTex: tex,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { Tribe.Reptile },
                 decals: new List<Texture>() { Plugin.raresignaturetex },
+                  pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/nithhoggr_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/nidhoggr_emission.png")
                 );
         }

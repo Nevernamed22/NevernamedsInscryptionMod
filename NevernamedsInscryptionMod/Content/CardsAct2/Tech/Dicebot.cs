@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Dicebot",
                 0,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.P03KayceesNeutralRegion, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -27,6 +27,7 @@ namespace NevernamedsInscryptionMod
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { },
                 variableStat: DamageDice.specialStatIcon,
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/dicebot.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/dicebot_pixel.png")
                 );
         }

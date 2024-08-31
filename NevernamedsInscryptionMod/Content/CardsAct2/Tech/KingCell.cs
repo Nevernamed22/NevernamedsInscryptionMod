@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Selfless Cell",
                 1,
                 2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.P03KayceesBastionRegion, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 3, //5
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { GiftWhenPoweredCustom.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/selflesscell.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/selflesscell_pixel.png")
                 ).SetExtendedProperty("CustomGiftBearerSpawnsRare", "true");
         }

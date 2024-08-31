@@ -17,14 +17,16 @@ namespace NevernamedsInscryptionMod
                 "Dr Clapham-Lee",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "The vengeful decollated doctor. The proceedures used to grant him unnatural life are seared into his absent mind.",
                 bloodCost: 0,
                 bonesCost: 5,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Medicinal.ability, UnfocusedStrike.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/drclaphamlee.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/drclaphamlee_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/drclaphamlee_pixel.png")
                 );
         }

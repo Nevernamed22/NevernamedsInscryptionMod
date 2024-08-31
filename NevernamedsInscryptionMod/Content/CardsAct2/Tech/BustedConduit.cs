@@ -17,11 +17,12 @@ namespace NevernamedsInscryptionMod
                 "Busted Conduit",
                 0,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.P03KayceesBastionRegion, Plugin.P03KayceesUndeadRegion },
                 CardTemple.Tech,
                 description: "",
                 energyCost: 2,
                 abilities: new List<Ability>() { MalfunctioningConduit.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/bustedconduit.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bustedconduit_pixel.png")
                 );
         }

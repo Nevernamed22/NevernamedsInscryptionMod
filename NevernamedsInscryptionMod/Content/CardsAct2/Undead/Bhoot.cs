@@ -18,14 +18,17 @@ namespace NevernamedsInscryptionMod
                 "Bhoot",
                 3,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "How she floats above the holy earth... I wonder what form she will take next!",
                 bloodCost: 0,
-                bonesCost: 6,
+                bonesCost: 4,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Hypermorphic.ability, Ability.Strafe },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/bhoot.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/bhoot_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/bhoot_pixel.png")
                 );
         }

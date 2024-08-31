@@ -21,10 +21,12 @@ namespace NevernamedsInscryptionMod
                 CardTemple.Undead,
                 description: "",
                 bloodCost: 0,
-                bonesCost: 7,
+                bonesCost: 5,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { TransformerCustom.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/strigoimort.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/strigoimort_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/strigoimort_pixel.png"),
                 transformerForm: "DeadNevernamed StrigoiViu"
                 );
@@ -33,14 +35,16 @@ namespace NevernamedsInscryptionMod
                 "Strigoi Viu",
                 0,
                4,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "He rises from his grave at the coming of dusk...",
                 bloodCost: 0,
-                bonesCost: 7,
+                bonesCost: 5,
                 energyCost: 0,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { TransformerCustom.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/strigoiviu.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/strigoiviu_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/strigoiviu_pixel.png"),
                 transformerForm: "DeadNevernamed StrigoiMort"
                 );

@@ -24,7 +24,8 @@ namespace NevernamedsInscryptionMod
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/tapeworm.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/tapeworm_emission.png"),
                 abilities: new List<Ability>() { AnnoyingLatch.ability },
-                tribes: new List<Tribe>() { }
+                tribes: new List<Tribe>() { },
+                traits: new List<Trait>() { Trait.KillsSurvivors }
                 );
         }
     }

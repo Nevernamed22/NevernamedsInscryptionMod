@@ -22,7 +22,7 @@ namespace NevernamedsInscryptionMod
                 2,
                 new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
-                description: "The boated arboreal Yara-Ma-Yha-Who. Practically ballooned with blood from it's gluttonous feeding...",
+                description: "The bloated arboreal Yara-Ma-Yha-Who. Practically ballooned with blood from it's gluttonous feeding...",
                 bloodCost: 1,
                 bonesCost: 2,
                 defaultTex: tex,

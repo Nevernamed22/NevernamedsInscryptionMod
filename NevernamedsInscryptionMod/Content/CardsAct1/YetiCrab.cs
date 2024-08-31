@@ -19,7 +19,7 @@ namespace NevernamedsInscryptionMod
                 3,
                 new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
                 CardTemple.Nature,
-                description: "The pallid yeti crab. It can consume the bacterial colonies along it's claws to regain it's strength.",
+                description: "The palid yeti crab. It can consume the bacterial colonies along it's claws to regain it's strength.",
                 bloodCost: 1,
                 bonesCost: 4,
                 defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/yeticrab.png"),

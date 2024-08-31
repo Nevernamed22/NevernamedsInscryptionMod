@@ -17,15 +17,17 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed Trojan",
                 "Trojan",
                 0,
-                2,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                1,
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.P03KayceesNatureRegion, CardMetaCategory.Part3Random, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
                 bonesCost: 0,
-                energyCost: 3,
+                energyCost: 2,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Traitor.ability, Trampler.ability },
+                flipPortraitWhenStrafing: true,
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/trojan.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/trojan_pixel.png")
                 );
         }

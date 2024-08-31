@@ -17,7 +17,7 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed DentalMage",
                 "Dental Mage",
                 1,
-                1,
+                3,
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
                 CardTemple.Wizard,
                 description: "",

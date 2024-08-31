@@ -16,16 +16,19 @@ namespace NevernamedsInscryptionMod
             // Add the card
             CardSetupUtility.NewCard("Nevernamed ZhaleznyChalavek",
                 "Zhalezny Chalavek",
-                5,
-                5,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                4,
+                7,
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "",
+                description: "A lumbering iron golem, spirit of the swamp. A stalwart protector.",
                 bloodCost: 0,
                 bonesCost: 6,
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
-                abilities: new List<Ability>() { Ability.MadeOfStone, Ability.StrafeSwap },
+                abilities: new List<Ability>() { Ability.MadeOfStone, Ability.StrafePush },
+                appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/zhaleznychalavek.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/zhaleznychalavek_emission.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/zhaleznychalavek_pixel.png")
                 );
         }

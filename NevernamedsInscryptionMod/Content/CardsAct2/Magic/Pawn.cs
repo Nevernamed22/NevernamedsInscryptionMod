@@ -16,7 +16,7 @@ namespace NevernamedsInscryptionMod
             CardSetupUtility.NewCard("Nevernamed Pawn",
                 "Pawn",
                 1,
-                2,
+                1,
                 new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
                 CardTemple.Wizard,
                 description: "",

@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
             CardInfo inf = CardSetupUtility.NewCard("De Bug",
                   "De Bug",
               1,
-                  1,
+                 3,
                   new List<CardMetaCategory> {   CardMetaCategory.GBCPlayable  }, //DONT FUCKING COPY THIS YOU NUMPTY
                   CardTemple.Nature,
                   description: "What... is that?",
@@ -28,14 +28,14 @@ namespace NevernamedsInscryptionMod
                   bonesCost: 0,
                   gemsCost: new List<GemType>() {  },
                   defaultTex: tex,
-                  abilities: new List<Ability>() { Retreat.ability  },   
+                  abilities: new List<Ability>() { GoldDigger.ability  },   
                   tribes: new List<Tribe>() { },
                   //variableStat: SanguineBond.specialStatIcon,
                   //specialAbilities: new List<SpecialTriggeredAbility>() { SanguineBond.ability   },
                   emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/debug_emission.png"),
                   pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/debug_pixel.png"),
-                  appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.AlternatingBloodDecal  }
-                  );;
+                  appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> {   }
+                  ).SetExtendedProperty("DrawSigilNumberToDraw", "2");
 
             //inf.mods.Add(new CardModificationInfo() { gemify = true }); 
         }

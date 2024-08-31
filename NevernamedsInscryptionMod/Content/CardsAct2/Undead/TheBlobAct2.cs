@@ -18,15 +18,17 @@ namespace NevernamedsInscryptionMod
                 "The Blob",
                 1,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.Rare, CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, Plugin.GrimoraChoiceNode },
                 CardTemple.Undead,
-                description: "That terrifying sludge, it never ceases to expand. Beware of the blob.",
+                description: "Oho, I love this one! Such a jazzy little ooze. I can hardly begrude Leshy for borrowing it.",
                 bloodCost: 0,
                 bonesCost: 4,
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { CardAppearanceBehaviour.Appearance.RareCardBackground, },
                 tribes: new List<Tribe>() { },
                 specialAbilities: new List<SpecialTriggeredAbility>() { ContinualEvolution.ability },
-                pixelTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/theblob_pixel.png")
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/theblob_grimora.png"),
+                emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsGrimora/theblob_grimora_emission.png"),
+                pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/theblob_pixel.png")
                 );
         }
     }

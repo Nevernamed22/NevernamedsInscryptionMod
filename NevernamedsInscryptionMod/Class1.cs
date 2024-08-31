@@ -54,6 +54,7 @@ namespace NevernamedsInscryptionMod
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.QuadrupleBones).Info.canStack = true;
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.DrawRabbits).Info.canStack = true;
             AbilityManager.BaseGameAbilities.AbilityByID(Ability.Loot).Info.canStack = true;
+            AbilityManager.BaseGameAbilities.AbilityByID(Ability.ActivatedStatsUp).Info.AddMetaCategories( new AbilityMetaCategory[] { AbilityMetaCategory.Part1Modular, AbilityMetaCategory.Part1Rulebook });
 
             //Give static cards act 2 art
             CardManager.BaseGameCards.CardByName("!STATIC!GLITCH").SetPixelPortrait(Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/staticpixel.png"));
@@ -390,6 +391,35 @@ namespace NevernamedsInscryptionMod
             GiftHorse.Init();
             Kiwi.Init();
             Caracal.Init();
+            Baboon.Init();
+            InfantBaboon.Init();
+            Gymnure.Init();
+            Coinchenn.Init();
+            Budgerigar.Init();
+            Hookworm.Init();
+            Curruid.Init();
+            Camel.Init();
+            SpinyApe.Init();
+            Reptilicus.Init();
+            CrookedMouse.Init();
+            FireflySquid.Init();
+            VampireSquid.Init();
+            EnchantedNightcrawler.Init();
+            CurlyLeggedCat.Init();
+            ScaleTentacle.Init();
+            Skvader.Init();
+            KingCrab.Init();
+            Omukade.Init();
+            Elwetritsch.Init();
+            Powelliphanta.Init();
+            RatQueen.Init();
+            PackRatKing.Init();
+            TerribilePescecane.Init();
+            Moray.Init();
+            Hornet.Init();
+            SeaMonk.Init();
+            HisPresence.Init();
+            LynxSpider.Init();
 
             //ACT 1 ENERGY COST CARDS
             Blockhead.Init();
@@ -476,7 +506,7 @@ namespace NevernamedsInscryptionMod
             BatTery.Init();
             MagicTrap.Init();
             Gembrain.Init();
-            EnergyCube.Init();
+            EnergyCube.Init ();
             CrookedWraith.Init();
             BustedBot.Init();
             CapybaraAct2.Init();
@@ -694,6 +724,15 @@ namespace NevernamedsInscryptionMod
             Ribcage.Init();
             TempleTrap.Init();
             Vitrioleuse.Init();
+            Ossuary.Init();
+            Nisse.Init();
+            EnchantedBoulder.Init();
+            Prodigy.Init();
+            Monk.Init();
+            SuperDuper.Init();
+            Jeweler.Init();
+            Bloodstopper.Init();
+            Anchimayen.Init();
 
             //Make clear mox cost later
             MobiusGolem.Init();
@@ -733,6 +772,10 @@ namespace NevernamedsInscryptionMod
             Lvl2FactoryConduit.Init();
             Omegear.Init();
             Flammaball.Init();
+            BootingBot.Init();
+            Magnedroid.Init();
+            BallDroid.Init();
+            TimeFly.Init();
 
             //SPORE CARDS
             SporenergyBot.Init();
@@ -796,6 +839,7 @@ namespace NevernamedsInscryptionMod
             {"BeastNevernamed Kokyangwuti", "kokyangwuti"},
             {"BeastNevernamed LengSpider", "lengspider"},
             {"BeastNevernamed LittleMiss", "littlemiss"},
+            {"BeastNevernamed LynxSpider", "lynxspider"},
             {"BeastNevernamed Tarantula", "tarantula"},
             {"BeastNevernamed Sicarius", "sicarius"},
             {"BeastNevernamed SicariusBuried", "sicariusburied"},
@@ -912,7 +956,7 @@ namespace NevernamedsInscryptionMod
 
             Debug.Log($"DeadNevernamed Cards Total: {ModUndead.Count}/{UndeadCards.Count}\n");
             Debug.Log($"    Act 2 Total: Common({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}) Rare({RareModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{RareUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}) All({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count + RareModdedUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count + RareUndead.FindAll(x => x.metaCategories.Contains(CardMetaCategory.GBCPlayable)).Count})");
-            Debug.Log($"    Grimoramod Total: Common({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}) Rare({RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}) All({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count + RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count + RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count})");
+            Debug.Log($"    Grimoramod Total: Common({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode) || x.name.StartsWith("arackulele.inscryption.grimoramod")).Count}) Rare({RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode) || x.name.StartsWith("arackulele.inscryption.grimoramod")).Count}) All({CommonModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count + RareModdedUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode)).Count}/{CommonUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode) || x.name.StartsWith("arackulele.inscryption.grimoramod")).Count + RareUndead.FindAll(x => x.metaCategories.Contains(GrimoraChoiceNode) || x.name.StartsWith("arackulele.inscryption.grimoramod")).Count})");
             Debug.Log($"----------------------------------------------------------------");
 
             Debug.Log($"WizardNevernamed Cards Total: {ModWizards.Count}/{MoxCards.Count}\n");

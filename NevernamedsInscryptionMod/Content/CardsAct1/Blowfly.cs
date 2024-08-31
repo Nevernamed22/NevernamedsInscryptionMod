@@ -20,7 +20,7 @@ namespace NevernamedsInscryptionMod
                 "Blowfly",
                 0,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, },
+                new List<CardMetaCategory> { CardMetaCategory.ChoiceNode, CardMetaCategory.TraderOffer, CardMetaCategory.GBCPlayable, CardMetaCategory.GBCPack },
                 CardTemple.Nature,
                 description: "Disgusting.",
                 bloodCost: 1,
@@ -29,6 +29,7 @@ namespace NevernamedsInscryptionMod
                 abilities: new List<Ability>() { Traitor.ability, Ability.BuffEnemy },
                 tribes: new List<Tribe>() { Tribe.Insect },
 
+                pixelTex : Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/blowfly_pixel.png"),
                 emissionTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/Cards/blowfly_emission.png"),
                 appearanceBehaviour: new List<CardAppearanceBehaviour.Appearance> { }
                 );

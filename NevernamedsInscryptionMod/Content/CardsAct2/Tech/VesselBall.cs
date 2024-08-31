@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Vessel Ball",
                 1,
                 3,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, CardMetaCategory.ChoiceNode, Plugin.P03KayceesNeutralRegion },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { VesselShedder.ability, },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/vesselball.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/vesselball_pixel.png")
                 );
         }

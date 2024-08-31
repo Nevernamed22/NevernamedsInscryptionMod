@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Knight Cell",
                 2,
                 1,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.ChoiceNode, Plugin.P03KayceesBastionRegion  },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 5, 
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { SplashDamageWhenPowered.ability },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/knightcell.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/knightcell_pixel.png")
                 );
         }

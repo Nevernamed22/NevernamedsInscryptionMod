@@ -18,7 +18,7 @@ namespace NevernamedsInscryptionMod
                 "Vessel Lord",
                 1,
                 5,
-                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare },
+                new List<CardMetaCategory> { CardMetaCategory.GBCPack, CardMetaCategory.GBCPlayable, CardMetaCategory.Rare, Plugin.P03KayceesNeutralRegion, CardMetaCategory.ChoiceNode },
                 CardTemple.Tech,
                 description: "",
                 bloodCost: 0,
@@ -26,6 +26,7 @@ namespace NevernamedsInscryptionMod
                 energyCost: 6,
                 tribes: new List<Tribe>() { },
                 abilities: new List<Ability>() { Ability.DrawVesselOnHit, },
+                defaultTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/CardsTech/vessellord.png"),
                 pixelTex: Tools.LoadTex("NevernamedsInscryptionMod/Resources/PixelCards/vessellord_pixel.png")
                 );
         }
